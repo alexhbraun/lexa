@@ -11,14 +11,14 @@ const ComparisonItem: React.FC<{ text: string; type: 'bad' | 'good' }> = ({ text
 
 export const LexaLightComparisonSection: React.FC = () => {
     return (
-        <section id="comparativo" className="py-48 bg-[#FFFBF5] reveal"> {/* Warmer background tint */}
+        <section id="comparativo" className="py-24 md:py-48 bg-slate-50 reveal"> {/* Warmer background tint */}
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto mb-24 gap-12">
-                    <div className="max-w-3xl border-l-[1px] border-gold/40 pl-12 py-4"> {/* Gold vertical accent line */}
+                    <div className="max-w-3xl border-l-[1px] border-gold/40 pl-8 md:pl-12 py-4"> {/* Gold vertical accent line */}
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8">
                             PROTEÇÃO & PRESTÍGIO
                         </div>
-                        <h2 className="text-5xl md:text-7xl font-serif font-black text-[#051020] leading-tight">
+                        <h2 className="text-3xl md:text-7xl font-serif font-black text-[#051020] leading-tight">
                             A prevenção do erro silencioso de <span className="text-gold italic font-light">não atender quem ligou.</span>
                         </h2>
                     </div>

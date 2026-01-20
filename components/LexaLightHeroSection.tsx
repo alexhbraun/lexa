@@ -24,7 +24,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
             </div>
 
             <div className="container mx-auto px-6 text-center relative z-10">
-                <h1 className="text-4xl md:text-7xl font-serif font-black text-[#051020] mb-8 leading-[1.1] reveal">
+                <h1 className="text-3xl md:text-7xl font-serif font-black text-[#051020] mb-8 leading-[1.1] reveal">
                     Quando o seu telefone toca e ninguém atende, <br className="hidden md:block" />
                     o cliente toma a decisão de <span className="text-gold italic font-light">buscar o próximo escritório.</span>
                 </h1>
@@ -33,10 +33,10 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                     Preserve a oportunidade de contato no exato momento em que ela surge, garantindo atendimento profissional sempre que você estiver em audiência ou indisponível.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 reveal" style={{ animationDelay: '0.4s' }}>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 reveal w-full sm:w-auto px-4 sm:px-0" style={{ animationDelay: '0.4s' }}>
                     <button 
                         onClick={onOpenSurvey || onNavigateToPrep}
-                        className="group shimmer relative inline-flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
+                        className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                     >
                         <span className="leading-tight">Testar Lexa 7 dias grátis</span>
                         <div className="bg-gold p-2 rounded-full group-hover:rotate-12 transition-transform">
@@ -45,7 +45,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                     </button>
                     <a
                         href="#demo-audio"
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-navy-acc font-bold text-lg px-6 py-4 rounded-full hover:text-gold transition-all duration-300"
+                        className="w-full sm:w-auto flex sm:inline-flex items-center justify-center gap-2 text-navy-acc font-bold text-lg px-8 sm:px-6 py-4 rounded-full hover:text-gold transition-all duration-300 border border-transparent hover:border-navy-acc/10"
                     >
                         <PhoneIcon className="w-5 h-5" />
                         Ver demonstração

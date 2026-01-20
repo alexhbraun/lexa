@@ -2,7 +2,7 @@ import React from 'react';
 import { ShieldCheckIcon, IconAtendimento24h, IconAgendaAutomatica, IconResumosAutomaticos } from './Icons';
 
 const BenefitCard: React.FC<{ icon: React.ReactNode; title: string; text: string }> = ({ icon, title, text }) => (
-    <div className="group bg-white p-10 rounded-[50px] border border-slate-50 shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)] flex flex-col items-center text-center">
+    <div className="group bg-white p-6 md:p-10 rounded-[50px] border border-slate-50 shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)] flex flex-col items-center text-center">
         <div className="h-16 w-16 mb-8 text-gold bg-slate-50 rounded-2xl p-4 flex items-center justify-center transition-all duration-500 group-hover:bg-navy-acc group-hover:text-gold group-hover:scale-110">
             {icon}
         </div>
@@ -13,13 +13,13 @@ const BenefitCard: React.FC<{ icon: React.ReactNode; title: string; text: string
 
 export const LexaLightBenefitsSection: React.FC = () => {
     return (
-        <section className="py-48 bg-white reveal">
+        <section className="py-24 md:py-48 bg-white reveal">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-4xl mx-auto mb-24">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8">
                         DIFERENCIAIS DE ELITE
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-serif font-black text-[#051020] mb-8 leading-tight">
+                    <h2 className="text-3xl md:text-6xl font-serif font-black text-[#051020] mb-8 leading-tight">
                         A proteção operacional que o <br className="hidden md:block" />
                         seu escritório <span className="text-gold italic font-light">exige agora.</span>
                     </h2>

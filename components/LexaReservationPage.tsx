@@ -142,7 +142,7 @@ export const LexaReservationPage: React.FC<LexaReservationPageProps> = ({ onNavi
                             <motion.div variants={itemFade} className="flex flex-col items-center justify-center gap-6">
                                 <button
                                     onClick={handleScrollToPlans}
-                                    className="group shimmer relative inline-flex items-center justify-center gap-6 bg-navy-acc text-white font-bold text-xl md:text-2xl px-16 py-8 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
+                                    className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 sm:gap-6 bg-navy-acc text-white font-bold text-lg md:text-2xl px-8 sm:px-16 py-5 sm:py-8 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                                 >
                                     <span className="leading-tight">Reservar Avaliação de 7 Dias</span>
                                     <div className="bg-gold p-2 rounded-full group-hover:rotate-[360deg] transition-all duration-1000">
@@ -358,7 +358,7 @@ export const LexaReservationPage: React.FC<LexaReservationPageProps> = ({ onNavi
                         
                         <button
                             onClick={handleContract}
-                            className="group shimmer relative inline-flex items-center justify-center gap-4 bg-gold text-navy-acc font-black text-xl px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_50px_-10px_rgba(197,160,89,0.4)]"
+                            className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-gold text-navy-acc font-black text-lg sm:text-xl px-8 sm:px-12 py-5 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_50px_-10px_rgba(197,160,89,0.4)]"
                         >
                             <span className="leading-tight">Ativar Lexa no meu número — 7 dias grátis</span>
                             <div className="bg-navy-acc p-1.5 rounded-full group-hover:rotate-90 transition-transform">

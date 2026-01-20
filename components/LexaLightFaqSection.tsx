@@ -56,14 +56,14 @@ export const LexaLightFaqSection: React.FC<{ onOpenSurvey?: () => void }> = ({ o
 ];
 
     return (
-        <section id="faq" className="py-48 bg-[#FFFBF5] reveal"> {/* Updated to warm tint matching Comparison section */}
+        <section id="faq" className="py-24 md:py-48 bg-white reveal"> {/* Updated to warm tint matching Comparison section */}
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-24">
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8">
                             RESPOSTAS FACTUAIS
                         </div>
-                        <h2 className="text-4xl md:text-6xl font-serif font-black text-[#051020] mb-8 leading-tight">
+                        <h2 className="text-3xl md:text-6xl font-serif font-black text-[#051020] mb-8 leading-tight">
                             Esclarecimentos <span className="text-gold italic font-light">Sobre a Lexa.</span>
                         </h2>
                     </div>
@@ -88,7 +88,7 @@ export const LexaLightFaqSection: React.FC<{ onOpenSurvey?: () => void }> = ({ o
                         </p>
                         <button
                             onClick={onOpenSurvey}
-                            className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-navy-acc text-white font-bold text-base px-8 py-4 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_40px_-15px_rgba(5,16,32,0.4)]"
+                            className="shimmer w-full sm:w-auto flex sm:inline-flex items-center justify-center gap-3 bg-navy-acc text-white font-bold text-base px-8 py-4 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_40px_-15px_rgba(5,16,32,0.4)]"
                         >
                             <ShieldCheckIcon className="w-5 h-5 text-gold shrink-0" />
                             <span className="leading-tight">Testar Lexa 7 dias grátis</span>

@@ -31,7 +31,7 @@ const AudioCard: React.FC<{
     };
 
     return (
-        <div className="group bg-white/5 backdrop-blur-2xl p-10 rounded-[60px] border border-white/20 transition-all duration-700 hover:-translate-y-4 shadow-[0_0_80px_-20px_rgba(197,160,89,0.1)] hover:shadow-[0_80px_120px_-20px_rgba(0,0,0,0.4)] hover:border-gold/40">
+        <div className="group bg-white/5 backdrop-blur-2xl p-6 md:p-10 rounded-[60px] border border-white/20 transition-all duration-700 hover:-translate-y-4 shadow-[0_0_80px_-20px_rgba(197,160,89,0.1)] hover:shadow-[0_80px_120px_-20px_rgba(0,0,0,0.4)] hover:border-gold/40">
             {audioSrc && (
                 <audio 
                     ref={audioRef} 
@@ -89,13 +89,13 @@ const AudioCard: React.FC<{
 
 export const LexaLightAudioDemoSection: React.FC = () => {
     return (
-        <section id="demo-audio" className="py-48 bg-[#051020] reveal overflow-hidden">
+        <section id="demo-audio" className="py-24 md:py-48 bg-[#051020] reveal overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-5xl mx-auto mb-32">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8">
                         DEMONSTRAÇÃO ACÚSTICA
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-serif font-black text-white mb-8 leading-tight">
+                    <h2 className="text-3xl md:text-6xl font-serif font-black text-white mb-8 leading-tight">
                         É exatamente isto que o seu cliente <br className="hidden md:block" />
                         ouve quando <span className="text-gold italic font-light">liga para você.</span>
                     </h2>

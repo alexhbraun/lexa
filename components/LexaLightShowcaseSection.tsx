@@ -2,14 +2,14 @@ import React from 'react';
 
 export const LexaLightShowcaseSection: React.FC = () => {
     return (
-        <section className="py-48 bg-[#F8FAFC] reveal overflow-hidden">
+        <section className="py-24 md:py-48 bg-white reveal overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-24">
                     <div className="lg:w-1/2">
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8 stagger-reveal" style={{ animationDelay: '0.1s' }}>
                             VISIBILIDADE E CONTROLE
                         </div>
-                        <h2 className="text-4xl md:text-6xl font-serif font-black text-[#051020] mb-10 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
+                        <h2 className="text-3xl md:text-6xl font-serif font-black text-[#051020] mb-10 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
                             A segurança de saber exatamente <br className="hidden md:block" />
                             quem ligou e <span className="text-gold italic font-light">o que foi solicitado.</span>
                         </h2>

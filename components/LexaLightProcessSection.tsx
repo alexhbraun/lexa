@@ -2,7 +2,7 @@ import React from 'react';
 import { PhoneIcon, IconResumosAutomaticos, IconTransferenciaHumana, IconAtendimento24h } from './Icons';
 
 const Step: React.FC<{ number: string; title: string; text: string; icon: React.ReactNode }> = ({ number, title, text, icon }) => (
-    <div className="group bg-white p-10 rounded-[50px] border border-slate-100 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] relative">
+    <div className="group bg-white p-6 md:p-10 rounded-[50px] border border-slate-100 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] relative">
         <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-navy-acc border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
             {number}
         </div>
@@ -18,7 +18,7 @@ const Step: React.FC<{ number: string; title: string; text: string; icon: React.
 
 export const LexaLightProcessSection: React.FC = () => {
     return (
-        <section id="como-funciona" className="py-32 bg-[#F1F4FF] reveal">
+        <section id="como-funciona" className="py-20 md:py-32 bg-white reveal">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-5xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
@@ -30,31 +30,39 @@ export const LexaLightProcessSection: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-                    <Step
-                        number="01"
-                        title="Postura profissional"
-                        text="A Lexa atende cada ligação com o tom e a elegância que a advocacia exige."
-                        icon={<PhoneIcon className="w-full h-full" />}
-                    />
-                    <Step
-                        number="02"
-                        title="Motivo da ligação"
-                        text="Escuta com atenção o que o seu cliente ou prospect precisa no momento."
-                        icon={<IconTransferenciaHumana className="w-full h-full" />}
-                    />
-                    <Step
-                        number="03"
-                        title="Dados essenciais"
-                        text="Registra as informações cruciais para que nada se perca no dia a dia."
-                        icon={<IconResumosAutomaticos className="w-full h-full" />}
-                    />
-                    <Step
-                        number="04"
-                        title="Encaminhamento"
-                        text="Entrega tudo para você com clareza, permitindo um retorno estratégico."
-                        icon={<IconAtendimento24h className="w-full h-full" />}
-                    />
+                <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-4 gap-4 md:gap-8 relative pb-8 pt-8 md:pt-0 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 hide-scrollbar md:overflow-visible">
+                    <div className="min-w-[85vw] md:min-w-0 snap-center">
+                        <Step
+                            number="01"
+                            title="Postura profissional"
+                            text="A Lexa atende cada ligação com o tom e a elegância que a advocacia exige."
+                            icon={<PhoneIcon className="w-full h-full" />}
+                        />
+                    </div>
+                    <div className="min-w-[85vw] md:min-w-0 snap-center">
+                        <Step
+                            number="02"
+                            title="Motivo da ligação"
+                            text="Escuta com atenção o que o seu cliente ou prospect precisa no momento."
+                            icon={<IconTransferenciaHumana className="w-full h-full" />}
+                        />
+                    </div>
+                    <div className="min-w-[85vw] md:min-w-0 snap-center">
+                        <Step
+                            number="03"
+                            title="Dados essenciais"
+                            text="Registra as informações cruciais para que nada se perca no dia a dia."
+                            icon={<IconResumosAutomaticos className="w-full h-full" />}
+                        />
+                    </div>
+                    <div className="min-w-[85vw] md:min-w-0 snap-center">
+                        <Step
+                            number="04"
+                            title="Encaminhamento"
+                            text="Entrega tudo para você com clareza, permitindo um retorno estratégico."
+                            icon={<IconAtendimento24h className="w-full h-full" />}
+                        />
+                    </div>
                 </div>
 
                 <div className="mt-20 text-center max-w-3xl mx-auto">

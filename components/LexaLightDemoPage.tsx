@@ -11,6 +11,7 @@ import { LexaLightBenefitsSection } from './LexaLightBenefitsSection';
 import { LexaLightCtaSection } from './LexaLightCtaSection';
 import { LexaLightFaqSection } from './LexaLightFaqSection';
 import { Modal } from './Modal';
+import { StickyMobileCTA } from './StickyMobileCTA';
 import { ShieldCheckIcon, PhoneIcon } from './Icons';
 
 interface LexaDemoPageProps {
@@ -62,6 +63,7 @@ export const LexaLightDemoPage: React.FC<LexaDemoPageProps> = ({ onNavigateToPre
             <LexaLightShowcaseSection />
             <LexaLightCtaSection onOpenSurvey={() => setIsSurveyOpen(true)} />
             <LexaLightFaqSection onOpenSurvey={() => setIsSurveyOpen(true)} />
+            <StickyMobileCTA onOpenSurvey={() => setIsSurveyOpen(true)} />
 
             {/* Final CTA Section */}
             <section id="contato" className="py-64 bg-[#051020] relative overflow-hidden">
