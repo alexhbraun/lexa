@@ -31,7 +31,7 @@ const AudioCard: React.FC<{
     };
 
     return (
-        <div className="group bg-white/5 backdrop-blur-2xl p-6 md:p-10 rounded-[60px] border border-white/20 transition-all duration-700 hover:-translate-y-4 shadow-[0_0_80px_-20px_rgba(197,160,89,0.1)] hover:shadow-[0_80px_120px_-20px_rgba(0,0,0,0.4)] hover:border-gold/40">
+        <div className="group bg-[#1A2238] p-6 md:p-10 rounded-[60px] border border-[rgba(255,255,255,0.08)] transition-all duration-700 hover:-translate-y-4 shadow-[0_20px_60px_rgba(10,16,32,0.35)] hover:shadow-[0_40px_80px_rgba(10,16,32,0.5)] hover:border-gold/40">
             {audioSrc && (
                 <audio 
                     ref={audioRef} 
@@ -58,12 +58,12 @@ const AudioCard: React.FC<{
                 </div>
 
                 <h3 className="text-2xl font-black text-white mb-4 leading-tight">{title}</h3>
-                <p className="text-slate-400 text-[17px] leading-relaxed font-light mb-10 italic">
+                <p className="text-[#D0D6EA] text-[17px] leading-relaxed font-light mb-10 italic">
                     "{description}"
                 </p>
 
                 <div className="mt-auto">
-                    <div className="flex items-center gap-6 p-6 rounded-[30px] bg-white/5 border border-white/10 shadow-inner relative overflow-hidden">
+                    <div className="flex items-center gap-6 p-6 rounded-[30px] bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.12)] relative overflow-hidden">
                         <button
                             onClick={togglePlay}
                             className={`shimmer w-16 h-16 rounded-full bg-gold flex items-center justify-center text-navy-acc hover:scale-105 transition-all duration-500 shadow-xl z-10 ${!audioSrc ? 'opacity-50 cursor-not-allowed' : ''}`}
@@ -74,7 +74,7 @@ const AudioCard: React.FC<{
                         <div className="flex-grow z-10">
                             <div className="flex justify-between mb-3">
                                 <span className="text-[10px] text-gold font-black uppercase tracking-widest opacity-80">Status: {isPlaying ? 'Em reprodução' : 'Pronto'}</span>
-                                <span className="text-[10px] text-white font-black uppercase tracking-widest opacity-60">{duration}</span>
+                                <span className="text-[10px] text-[rgba(208,214,234,0.75)] font-black uppercase tracking-widest">{duration}</span>
                             </div>
                             <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden relative">
                                 <div className={`h-full bg-gold transition-all duration-[2000ms] ease-linear ${isPlaying ? 'w-full' : 'w-0'}`}></div>
@@ -89,7 +89,7 @@ const AudioCard: React.FC<{
 
 export const LexaLightAudioDemoSection: React.FC = () => {
     return (
-        <section id="demo-audio" className="py-24 md:py-48 bg-[#051020] reveal overflow-hidden">
+        <section id="demo-audio" className="py-24 md:py-48 bg-[#0B1224] reveal overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-5xl mx-auto mb-32">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-8">
@@ -99,7 +99,7 @@ export const LexaLightAudioDemoSection: React.FC = () => {
                         É exatamente isto que o seu cliente <br className="hidden md:block" />
                         ouve quando <span className="text-gold italic font-light">liga para você.</span>
                     </h2>
-                    <p className="text-xl text-slate-300 font-light max-w-2xl mx-auto">
+                    <p className="text-xl text-[#D0D6EA] font-light max-w-2xl mx-auto">
                         Não se trata de uma simulação teórica ou promessa técnica. 
                         Escute como o atendimento da Lexa funciona na prática agora.
                         <br /><br />
