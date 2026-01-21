@@ -2,12 +2,12 @@ import React from 'react';
 import { PhoneIcon, IconResumosAutomaticos, IconTransferenciaHumana, IconAtendimento24h } from './Icons';
 
 const Step: React.FC<{ number: string; title: string; text: string; icon: React.ReactNode }> = ({ number, title, text, icon }) => (
-    <div className="group bg-white p-6 md:p-10 rounded-[50px] border border-slate-100 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] relative">
+    <div className="group bg-white/60 backdrop-blur-xl p-6 md:p-10 rounded-[50px] border border-white/50 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] relative">
         <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-navy-acc border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
             {number}
         </div>
         <div className="flex flex-col items-center text-center">
-            <div className="h-20 w-20 mb-8 text-navy-acc bg-[#F1F4FF] rounded-full p-5 flex items-center justify-center transition-all duration-500 group-hover:bg-navy-acc group-hover:text-white">
+            <div className="h-20 w-20 mb-8 text-gold bg-slate-50 rounded-full p-5 flex items-center justify-center transition-all duration-500 group-hover:bg-navy-acc group-hover:text-gold">
                 {icon}
             </div>
             <h3 className="text-xl font-bold text-[#051020] mb-4 leading-tight">{title}</h3>
@@ -18,7 +18,10 @@ const Step: React.FC<{ number: string; title: string; text: string; icon: React.
 
 export const LexaLightProcessSection: React.FC = () => {
     return (
-        <section id="como-funciona" className="py-20 md:py-32 bg-white reveal">
+        <section id="como-funciona" className="py-20 md:py-32 bg-white reveal relative overflow-hidden">
+            {/* Subtle decorative blob for glassmorphism context */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-gradient-to-b from-slate-50/0 via-slate-50/50 to-slate-50/0 -z-10 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] bg-gold/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-5xl mx-auto mb-20">
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">

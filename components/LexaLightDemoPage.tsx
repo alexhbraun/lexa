@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { LexaLightHeroSection } from './LexaLightHeroSection';
 import { LexaSurveySection } from './LexaSurveySection';
 import { LexaLightProblemSection } from './LexaLightProblemSection';
+import { LexaLightTrustBar } from './LexaLightTrustBar';
 
 import { LexaLightComparisonSection } from './LexaLightComparisonSection';
 import { LexaLightProcessSection } from './LexaLightProcessSection';
@@ -44,6 +45,8 @@ export const LexaLightDemoPage: React.FC<LexaDemoPageProps> = ({ onNavigateToPre
                 onNavigateToPrep={onNavigateToPrep} 
                 onOpenSurvey={() => setIsSurveyOpen(true)}
             />
+            
+            <LexaLightTrustBar />
             
             {/* Survey Modal */}
             <Modal
