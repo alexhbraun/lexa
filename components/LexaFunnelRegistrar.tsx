@@ -68,6 +68,36 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                 É um teste operacional no seu número, com chamadas reais.
                             </p>
                         </div>
+
+                        {/* Overview of Next Steps */}
+                        <div className="text-left mt-[32px] mb-[12px] w-full">
+                            <h3 className="text-slate-400 text-xs font-bold uppercase tracking-wider">
+                                O que acontece a seguir
+                            </h3>
+                        </div>
+
+                        <div className="text-left space-y-[10px] mb-[24px] w-full">
+                            <div className="text-sm leading-[1.4] text-slate-500">
+                                <p className="font-bold text-slate-800">1. Preparamos sua Lexa</p>
+                                <p>Criamos um ambiente dedicado para o seu teste, configurado para o seu número.</p>
+                            </div>
+                            <div className="text-sm leading-[1.4] text-slate-500">
+                                <p className="font-bold text-slate-800">2. Avisamos quando estiver pronta</p>
+                                <p>Assim que tudo estiver preparado, você recebe um aviso para iniciar o teste.</p>
+                            </div>
+                            <div className="text-sm leading-[1.4] text-slate-500">
+                                <p className="font-bold text-slate-800">3. O teste começa na primeira ligação real</p>
+                                <p>O período de avaliação só inicia quando a Lexa atender uma chamada de verdade.</p>
+                            </div>
+                            <div className="text-sm leading-[1.4] text-slate-500">
+                                <p className="font-bold text-slate-800">4. Você decide com calma</p>
+                                <p>Após o teste, você escolhe se faz sentido continuar — sem surpresas.</p>
+                            </div>
+                            <p className="text-[11px] text-slate-400 font-medium mt-[10px]">
+                                Não há cobrança antes do início real do teste.
+                            </p>
+                        </div>
+
                         <p className="text-slate-400 text-xs font-bold uppercase tracking-wider">
                             Precisamos apenas de algumas informações para preparar corretamente o seu ambiente.
                         </p>
