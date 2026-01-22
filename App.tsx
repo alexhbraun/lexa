@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { PrepPage } from './components/PrepPage';
 
 import { LexaLightDemoPage } from './components/LexaLightDemoPage';
+import { LexaLightDemoPageB } from './components/LexaLightDemoPageB';
 
 // Funnel Components
 import { LexaFunnelRegistrar } from './components/LexaFunnelRegistrar';
@@ -15,7 +16,7 @@ import { LexaFunnelStarted } from './components/LexaFunnelStarted';
 import { LexaFunnelTrial } from './components/LexaFunnelTrial';
 
 type ViewState = 'landing' | 'prep' | 'lexa-light' | 
-                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial';
+                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b';
 
 function App() {
   const [view, setView] = useState<ViewState>('landing');
@@ -31,6 +32,7 @@ function App() {
     else if (path.includes('/pronta-para-teste')) setView('pronta-para-teste');
     else if (path.includes('/teste-iniciado')) setView('teste-iniciado');
     else if (path.includes('/trial')) setView('trial');
+    else if (search.includes('v2') || path.includes('/b')) setView('variant-b');
     else if (search.includes('lexa') || path.includes('/lexa')) setView('lexa-light');
   }, []);
 
@@ -96,6 +98,18 @@ function App() {
         <Header onLogoClick={handleBackToLanding} />
         <main>
           <LexaLightDemoPage onNavigateToPrep={() => navigateTo('registrar')} />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (view === 'variant-b') {
+    return (
+      <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
+        <Header onLogoClick={handleBackToLanding} />
+        <main>
+          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('registrar')} />
         </main>
         <Footer />
       </div>
