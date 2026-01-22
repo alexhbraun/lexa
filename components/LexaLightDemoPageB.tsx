@@ -8,10 +8,8 @@ import { LexaLightTrustBar } from './LexaLightTrustBar';
 import { LexaLightProcessSectionB } from './LexaLightProcessSectionB';
 import { LexaLightAudioDemoSection } from './LexaLightAudioDemoSection';
 import { LexaLightFeaturesSectionB } from './LexaLightFeaturesSectionB';
-import { LexaLightPricingSectionB } from './LexaLightPricingSectionB';
 import { LexaLightFaqSectionB } from './LexaLightFaqSectionB';
 import { Modal } from './Modal';
-import { StickyMobileCTA } from './StickyMobileCTA';
 import { ShieldCheckIcon, PhoneIcon } from './Icons';
 
 interface LexaDemoPageProps {
@@ -65,10 +63,7 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
             <LexaLightAudioDemoSection className="bg-[#051020] border-t-0" />
             <LexaLightProcessSectionB />
             <LexaLightFeaturesSectionB />   
-            <LexaLightPricingSectionB onOpenSurvey={() => setIsSurveyOpen(true)} />
             <LexaLightFaqSectionB onOpenSurvey={() => setIsSurveyOpen(true)} />
-
-            <StickyMobileCTA onOpenSurvey={() => setIsSurveyOpen(true)} />
 
             {/* Final CTA Section */}
             <section id="contato" className="py-40 bg-[#051020] relative overflow-hidden">
@@ -82,10 +77,10 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
                         </div>
 
                         <h2 className="text-4xl md:text-6xl font-serif font-black text-white mb-8 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
-                            Pronto Para Parar de <br/> <span className="text-gold italic">Perder Ligações?</span>
+                            Pronto Para Ver se a Lexa <br/> <span className="text-gold italic">Funciona no Seu Dia a Dia?</span>
                         </h2>
                         <p className="text-2xl text-slate-400 font-light leading-relaxed mb-16 max-w-3xl mx-auto stagger-reveal" style={{ animationDelay: '0.3s' }}>
-                            Cada ligação que você perde enquanto pensa sobre isso é dinheiro que outra pessoa está ganhando.
+                            Você não precisa acreditar.<br/>Você só precisa testar.
                         </p>
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 stagger-reveal" style={{ animationDelay: '0.4s' }}>
@@ -94,13 +89,16 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
                                 className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_40px_100px_-15px_rgba(197,160,89,0.5)]"
                             >
                                 <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0" />
-                                <span className="leading-tight font-black uppercase tracking-widest">COMECE AGORA</span>
+                                <span className="leading-tight font-black uppercase tracking-widest">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
                             </button>
                         </div>
                         
-                        <div className="mt-12 text-center reveal" style={{ animationDelay: '0.6s' }}>
-                            <p className="text-slate-500 font-medium tracking-[0.2em] uppercase text-xs">
+                        <div className="mt-8 text-center reveal" style={{ animationDelay: '0.6s' }}>
+                            <p className="text-slate-500 font-medium tracking-[0.2em] uppercase text-xs mb-2">
                                 Formulário rápido de onboarding (5 min)
+                            </p>
+                             <p className="text-sm text-slate-500 font-medium opacity-60">
+                                Decisão depois · Veja na prática
                             </p>
                         </div>
                     </div>

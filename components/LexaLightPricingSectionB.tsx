@@ -37,8 +37,11 @@ const PricingCard: React.FC<{
             onClick={onCta}
             className={`w-full py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 ${highlight ? 'bg-gold text-navy-acc hover:bg-white' : 'bg-slate-100 text-slate-900 hover:bg-[#051020] hover:text-white'}`}
         >
-            Escolher Plano
+            INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)
         </button>
+        <p className="text-center mt-3 text-xs text-slate-400 font-medium opacity-80">
+            Sem compromisso · Veja na prática
+        </p>
     </div>
 );
 

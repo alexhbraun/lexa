@@ -97,7 +97,7 @@ function App() {
       <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
         <Header onLogoClick={handleBackToLanding} />
         <main>
-          <LexaLightDemoPage onNavigateToPrep={() => navigateTo('registrar')} />
+          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('registrar')} />
         </main>
         <Footer />
       </div>

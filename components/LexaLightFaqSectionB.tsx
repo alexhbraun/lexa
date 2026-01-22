@@ -10,14 +10,14 @@ const FaqItem: React.FC<{ question: string; answer: string; isOpen: boolean; onC
             <span className={`text-xl font-bold transition-all duration-300 ${isOpen ? 'text-navy-acc' : 'text-slate-800 group-hover:text-gold'}`}>
                 {question}
             </span>
-            <span className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-navy-acc text-white rotate-45' : 'bg-slate-50 text-slate-400 group-hover:bg-slate-100'}`}>
-                <span className="text-2xl font-light">+</span>
+            <span className={`flex items-center justify-center transition-all duration-300 ${isOpen ? 'text-navy-acc rotate-45' : 'text-slate-300 group-hover:text-gold'}`}>
+                <span className="text-3xl font-light">+</span>
             </span>
         </button>
         <div
             className={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-96 pb-10' : 'max-h-0'}`}
         >
-            <p className="text-xl text-slate-500 leading-relaxed font-light pr-12 whitespace-pre-line">
+            <p className="text-lg text-slate-600 leading-relaxed font-light pr-12 whitespace-pre-line">
                 {answer}
             </p>
         </div>
@@ -51,14 +51,26 @@ export const LexaLightFaqSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ 
         {
             question: "Existe algum contrato de fidelidade?",
             answer: "Você não precisa acreditar.\nVocê só precisa testar.\n\nSe não fizer sentido, você vai perceber rápido. Sem multa. Sem amarras.\n\nO que normalmente acontece é o oposto: você recebe os primeiros resumos e entende o quanto estava perdendo sem saber.\n\nO risco não é cancelar.\nÉ nunca descobrir o que já estava escapando."
+        },
+        {
+            question: "Preciso informar cartão para testar?",
+            answer: "Não. Zero barreiras.\n\nPedir cartão antes cria atrito. Nós queremos confiança.\nVocê inicia o teste sem compromisso financeiro nenhum.\n\nNa prática: você valida a tecnologia primeiro. O investimento vem depois, se fizer sentido.\n\nO risco não é testar. É continuar pagando o preço invisível de perder clientes."
+        },
+        {
+            question: "Sou obrigado a continuar após os 3 dias?",
+            answer: "Não. A Lexa só deve ficar se ela se pagar.\n\nVocê é livre para parar a qualquer momento. Sem multas, sem letras miúdas.\nO teste serve justamente para provar o valor antes de qualquer decisão.\n\nNa prática: a maioria dos clientes não quer ficar sem depois que vê os resultados.\n\nMas a escolha é 100% sua."
+        },
+        {
+            question: "O teste é real ou simulado?",
+            answer: "É 100% real.\n\nSimulações não mostram a verdade.\nA Lexa vai atender suas chamadas reais, falar com seus clientes reais e resolver situações do dia a dia.\n\nVocê verá o impacto direto na sua operação na mesma hora.\n\nO risco não é o teste falhar.\nÉ você descobrir o volume de oportunidades que estava deixando passar."
         }
     ];
 
     return (
-        <section id="faq" className="py-24 md:py-32 bg-white reveal">
+        <section id="faq" className="py-24 md:py-32 bg-slate-50 reveal">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
-                    <div className="glask-card p-8 md:p-12 rounded-[60px] border border-slate-100 shadow-xl bg-white">
+                    <div className="glask-card p-8 md:p-12 rounded-[40px] border border-slate-100 shadow-xl bg-white">
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6 text-center">
                             DÚVIDAS
                         </div>

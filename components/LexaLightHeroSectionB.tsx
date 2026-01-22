@@ -24,7 +24,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
             </div>
 
             <div className="container mx-auto px-6 text-center relative z-10">
-                <h1 className="text-3xl md:text-7xl font-serif font-black text-[#051020] mb-8 leading-[1.1] reveal">
+                <h1 className="text-[40px] md:text-7xl font-serif font-black text-[#051020] mb-8 leading-[1.1] reveal">
                     Nunca Mais Perca <br className="hidden md:block" />
                     <span className="text-gold italic font-light">Uma Ligação de Cliente.</span>
                 </h1>
@@ -38,11 +38,11 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 reveal w-full sm:w-auto px-4 sm:px-0" style={{ animationDelay: '0.4s' }}>
                     <button 
                         onClick={onOpenSurvey || onNavigateToPrep}
-                        className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
+                        className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-2 sm:gap-4 bg-navy-acc text-white font-bold text-xs sm:text-lg px-5 py-3 sm:px-12 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                     >
-                        <span className="leading-tight">Comece Agora</span>
-                        <div className="bg-gold p-2 rounded-full group-hover:rotate-12 transition-transform">
-                            <IconAtendimento24h className="w-5 h-5 text-navy-acc" />
+                        <span className="leading-tight uppercase">Iniciar Teste de 3 Dias (Grátis e Sem Cartão)</span>
+                        <div className="bg-gold p-1.5 sm:p-2 rounded-full group-hover:rotate-12 transition-transform">
+                            <IconAtendimento24h className="w-4 h-4 sm:w-5 sm:h-5 text-navy-acc" />
                         </div>
                     </button>
                     <a
@@ -54,8 +54,13 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                     </a>
                 </div>
 
-                <div className="mt-8 flex items-center justify-center gap-3 text-slate-500 font-bold text-sm reveal" style={{ animationDelay: '0.6s' }}>
-                    Onboarding em 1-2 dias.
+                <div className="mt-8 flex flex-col items-center justify-center gap-2 reveal" style={{ animationDelay: '0.6s' }}>
+                    <div className="flex items-center justify-center gap-3 text-[#051020] font-black text-sm uppercase tracking-wide">
+                         Onboarding em 1-2 dias.
+                    </div>
+                     <p className="text-sm text-slate-900 font-bold">
+                        Teste real · Sem compromisso · Sem cartão
+                    </p>
                 </div>
             </div>
         </section>
