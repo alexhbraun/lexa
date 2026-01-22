@@ -34,7 +34,7 @@ export const LexaLightSolutionSectionB: React.FC = () => {
                     </div>
 
                     {/* Right Column: Checklist Card */}
-                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-slate-100 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)]">
+                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-gold/30 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)]">
                         <h3 className="text-lg font-bold text-slate-400 uppercase tracking-widest mb-8 text-center lg:text-left">O que ela faz por você:</h3>
                          <ul className="space-y-6">
                             <li className="flex items-start gap-4">

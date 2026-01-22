@@ -2,7 +2,7 @@ import React from 'react';
 import { PhoneIcon, IconResumosAutomaticos, IconTransferenciaHumana, IconAtendimento24h, ShieldCheckIcon } from './Icons';
 
 const Step: React.FC<{ number: string; title: string; text: React.ReactNode; icon: React.ReactNode }> = ({ number, title, text, icon }) => (
-    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-slate-100 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/30 relative h-full flex flex-col items-center">
+    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-gold/30 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 relative h-full flex flex-col items-center">
         <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-navy-acc border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
             {number}
         </div>
@@ -95,7 +95,7 @@ export const LexaLightProcessSectionB: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="mt-20 max-w-4xl mx-auto bg-white rounded-[40px] p-8 md:p-12 border border-slate-100 shadow-xl">
+                <div className="mt-20 max-w-4xl mx-auto bg-white rounded-[40px] p-8 md:p-12 border border-gold/30 shadow-xl">
                      <h3 className="text-2xl font-bold text-[#051020] mb-8 text-center">Então, quando uma ligação chega:</h3>
                      <ul className="space-y-4 text-left md:text-center text-slate-600 text-lg mb-12">
                         <li className="flex items-start md:items-center md:justify-center gap-3">

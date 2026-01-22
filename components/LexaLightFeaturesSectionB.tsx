@@ -15,7 +15,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/30 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
+                    <div className="p-8 bg-slate-50 rounded-[40px] border border-gold/30 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
                         <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-gold mb-6">
                             <IconTransferenciaHumana className="w-6 h-6" />
                         </div>
@@ -25,7 +25,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/30 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
+                    <div className="p-8 bg-slate-50 rounded-[40px] border border-gold/30 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
                         <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-gold mb-6">
                             <IconResumosAutomaticos className="w-6 h-6" />
                         </div>
@@ -35,7 +35,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="p-8 bg-slate-50 rounded-[40px] border border-slate-100 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/30 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
+                    <div className="p-8 bg-slate-50 rounded-[40px] border border-gold/30 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 transition-all duration-500 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
                         <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-gold mb-6">
                             <IconAtendimento24h className="w-6 h-6" />
                         </div>

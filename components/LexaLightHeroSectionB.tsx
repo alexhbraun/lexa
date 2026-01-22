@@ -17,7 +17,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                     className="w-full h-full object-cover object-center"
                 />
                 {/* Refined overlays: Balanced for visibility and contrast */}
-                <div className="absolute inset-0 bg-white/30"></div>
+                <div className="absolute inset-0 bg-white/40"></div>
                 {/* Darker gradient overlay for psychological weight on the headline */}
                 <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-black/10"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-transparent to-white/80 opacity-60"></div>
