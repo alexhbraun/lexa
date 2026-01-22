@@ -20,6 +20,15 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
                 <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
             </div>
 
+            {/* Branding Header */}
+            <div className="pt-12 pb-8 flex justify-center relative z-10">
+                <img 
+                    src="https://ik.imagekit.io/rgqefde41/Design%20sem%20nome%20(8).png" 
+                    alt="Lexa Logo" 
+                    className="h-16 w-auto"
+                />
+            </div>
+
             <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -32,9 +41,9 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 
-                    <div className="w-20 h-20 bg-navy-acc text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl ring-4 ring-slate-50 relative">
-                         <div className="absolute inset-0 rounded-full border border-white/20"></div>
-                        <ShieldCheckIcon className="w-10 h-10 text-gold" />
+                    <div className="w-24 h-24 bg-navy-acc text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl ring-8 ring-gold/5 relative">
+                         <div className="absolute inset-0 rounded-full border-2 border-gold/20 animate-ping"></div>
+                        <ShieldCheckIcon className="w-12 h-12 text-gold" />
                     </div>
 
                     <h1 className="text-4xl md:text-5xl font-serif font-black text-[#051020] mb-6 tracking-tight leading-tight">

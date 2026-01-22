@@ -45,17 +45,32 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                 <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
             </div>
 
+            {/* Branding Header */}
+            <div className="pt-12 pb-8 flex justify-center relative z-10">
+                <img 
+                    src="https://ik.imagekit.io/rgqefde41/Design%20sem%20nome%20(8).png" 
+                    alt="Lexa Logo" 
+                    className="h-16 w-auto"
+                />
+            </div>
+
             <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="max-w-[580px] w-full relative z-10"
+                className="max-w-[800px] w-full relative z-10"
             >
                 {/* Ceramic Card */}
-                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5 text-center">
+                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5">
                     
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
+
+                    <div className="text-center mb-12">
+                        <div className="inline-flex items-center gap-2 mb-8 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full">
+                            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">Configuração em Tempo Real</span>
+                        </div>
 
 
                     <h1 className="text-3xl md:text-4xl font-serif font-black text-[#051020] mb-4 leading-tight tracking-tight">
@@ -66,40 +81,48 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                     </p>
 
                     {/* Step 1: Selection */}
-                    <div className="mb-10 text-left">
-                        <p className="text-[11px] font-black text-slate-400 mb-6 uppercase tracking-[0.2em] text-center">
-                            Qual é o tipo do número que você vai usar com a Lexa?
-                        </p>
-                        <div className="grid grid-cols-1 gap-4">
-                            {[
-                                { id: 'celular', label: 'Celular', icon: SmartphoneIcon },
-                                { id: 'fixo', label: 'Fixo / PABX / VoIP', icon: PhoneIcon },
-                                { id: 'desconhecido', label: 'Não sei', icon: HelpCircleIcon }
-                            ].map((item) => (
-                                <button 
-                                    key={item.id}
-                                    onClick={() => {
-                                        setLineType(item.id as LineType);
-                                        setIsCellularBlocked(false);
-                                    }}
-                                    className={`group relative flex items-center justify-between gap-4 px-8 py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-sm overflow-hidden border-2 ${
-                                        lineType === item.id 
-                                        ? 'bg-navy-acc text-white border-navy-acc shadow-xl' 
-                                        : 'bg-white text-navy-acc border-slate-100 hover:border-gold/30 hover:shadow-md'
-                                    }`}
-                                >
-                                    {lineType === item.id && (
-                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] animate-[shimmer_2s_infinite]"></div>
-                                    )}
-                                    <span className="font-bold text-lg relative z-10">{item.label}</span>
-                                    <div className={`p-2 rounded-full relative z-10 transition-transform duration-300 group-hover:rotate-12 ${
-                                        lineType === item.id ? 'bg-gold' : 'bg-slate-50'
-                                    }`}>
-                                        <item.icon className={`w-5 h-5 ${lineType === item.id ? 'text-navy-acc' : 'text-slate-400'}`} />
-                                    </div>
-                                </button>
-                            ))}
+                    {!lineType && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in-up">
+                            <button 
+                                onClick={() => setLineType('mobile')}
+                                className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
+                            >
+                                <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
+                                    <SmartphoneIcon className="w-6 h-6 text-navy-acc" />
+                                </div>
+                                <h3 className="text-xl font-black text-[#051020] mb-2 uppercase tracking-tight">Celular</h3>
+                                <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                                    Use a mobile number (Vivo, TIM, Claro, etc.)
+                                </p>
+                            </button>
+
+                            <button 
+                                onClick={() => setLineType('fixo')}
+                                className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
+                            >
+                                <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
+                                    <PhoneIcon className="w-6 h-6 text-navy-acc" />
+                                </div>
+                                <h3 className="text-xl font-black text-[#051020] mb-2 uppercase tracking-tight">Fixo / PABX / VoIP</h3>
+                                <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                                    Use a landline or PBX system.
+                                </p>
+                            </button>
+
+                            <button 
+                                onClick={() => setLineType('desconhecido')}
+                                className="md:col-span-2 group relative bg-white border border-slate-100 p-6 rounded-[32px] text-center transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-4"
+                            >
+                                <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-gold/10 transition-colors">
+                                    <HelpCircleIcon className="w-5 h-5 text-navy-acc" />
+                                </div>
+                                <div className="text-left">
+                                    <h3 className="text-lg font-black text-[#051020] uppercase tracking-tight">Não tenho certeza</h3>
+                                    <p className="text-slate-400 text-xs font-medium">We will guide you through the process.</p>
+                                </div>
+                            </button>
                         </div>
+                    )}
                     </div>
 
                     {/* Step 2: Conditional Instructions */}

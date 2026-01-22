@@ -38,6 +38,14 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                 <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
             </div>
 
+            <div className="pt-12 pb-8 flex justify-center relative z-10">
+                <img 
+                    src="https://ik.imagekit.io/rgqefde41/Design%20sem%20nome%20(8).png" 
+                    alt="Lexa Logo" 
+                    className="h-16 w-auto"
+                />
+            </div>
+
             <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -107,54 +115,54 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="space-y-5">
                             <div className="group">
-                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1 group-focus-within:text-gold transition-colors">Nome Completo</label>
+                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-2 ml-1 group-focus-within:text-gold transition-colors">Nome Completo</label>
                                 <input 
                                     type="text" 
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-300 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
                                     placeholder="Ex: Dr. Alexandre Braun"
                                     required
                                 />
                             </div>
 
                             <div className="group">
-                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1 group-focus-within:text-gold transition-colors">Nome do Escritório</label>
+                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-2 ml-1 group-focus-within:text-gold transition-colors">Nome do Escritório</label>
                                 <input 
                                     type="text" 
                                     name="officeName"
                                     value={formData.officeName}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-300 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
                                     placeholder="Ex: Braun & Associados"
                                     required
                                 />
                             </div>
                             
                             <div className="group">
-                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1 group-focus-within:text-gold transition-colors">E-mail profissional que receberá as notificações das ligações</label>
+                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-2 ml-1 group-focus-within:text-gold transition-colors">E-mail profissional que receberá as notificações das ligações</label>
                                 <input 
                                     type="email" 
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-300 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
                                     placeholder="contato@seuescritorio.com.br"
                                     required
                                 />
                             </div>
 
                             <div className="group">
-                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1 group-focus-within:text-gold transition-colors">Número que receberá encaminhamento</label>
+                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-2 ml-1 group-focus-within:text-gold transition-colors">Número que receberá encaminhamento</label>
                                 <div className="relative">
-                                    <SmartphoneIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-300" />
+                                    <SmartphoneIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                                     <input 
                                         type="tel" 
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold pl-12 pr-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-300 rounded-t-xl hover:bg-slate-50/80"
+                                        className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold pl-12 pr-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
                                         placeholder="(00) 00000-0000"
                                         required
                                     />
@@ -162,19 +170,26 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                             </div>
 
                             <div>
-                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-3 ml-1">Tipo de Linha</label>
+                                <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-3 ml-1">Tipo de Linha</label>
                                 <div className="grid grid-cols-3 gap-3">
-                                    {['Fixo', 'Celular', 'Dúvida'].map((type) => (
-                                        <label key={type} className={`cursor-pointer border rounded-xl p-3 flex flex-col items-center justify-center text-xs font-bold transition-all duration-300 ${formData.lineType === type ? 'bg-[#051020] text-white border-[#051020] shadow-lg scale-105' : 'bg-white text-slate-400 border-slate-100 hover:border-gold/30 hover:bg-slate-50'}`}>
+                                    {[
+                                        { id: 'Fixo', label: 'Fixo', hint: 'Landline/PABX' },
+                                        { id: 'Celular', label: 'Celular', hint: 'Mobile number' },
+                                        { id: 'Dúvida', label: 'Dúvida', hint: 'We will help' }
+                                    ].map((type) => (
+                                        <label key={type.id} className={`cursor-pointer border rounded-2xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 ${formData.lineType === type.id ? 'bg-[#051020] text-white border-[#051020] shadow-lg scale-105' : 'bg-white text-slate-500 border-slate-100 hover:border-gold/30 hover:bg-slate-50'}`}>
                                             <input 
                                                 type="radio" 
                                                 name="lineType" 
-                                                value={type} 
-                                                checked={formData.lineType === type}
+                                                value={type.id} 
+                                                checked={formData.lineType === type.id}
                                                 onChange={(e) => setFormData({...formData, lineType: e.target.value})}
                                                 className="hidden"
                                             />
-                                            {type}
+                                            <span className="text-xs font-black uppercase tracking-wider mb-1">{type.label}</span>
+                                            <span className={`text-[9px] font-medium leading-tight ${formData.lineType === type.id ? 'text-gold/80' : 'text-slate-400'}`}>
+                                                {type.hint}
+                                            </span>
                                         </label>
                                     ))}
                                 </div>

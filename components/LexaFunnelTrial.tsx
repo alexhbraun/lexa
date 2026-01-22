@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircleIcon, ZapIcon } from './Icons';
+import { CheckCircleIcon, ZapIcon, HelpCircleIcon } from './Icons';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
@@ -49,25 +49,29 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
                          {/* LEVEL 1 */}
                          <div className="bg-white rounded-[40px] p-10 border border-white/60 shadow-[0_40px_100px_-20px_rgba(5,16,32,0.05)] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                            <div className="mb-8">
+                            <div className="mb-0 flex-grow">
                                 <h3 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Nível 1 • Essencial</h3>
                                 <div className="text-3xl font-black text-[#051020] mb-2 tracking-tight">Baixo Volume</div>
-                                <p className="text-slate-500 text-sm font-medium">Para advogados com fluxo ocasional.</p>
-                            </div>
-                            <div className="mb-8 py-6 border-y border-slate-50">
-                                <div className="flex items-baseline gap-2">
-                                    <span className="text-3xl font-black text-[#051020] tracking-tight">R$ 297</span>
-                                    <span className="text-slate-400 text-sm font-bold">/ mês</span>
+                                <p className="text-slate-500 text-sm font-medium mb-8">Para advogados com fluxo ocasional.</p>
+                                
+                                <div className="mb-8 py-6 border-y border-slate-50">
+                                    <div className="flex items-baseline gap-2">
+                                        <span className="text-3xl font-black text-[#051020] tracking-tight">R$ 297</span>
+                                        <span className="text-slate-400 text-sm font-bold">/ mês</span>
+                                    </div>
                                 </div>
+                                <ul className="space-y-4 mb-10 text-slate-600 text-sm font-bold">
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Suporta até ~5 ligações/dia</li>
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Cobertura de ausência</li>
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Resumos via WhatsApp</li>
+                                </ul>
                             </div>
-                            <ul className="space-y-4 mb-10 text-slate-600 text-sm font-bold flex-grow">
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Suporta até ~5 ligações/dia</li>
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Cobertura de ausência</li>
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Resumos via WhatsApp</li>
-                            </ul>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Nível 1')} className="w-full py-5 rounded-full bg-slate-50 text-slate-900 font-black hover:bg-[#051020] hover:text-white transition-all text-sm uppercase tracking-wider">
-                                    Escolher Nível 1
+                                <button onClick={() => handleSelectPlan('Nível 1')} className="group shimmer relative w-full py-5 rounded-full bg-white text-navy-acc font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                    <span>Escolher Nível 1</span>
+                                    <div className="bg-gold p-1.5 rounded-full">
+                                        <CheckCircleIcon className="w-3.5 h-3.5 text-navy-acc" />
+                                    </div>
                                 </button>
                             ) : (
                                 <div className="w-full py-5 rounded-full bg-slate-50 text-slate-300 font-black text-center text-[10px] uppercase tracking-widest border border-dashed border-slate-200">
@@ -79,28 +83,40 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                         {/* LEVEL 2 */}
                         <div className="bg-[#051020] rounded-[40px] p-10 border border-slate-800 flex flex-col relative transform md:-translate-y-4 shadow-[0_50px_100px_-20px_rgba(5,16,32,0.3)] ring-1 ring-white/10">
                             <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-gold/50 via-gold to-gold/50"></div>
-                            <div className="mb-8">
+                            <div className="mb-0 flex-grow">
                                 <h3 className="text-xs font-black text-gold uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
                                     <ZapIcon className="w-4 h-4" /> Nível 2 • Profissional
                                 </h3>
-                                <div className="text-4xl font-black text-white mb-2 tracking-tight">Volume Ativo</div>
-                                <p className="text-gold/80 text-sm font-medium">Recomendado para a maioria.</p>
-                            </div>
-                            <div className="mb-8 py-6 border-y border-white/10">
-                                <div className="flex items-baseline gap-2">
-                                    <span className="text-5xl font-black text-white tracking-tight">R$ 497</span>
-                                    <span className="text-white/40 text-sm font-bold">/ mês</span>
+                                <div className="flex items-center gap-2 mb-2">
+                                    <div className="text-4xl font-black text-white tracking-tight">Volume Ativo</div>
+                                    <div className="group/tip relative">
+                                        <HelpCircleIcon className="w-4 h-4 text-white/30 cursor-help hover:text-gold transition-colors" />
+                                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-white text-navy-acc text-[10px] font-bold rounded-xl opacity-0 invisible group-hover/tip:opacity-100 group-hover/tip:visible transition-all shadow-xl z-20 leading-relaxed text-center">
+                                            Ideal para escritórios com movimento constante e picos de atendimento.
+                                        </div>
+                                    </div>
                                 </div>
+                                <p className="text-gold/80 text-sm font-medium mb-8">Recomendado para a maioria.</p>
+                                
+                                <div className="mb-8 py-6 border-y border-white/10">
+                                    <div className="flex items-baseline gap-2">
+                                        <span className="text-5xl font-black text-white tracking-tight">R$ 497</span>
+                                        <span className="text-white/40 text-sm font-bold">/ mês</span>
+                                    </div>
+                                </div>
+                                <ul className="space-y-4 mb-10 text-white/90 text-[15px] font-bold">
+                                    <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Suporta até ~10 ligações/dia</li>
+                                    <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Prioridade na fila</li>
+                                    <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Gestão de picos de demanda</li>
+                                </ul>
                             </div>
-                            <ul className="space-y-4 mb-10 text-white/90 text-[15px] font-bold flex-grow">
-                                <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Suporta até ~10 ligações/dia</li>
-                                <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Prioridade na fila</li>
-                                <li className="flex gap-3"><ZapIcon className="w-5 h-5 text-gold" /> Gestão de picos de demanda</li>
-                            </ul>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Nível 2')} className="group shimmer relative w-full py-6 rounded-full bg-gold text-navy-acc font-black shadow-lg hover:scale-[1.02] transition-all overflow-hidden text-sm uppercase tracking-wider">
+                                <button onClick={() => handleSelectPlan('Nível 2')} className="group shimmer relative w-full py-6 rounded-full bg-gold text-navy-acc font-black shadow-lg hover:scale-[1.02] transition-all overflow-hidden text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                                    Escolher Nível 2 e Continuar
+                                    <span>Escolher Nível 2 e Continuar</span>
+                                    <div className="bg-navy-acc p-1.5 rounded-full">
+                                        <ZapIcon className="w-4 h-4 text-gold" />
+                                    </div>
                                 </button>
                             ) : (
                                 <div className="w-full py-6 rounded-full bg-white/5 text-white/20 font-black text-center text-[10px] uppercase tracking-widest border border-dashed border-white/10">
@@ -111,25 +127,37 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
 
                         {/* LEVEL 3 */}
                         <div className="bg-white rounded-[40px] p-10 border border-white/60 shadow-[0_40px_100px_-20px_rgba(5,16,32,0.05)] flex flex-col hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                            <div className="mb-8">
+                            <div className="mb-0 flex-grow">
                                 <h3 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Nível 3 • Ilimitado</h3>
-                                <div className="text-3xl font-black text-[#051020] mb-2 tracking-tight">Alto Tráfego</div>
-                                <p className="text-slate-500 text-sm font-medium">Para escritórios consolidados.</p>
-                            </div>
-                            <div className="mb-8 py-6 border-y border-slate-50">
-                                <div className="flex items-baseline gap-2">
-                                    <span className="text-3xl font-black text-[#051020] tracking-tight">R$ 997</span>
-                                    <span className="text-slate-400 text-sm font-bold">/ mês</span>
+                                <div className="flex items-center gap-2 mb-2">
+                                    <div className="text-3xl font-black text-[#051020] tracking-tight">Alto Tráfego</div>
+                                    <div className="group/tip relative">
+                                        <HelpCircleIcon className="w-4 h-4 text-slate-300 cursor-help hover:text-gold transition-colors" />
+                                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-3 bg-white text-navy-acc text-[10px] font-bold rounded-xl opacity-0 invisible group-hover/tip:opacity-100 group-hover/tip:visible transition-all shadow-xl z-20 leading-relaxed text-center">
+                                            Sem limites de chamadas ou duração. Total tranquilidade para grandes volumes.
+                                        </div>
+                                    </div>
                                 </div>
+                                <p className="text-slate-500 text-sm font-medium mb-8">Para escritórios consolidados.</p>
+                                
+                                <div className="mb-8 py-6 border-y border-slate-50">
+                                    <div className="flex items-baseline gap-2">
+                                        <span className="text-3xl font-black text-[#051020] tracking-tight">R$ 997</span>
+                                        <span className="text-slate-400 text-sm font-bold">/ mês</span>
+                                    </div>
+                                </div>
+                                <ul className="space-y-4 mb-10 text-slate-600 text-sm font-bold">
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Chamadas ilimitadas</li>
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Sem risco de gargalo</li>
+                                    <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Atendimento prioritário</li>
+                                </ul>
                             </div>
-                            <ul className="space-y-4 mb-10 text-slate-600 text-sm font-bold flex-grow">
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Chamadas ilimitadas</li>
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Sem risco de gargalo</li>
-                                <li className="flex gap-3"><CheckCircleIcon className="w-5 h-5 text-slate-300" /> Atendimento prioritário</li>
-                            </ul>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Nível 3')} className="w-full py-5 rounded-full bg-slate-50 text-slate-900 font-black hover:bg-[#051020] hover:text-white transition-all text-sm uppercase tracking-wider">
-                                    Escolher Nível 3
+                                <button onClick={() => handleSelectPlan('Nível 3')} className="group shimmer relative w-full py-5 rounded-full bg-white text-navy-acc font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                    <span>Escolher Nível 3</span>
+                                    <div className="bg-gold p-1.5 rounded-full">
+                                        <CheckCircleIcon className="w-3.5 h-3.5 text-navy-acc" />
+                                    </div>
                                 </button>
                             ) : (
                                 <div className="w-full py-5 rounded-full bg-slate-50 text-slate-300 font-black text-center text-[10px] uppercase tracking-widest border border-dashed border-slate-200">

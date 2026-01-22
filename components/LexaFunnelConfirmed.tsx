@@ -20,6 +20,14 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                 <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px]"></div>
             </div>
 
+            <div className="pt-12 pb-8 flex justify-center relative z-10">
+                <img 
+                    src="https://ik.imagekit.io/rgqefde41/Design%20sem%20nome%20(8).png" 
+                    alt="Lexa Logo" 
+                    className="h-16 w-auto"
+                />
+            </div>
+
             <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -45,6 +53,17 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
 
                     <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-inner mb-10 text-left relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-1 h-full bg-gold"></div>
+                        
+                        <div className="mb-8">
+                            <div className="flex justify-between items-end mb-3">
+                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#051020]">Progresso da Configuração</span>
+                                <span className="text-[10px] font-black text-gold">30%</span>
+                            </div>
+                            <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+                                <div className="h-full bg-gold w-[30%] shadow-[0_0_10px_rgba(197,160,89,0.3)]"></div>
+                            </div>
+                        </div>
+
                         <p className="text-[#051020] font-bold leading-relaxed mb-6 text-lg">
                             Para garantir que o atendimento funcione corretamente no seu número, 
                             criamos o ambiente da Lexa de forma dedicada.
@@ -79,9 +98,13 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
 
                     <button 
                         onClick={() => onNavigate('status')} 
-                        className="text-[#051020] font-bold border-b-2 border-[#051020]/10 hover:border-[#051020] transition-colors pb-1 text-sm tracking-wide uppercase"
+                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden uppercase tracking-widest"
                     >
-                        Acompanhar status
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+                        <span className="relative z-10">Acompanhar Status</span>
+                        <div className="bg-gold p-1.5 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
+                            <ClockIcon className="w-4 h-4 text-navy-acc" />
+                        </div>
                     </button>
                 </div>
             </motion.div>
