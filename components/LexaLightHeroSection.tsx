@@ -38,7 +38,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                         onClick={onOpenSurvey || onNavigateToPrep}
                         className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                     >
-                        <span className="leading-tight">Testar Lexa 7 dias grátis</span>
+                        <span className="leading-tight">Testar a Lexa gratuitamente</span>
                         <div className="bg-gold p-2 rounded-full group-hover:rotate-12 transition-transform">
                             <IconAtendimento24h className="w-5 h-5 text-navy-acc" />
                         </div>
@@ -53,8 +53,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                 </div>
 
                 <div className="mt-8 flex items-center justify-center gap-3 text-slate-500 font-bold text-sm reveal" style={{ animationDelay: '0.6s' }}>
-                    <div className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></div>
-                    Atendimento profissional, sem improviso.
+                    Teste técnico real. Sem cobrança inicial.
                 </div>
             </div>
         </section>

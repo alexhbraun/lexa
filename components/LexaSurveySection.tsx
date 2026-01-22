@@ -177,7 +177,7 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                             )}
 
                             <button 
-                                onClick={() => window.location.href = '/reservar'}
+                                onClick={() => window.location.href = '/registrar'}
                                 className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-black text-xl px-12 py-6 rounded-full transition-all shadow-[0_20px_50px_-15px_rgba(197,160,89,0.4)] hover:scale-105"
                             >
                                 Contratar Lexa — 7 dias grátis
