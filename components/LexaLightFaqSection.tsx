@@ -17,7 +17,7 @@ const FaqItem: React.FC<{ question: string; answer: string; isOpen: boolean; onC
         <div
             className={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-96 pb-10' : 'max-h-0'}`}
         >
-            <p className="text-xl text-slate-500 leading-relaxed font-light pr-12">
+            <p className="text-xl text-slate-500 leading-relaxed font-light pr-12 whitespace-pre-line">
                 {answer}
             </p>
         </div>
@@ -42,6 +42,10 @@ export const LexaLightFaqSection: React.FC<{ onOpenSurvey?: () => void }> = ({ o
         answer: "A Lexa utiliza um tom de voz calmo, profissional e direto, focado em ouvir o cliente e registrar o motivo do contato. O padrão seguido é o de uma recepção de elite, onde a clareza e o acolhimento são as maiores prioridades."
     },
     {
+        question: "Posso personalizar o que a IA fala?",
+        answer: "Completamente. Você controla:\n• Saudação e apresentação\n• Perguntas de qualificação por área\n• Quando transferir para humano\n• Tom de voz e formalidade\n• Horários de disponibilidade"
+    },
+    {
         question: "A Lexa oferece orientação jurídica aos clientes?",
         answer: "Não. A Lexa é uma ferramenta de proteção operacional. Ela acolhe o contato, registra os fatos e encaminha para você. A decisão e a estratégia jurídica continuam sempre sob seu controle absoluto."
     },
@@ -56,7 +60,7 @@ export const LexaLightFaqSection: React.FC<{ onOpenSurvey?: () => void }> = ({ o
 ];
 
     return (
-        <section id="faq" className="py-24 md:py-48 bg-white reveal"> {/* Updated to warm tint matching Comparison section */}
+        <section id="faq" className="py-24 md:py-48 bg-slate-50 reveal"> {/* Updated to warm tint matching Comparison section */}
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto">
                     <div className="text-center mb-24">
@@ -91,7 +95,7 @@ export const LexaLightFaqSection: React.FC<{ onOpenSurvey?: () => void }> = ({ o
                             className="shimmer w-full sm:w-auto flex sm:inline-flex items-center justify-center gap-3 bg-navy-acc text-white font-bold text-base px-8 py-4 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_40px_-15px_rgba(5,16,32,0.4)]"
                         >
                             <ShieldCheckIcon className="w-5 h-5 text-gold shrink-0" />
-                            <span className="leading-tight">Testar Lexa 7 dias grátis</span>
+                            <span className="leading-tight">Testar a Lexa 3 dias sem compromisso</span>
                         </button>
                     </div>
                 </div>

@@ -10,20 +10,19 @@ export const LexaLightShowcaseSection: React.FC = () => {
                             VISIBILIDADE E CONTROLE
                         </div>
                         <h2 className="text-3xl md:text-6xl font-serif font-black text-[#051020] mb-10 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
-                            A segurança de saber exatamente <br className="hidden md:block" />
-                            quem ligou e <span className="text-gold italic font-light">o que foi solicitado.</span>
+                            Depois da ligação, você sabe exatamente <span className="text-gold italic font-light">o que aconteceu.</span>
                         </h2>
-                        <p className="text-xl text-slate-500 font-light leading-relaxed mb-12 stagger-reveal" style={{ animationDelay: '0.3s' }}>
-                            Cada ligação gera um registro objetivo e imediato. Você elimina a ansiedade de descobrir, dias depois, que uma oportunidade importante se perdeu no silêncio do escritório.
-                            <br /><br />
-                            Menos incerteza. Mais clareza para o seu próximo passo estratégico.
-                        </p>
                         
-                        <div className="space-y-6 stagger-reveal" style={{ animationDelay: '0.4s' }}>
+                        <p className="text-xl text-slate-500 font-light leading-relaxed mb-12 stagger-reveal" style={{ animationDelay: '0.3s' }}>
+                            Quando você não pode atender, a Lexa registra a ligação para que você analise depois, com calma.
+                        </p>
+
+                        <div className="space-y-6 stagger-reveal mb-12" style={{ animationDelay: '0.4s' }}>
                             {[
-                                "Triagem semântica imediata",
-                                "Registro auditável da chamada",
-                                "Controle absoluto do histórico"
+                                "Quem ligou",
+                                "Qual foi o motivo do contato, em linguagem simples",
+                                "Se é um novo contato ou alguém já atendido",
+                                "Um histórico organizado para consulta posterior"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-6 group">
                                     <div className="p-3 rounded-xl bg-white shadow-sm border border-slate-100 group-hover:border-gold/30 transition-all duration-500">
@@ -34,6 +33,20 @@ export const LexaLightShowcaseSection: React.FC = () => {
                                     </div>
                                 </div>
                             ))}
+                        </div>
+
+                        <div className="mb-12 p-8 bg-slate-50 rounded-[30px] border border-slate-100 stagger-reveal" style={{ animationDelay: '0.45s' }}>
+                            <p className="text-lg text-[#051020] font-black leading-relaxed">
+                                A Lexa registra. <br/>
+                                Você decide. <br/>
+                                Nenhuma ligação termina sem registro.
+                            </p>
+                        </div>
+
+                        <div className="stagger-reveal" style={{ animationDelay: '0.5s' }}>
+                            <p className="text-xl text-slate-500 font-light leading-relaxed">
+                                Durante o período de teste, você vê esse registro acontecendo na prática — ligação por ligação.
+                            </p>
                         </div>
                     </div>
 

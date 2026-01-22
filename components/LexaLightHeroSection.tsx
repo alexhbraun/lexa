@@ -38,7 +38,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                         onClick={onOpenSurvey || onNavigateToPrep}
                         className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                     >
-                        <span className="leading-tight">Testar a Lexa gratuitamente</span>
+                        <span className="leading-tight">Testar a Lexa 3 dias sem compromisso</span>
                         <div className="bg-gold p-2 rounded-full group-hover:rotate-12 transition-transform">
                             <IconAtendimento24h className="w-5 h-5 text-navy-acc" />
                         </div>

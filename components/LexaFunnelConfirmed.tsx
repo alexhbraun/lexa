@@ -48,7 +48,7 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                         Teste reservado com sucesso
                     </h1>
                     <p className="text-slate-500 text-lg font-light mb-10 leading-relaxed">
-                        Agora vamos preparar sua Lexa.
+                        Sua Lexa já está separada para o seu escritório.
                     </p>
 
                     <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-inner mb-10 text-left relative overflow-hidden">
@@ -64,12 +64,12 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                             </div>
                         </div>
 
-                        <p className="text-[#051020] font-bold leading-relaxed mb-6 text-lg">
-                            Para garantir que o atendimento funcione corretamente no seu número, 
-                            criamos o ambiente da Lexa de forma dedicada.
+                        <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Preparação técnica em andamento</h3>
+                        <p className="text-slate-600 font-medium leading-relaxed mb-4 text-base">
+                            Para garantir que o atendimento funcione corretamente **no seu número**, criamos o ambiente da Lexa de forma dedicada.
                         </p>
-                        <p className="text-slate-500 text-sm leading-relaxed mb-8">
-                            Isso normalmente leva até o próximo dia útil.
+                        <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                            Isso assegura que nenhuma ligação seja perdida e que o teste reflita a operação real do seu escritório. Esse processo normalmente é concluído **até o próximo dia útil**.
                         </p>
 
                         <div className="bg-white rounded-xl p-5 border border-slate-100 text-left shadow-sm">
@@ -79,7 +79,7 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                             </div>
                             <p className="text-sm font-bold text-slate-700 pl-5 mb-5 relative">
                                 <span className="absolute left-[2px] top-2 bottom-[-20px] w-px bg-slate-200"></span>
-                                Preparação do ambiente em andamento
+                                Ambiente da Lexa em preparação
                             </p>
                             
                             <div className="flex items-center gap-3 mb-1 opacity-60">
@@ -90,10 +90,22 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                         </div>
                     </div>
 
-                    <div className="mb-10 max-w-sm mx-auto">
-                        <p className="text-xs text-slate-500 leading-relaxed font-semibold uppercase tracking-wide">
-                            O período de teste <span className="text-navy-acc">só começa quando a Lexa atender a primeira ligação real.</span>
+                    <div className="mb-10 text-left px-4">
+                        <p className="text-base text-[#051020] leading-relaxed font-bold mb-2">
+                            O período de teste só começa quando a Lexa atender a primeira ligação real.
                         </p>
+                        <p className="text-sm text-slate-500 font-medium leading-relaxed">
+                            Assim, você testa de verdade — sem perder tempo de avaliação.
+                        </p>
+                    </div>
+
+                    <div className="mb-12 text-left bg-slate-50/50 rounded-3xl p-6 border border-slate-100/50">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4">O que isso significa na prática</h4>
+                        <ul className="space-y-2 text-sm font-bold text-slate-600">
+                            <li className="flex items-center gap-2">• Nenhuma cobrança durante a preparação</li>
+                            <li className="flex items-center gap-2">• Nenhuma ligação desviada antes do teste começar</li>
+                            <li className="flex items-center gap-2">• Nenhum compromisso até você decidir continuar</li>
+                        </ul>
                     </div>
 
                     <button 
@@ -101,11 +113,14 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                         className="group shimmer relative w-full flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden uppercase tracking-widest"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                        <span className="relative z-10">Acompanhar Status</span>
+                        <span className="relative z-10">Acompanhar status da minha Lexa</span>
                         <div className="bg-gold p-1.5 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
                             <ClockIcon className="w-4 h-4 text-navy-acc" />
                         </div>
                     </button>
+                    <p className="mt-6 text-xs text-slate-400 font-bold uppercase tracking-wider">
+                        Você será avisado por e-mail assim que o teste estiver liberado.
+                    </p>
                 </div>
             </motion.div>
         </section>

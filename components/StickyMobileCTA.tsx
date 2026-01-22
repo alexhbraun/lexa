@@ -31,7 +31,7 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({ onOpenSurvey }
                 className="w-full flex items-center justify-center gap-2 bg-navy-acc text-white font-bold text-lg py-4 rounded-full shadow-lg"
             >
                 <ShieldCheckIcon className="w-5 h-5 text-gold" />
-                <span>Testar Lexa 7 dias grátis</span>
+                <span>Testar a Lexa 3 dias sem compromisso</span>
             </button>
         </div>
     );

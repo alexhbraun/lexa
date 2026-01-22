@@ -11,6 +11,7 @@ import { LexaLightShowcaseSection } from './LexaLightShowcaseSection';
 import { LexaLightBenefitsSection } from './LexaLightBenefitsSection';
 import { LexaLightCtaSection } from './LexaLightCtaSection';
 import { LexaLightFaqSection } from './LexaLightFaqSection';
+import { LexaLightTrialStepsSection } from './LexaLightTrialStepsSection';
 import { Modal } from './Modal';
 import { StickyMobileCTA } from './StickyMobileCTA';
 import { ShieldCheckIcon, PhoneIcon } from './Icons';
@@ -65,6 +66,8 @@ export const LexaLightDemoPage: React.FC<LexaDemoPageProps> = ({ onNavigateToPre
             <LexaLightComparisonSection />   
             <LexaLightShowcaseSection />
             <LexaLightCtaSection onOpenSurvey={() => setIsSurveyOpen(true)} />
+            
+            <LexaLightTrialStepsSection onOpenSurvey={() => setIsSurveyOpen(true)} />
             <LexaLightFaqSection onOpenSurvey={() => setIsSurveyOpen(true)} />
             <StickyMobileCTA onOpenSurvey={() => setIsSurveyOpen(true)} />
 
@@ -96,7 +99,7 @@ export const LexaLightDemoPage: React.FC<LexaDemoPageProps> = ({ onNavigateToPre
                                 className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_40px_100px_-15px_rgba(197,160,89,0.5)]"
                             >
                                 <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0" />
-                                <span className="leading-tight font-black uppercase tracking-widest">Testar Lexa 7 dias grátis</span>
+                                <span className="leading-tight font-black uppercase tracking-widest">Testar a Lexa 3 dias sem compromisso</span>
                             </button>
                         </div>
                         

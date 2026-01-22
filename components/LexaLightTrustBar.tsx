@@ -38,8 +38,8 @@ export const LexaLightTrustBar: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100">
                         <TrustItem 
                             icon={<ClockIcon className="w-6 h-6" />}
-                            title="Atendimento automático incluído"
-                            text="Durante audiências e fora do expediente"
+                            title="A partir de apenas R$297 mensal"
+                            text="Com 150 minutos inclusos"
                         />
                         <TrustItem 
                             icon={<FileTextIcon className="w-6 h-6" />}
