@@ -74,8 +74,9 @@ export const LexaLightFaqSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ 
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6 text-center">
                             DÚVIDAS
                         </div>
-                        <h2 className="text-3xl font-serif font-black text-[#051020] mb-8 text-center">
-                            Dúvidas Comuns
+                        <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 text-center">
+                            Dúvidas Comuns. <br/>
+                            <span className="text-gold italic font-light">E Respostas Claras.</span>
                         </h2>
                         <div className="space-y-4">
                             {faqData.map((faq, index) => (

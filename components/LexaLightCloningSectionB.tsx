@@ -23,7 +23,7 @@ export const LexaLightCloningSectionB: React.FC = () => {
 
                 {/* Rejection Eyebrow */}
                 <div className="text-center mb-8">
-                    <span className="text-gold opacity-85 text-[11px] font-black uppercase tracking-[0.08em]">
+                    <span className="text-gold opacity-90 text-lg md:text-xl font-black uppercase tracking-widest">
                         POR QUE AS SOLUÇÕES TRADICIONAIS NÃO RESOLVEM
                     </span>
                 </div>

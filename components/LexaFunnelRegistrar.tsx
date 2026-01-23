@@ -64,8 +64,9 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                             <ShieldCheckIcon className="w-4 h-4 text-gold" />
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold/90">Ambiente Seguro</span>
                         </div>
-                        <h1 className="text-3xl md:text-4xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-[1.1]">
-                            Reserve seu teste real da Lexa
+                        <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-[1.1]">
+                            Reserve seu teste real.
+                            <br/><span className="text-gold italic font-light">Para o seu escritório.</span>
                         </h1>
                         <p className="text-slate-500 text-lg font-light leading-relaxed mb-6">
                             Em poucos passos, preparamos sua Lexa para atender ligações reais do seu escritório.
@@ -107,7 +108,8 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                         </div>
 
                         <p className="text-slate-400 text-xs font-bold uppercase tracking-wider">
-                            Precisamos apenas de algumas informações para preparar corretamente o seu ambiente.
+                            Precisamos apenas de algumas informações.<br/>
+                            <span className="text-gold/80 normal-case italic font-medium text-sm">Para preparar corretamente o ambiente.</span>
                         </p>
                     </div>
 

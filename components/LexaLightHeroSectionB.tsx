@@ -8,11 +8,11 @@ interface LexaHeroSectionProps {
 
 export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNavigateToPrep, onOpenSurvey }) => {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20 reveal bg-white">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 reveal bg-white">
             {/* Premium Background Image with Dynamic Overlay */}
             <div className="absolute inset-0 -z-10" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.35)' }}>
                 <img
-                    src="https://ik.imagekit.io/rgqefde41/Gemini_Generated_Image_s44ft8s44ft8s44f.png"
+                    src="https://ik.imagekit.io/rgqefde41/Gemini_Generated_Image_ih93sbih93sbih93.png"
                     alt="Boutique Law Office Brazil"
                     className="w-full h-full object-cover object-center"
                 />
@@ -30,13 +30,13 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                 ></div>
             </div>
 
-            <div className="relative z-10 mx-auto max-w-[820px] py-16 px-6 text-center">
-                <h1 className="text-[50px] md:text-[90px] font-serif font-black text-[#141414] mb-8 leading-[1.05] reveal">
+            <div className="relative z-10 mx-auto max-w-[820px] py-10 px-6 text-center">
+                <h1 className="text-[50px] md:text-[90px] font-serif font-black text-[#141414] mb-6 leading-[1.05] reveal">
                         Nunca Mais Perca <br className="hidden md:block" />
                         <span className="text-gold italic font-light">Uma Ligação de Cliente.</span>
                     </h1>
                     
-                    <div className="text-xl md:text-2xl text-[#3e3e3e] font-medium mb-12 leading-relaxed reveal space-y-4" style={{ animationDelay: '0.2s' }}>
+                    <div className="text-xl md:text-2xl text-[#3e3e3e] font-medium mb-10 leading-relaxed reveal space-y-3" style={{ animationDelay: '0.2s' }}>
                         <p>Seu telefone toca.</p>
                         <p>Você está em reunião com um cliente.</p>
                         <p>Um caso potencial de R$20.000 vai para a caixa postal — e direto para seu concorrente.</p>
@@ -52,13 +52,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                                 <IconAtendimento24h className="w-4 h-4 sm:w-5 sm:h-5 text-navy-acc" />
                             </div>
                         </button>
-                        <a
-                            href="#demo-audio"
-                            className="w-full sm:w-auto flex sm:inline-flex items-center justify-center gap-2 text-navy-acc font-bold text-lg px-8 sm:px-6 py-4 rounded-full hover:text-gold transition-all duration-300 border border-transparent hover:border-navy-acc/10"
-                        >
-                            <PhoneIcon className="w-5 h-5" />
-                            Ouvir demonstração
-                        </a>
+
                     </div>
 
                     <div className="flex flex-col items-center justify-center gap-2 reveal" style={{ animationDelay: '0.6s' }}>

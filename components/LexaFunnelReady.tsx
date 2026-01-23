@@ -73,8 +73,9 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                         </div>
 
 
-                    <h1 className="text-3xl md:text-4xl font-serif font-black text-[#051020] mb-4 leading-tight tracking-tight">
-                        Verificação de encaminhamento (teste técnico)
+                    <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 leading-tight tracking-tight">
+                        Verificação Técnica.
+                        <br/><span className="text-gold italic font-light">Antes de começar.</span>
                     </h1>
                     <p className="text-xl text-slate-500 font-light mb-10">
                         Este passo serve apenas para confirmar se sua linha permite encaminhamento de chamadas.

@@ -10,7 +10,8 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                         TUDO INCLUSO
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-white mb-6">
-                        O Que Você Realmente Recebe
+                        O Que Você Recebe. <br/>
+                        <span className="text-gold italic font-light">Realmente.</span>
                     </h2>
                 </div>
 

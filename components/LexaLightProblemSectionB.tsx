@@ -19,9 +19,9 @@ export const LexaLightProblemSectionB: React.FC = () => {
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
                         PARECE FAMILIAR?
                     </div>
-                    <h2 className="text-3xl md:text-6xl font-serif font-black text-[#051020] mb-8 leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
                         Cada Ligação Perdida <br />
-                        <span className="text-gold italic font-light">É Dinheiro</span> <span className="text-slate-400 italic font-light">Indo Embora.</span>
+                        <span className="text-gold italic font-light">É Dinheiro Indo Embora.</span>
                     </h2>
                     <div className="text-xl text-slate-700 font-medium max-w-3xl mx-auto space-y-6">
                         <p>

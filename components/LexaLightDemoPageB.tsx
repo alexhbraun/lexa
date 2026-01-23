@@ -81,8 +81,8 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
                             DECISÃO
                         </div>
 
-                        <h2 className="text-4xl md:text-6xl font-serif font-black text-white mb-8 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
-                            Pronto Para Ver se a Lexa <br/> <span className="text-gold italic">Funciona no Seu Dia a Dia?</span>
+                        <h2 className="text-3xl md:text-5xl font-serif font-black text-white mb-8 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
+                            Pronto Para Ver se a Lexa <br/> <span className="text-gold italic font-light">Funciona no Seu Dia a Dia?</span>
                         </h2>
                         <p className="text-2xl text-slate-400 font-light leading-relaxed mb-16 max-w-3xl mx-auto stagger-reveal" style={{ animationDelay: '0.3s' }}>
                             Você não precisa acreditar.<br/>Você só precisa testar.

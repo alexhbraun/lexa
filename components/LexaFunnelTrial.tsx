@@ -40,6 +40,7 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                     >
                         <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-6 tracking-tight">
                             Escolha como continuar.
+                            <br/><span className="text-gold italic font-light">Quando fizer sentido.</span>
                         </h1>
                         <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">
                             Quando fizer sentido, você escolhe um plano e continua sem interrupção.

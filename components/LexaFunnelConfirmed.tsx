@@ -44,8 +44,9 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                         <CheckCircleIcon className="w-8 h-8" />
                     </div>
 
-                    <h1 className="text-3xl md:text-4xl font-serif font-black text-[#051020] mb-4 leading-tight tracking-tight">
-                        Teste reservado com sucesso
+                    <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 leading-tight tracking-tight">
+                        Teste reservado.
+                        <br/><span className="text-gold italic font-light">Com sucesso.</span>
                     </h1>
                     <p className="text-slate-500 text-lg font-light mb-10 leading-relaxed">
                         Sua Lexa já está separada para o seu escritório.

@@ -46,8 +46,9 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
                         <ShieldCheckIcon className="w-12 h-12 text-gold" />
                     </div>
 
-                    <h1 className="text-4xl md:text-5xl font-serif font-black text-[#051020] mb-6 tracking-tight leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-6 tracking-tight leading-tight">
                         Teste iniciado.
+                        <br/><span className="text-gold italic font-light">Agora é real.</span>
                     </h1>
                     <p className="text-xl text-slate-500 font-light mb-12">
                         A Lexa já está atendendo chamadas do seu escritório.

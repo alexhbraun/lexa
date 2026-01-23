@@ -66,7 +66,8 @@ export const LexaLightPricingSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                         INVESTIMENTO
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-white mb-6">
-                        Preços Simples e Transparentes
+                        Preços Simples. <br/>
+                        <span className="text-gold italic font-light">E Transparentes.</span>
                     </h2>
                     <p className="text-xl text-slate-400 font-light">
                         Até mesmo um cliente salvo paga por meses de serviço. Faça as contas.

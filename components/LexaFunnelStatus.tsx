@@ -49,8 +49,9 @@ export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 
                     <div className="text-center mb-10">
-                        <h1 className="text-3xl md:text-4xl font-serif font-black text-[#051020] mb-4 tracking-tight">
-                            Preparando sua Lexa
+                        <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight">
+                            Preparando sua Lexa.
+                            <br/><span className="text-gold italic font-light">Sem surpresas.</span>
                         </h1>
                         <p className="text-slate-500 text-lg font-light leading-relaxed">
                             Estamos deixando tudo pronto para que o teste funcione sem surpresas.
