@@ -67,9 +67,9 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 
                     <div className="text-center mb-12">
-                        <div className="inline-flex items-center gap-2 mb-8 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full">
-                            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600">Configuração em Tempo Real</span>
+                        <div className="inline-flex items-center gap-2 mb-8 bg-gold/5 border border-gold/20 px-4 py-1.5 rounded-full">
+                            <span className="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold/90">Configuração em Tempo Real</span>
                         </div>
 
 
@@ -101,7 +101,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                                 className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
                             >
                                 <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
-                                    <PhoneIcon className="w-6 h-6 text-navy-acc" />
+                                    <PhoneIcon className="w-6 h-6 text-[#051020]" />
                                 </div>
                                 <h3 className="text-xl font-black text-[#051020] mb-2 uppercase tracking-tight">Fixo / PABX / VoIP</h3>
                                 <p className="text-slate-500 text-sm font-medium leading-relaxed">
@@ -317,12 +317,12 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
                             <button 
                                 onClick={() => onNavigate('teste-iniciado')} 
-                                className="group shimmer relative w-full flex items-center justify-center gap-6 bg-navy-acc text-white font-bold text-lg py-5 px-12 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden mb-8"
+                                className="group shimmer relative w-full flex items-center justify-center gap-6 bg-black text-white font-bold text-lg py-5 px-12 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden mb-8"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                                 <span className="leading-tight relative z-10">Consegui completar o teste de encaminhamento</span>
                                 <div className="bg-gold p-2 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
-                                    <CheckCircleIcon className="w-5 h-5 text-navy-acc" />
+                                    <CheckCircleIcon className="w-5 h-5 text-[#051020]" />
                                 </div>
                             </button>
                             

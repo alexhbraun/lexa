@@ -63,7 +63,7 @@ export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }
                         <div className="space-y-8 relative z-10">
                             {/* Step 1 */}
                             <div className="flex items-center gap-5">
-                                <div className="w-10 h-10 rounded-full bg-navy-acc text-gold flex items-center justify-center shrink-0 shadow-lg ring-4 ring-gold/10">
+                                <div className="w-10 h-10 rounded-full bg-[#051020] text-gold flex items-center justify-center shrink-0 shadow-lg ring-4 ring-gold/10">
                                     <CheckCircleIcon className="w-6 h-6" />
                                 </div>
                                 <div>
@@ -74,7 +74,7 @@ export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }
 
                             {/* Step 2 */}
                             <div className="flex items-center gap-5">
-                                <div className="w-10 h-10 rounded-full bg-gold text-navy-acc flex items-center justify-center shrink-0 animate-pulse shadow-[0_0_20px_rgba(197,160,89,0.5)] ring-4 ring-gold/20">
+                                <div className="w-10 h-10 rounded-full bg-gold text-[#051020] flex items-center justify-center shrink-0 animate-pulse shadow-[0_0_20px_rgba(197,160,89,0.5)] ring-4 ring-gold/20">
                                     <ClockIcon className="w-6 h-6" />
                                 </div>
                                 <div>
@@ -116,18 +116,18 @@ export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }
                             <span className="text-[10px] font-black text-gold">45%</span>
                         </div>
                         <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50 shadow-inner">
-                            <div className="h-full bg-gradient-to-r from-navy-acc to-navy-acc/80 rounded-full w-[45%] shadow-[0_0_15px_rgba(5,16,32,0.2)]"></div>
+                            <div className="h-full bg-gradient-to-r from-gold to-yellow-600 rounded-full w-[45%] shadow-[0_0_15px_rgba(197,160,89,0.2)]"></div>
                         </div>
                     </div>
 
                     <button 
                         onClick={() => onNavigate('pronta-para-teste')} 
-                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden uppercase tracking-widest"
+                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-black text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden uppercase tracking-widest"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                         <span className="relative z-10">Continuar</span>
                         <div className="bg-gold p-1.5 rounded-full relative z-10 group-hover:translate-x-1 transition-transform duration-300">
-                             <CheckCircleIcon className="w-4 h-4 text-navy-acc" />
+                             <CheckCircleIcon className="w-4 h-4 text-[#051020]" />
                         </div>
                     </button>
                 </div>

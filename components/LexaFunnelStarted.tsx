@@ -41,7 +41,7 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 
-                    <div className="w-24 h-24 bg-navy-acc text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl ring-8 ring-gold/5 relative">
+                    <div className="w-24 h-24 bg-[#051020] text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl ring-8 ring-gold/5 relative">
                          <div className="absolute inset-0 rounded-full border-2 border-gold/20 animate-ping"></div>
                         <ShieldCheckIcon className="w-12 h-12 text-gold" />
                     </div>
@@ -56,7 +56,7 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
                     <div className="bg-slate-50 border border-slate-100 rounded-3xl p-8 shadow-inner mb-10 text-left relative overflow-hidden">
                         <div className="absolute left-0 top-0 bottom-0 w-1 bg-gold"></div>
                         <div className="flex items-start gap-5 mb-6">
-                            <div className="w-12 h-12 rounded-2xl bg-white text-navy-acc border border-slate-100 flex items-center justify-center shrink-0 shadow-sm">
+                            <div className="w-12 h-12 rounded-2xl bg-white text-[#051020] border border-slate-100 flex items-center justify-center shrink-0 shadow-sm">
                                 <ClockIcon className="w-6 h-6" />
                             </div>
                             <div>
@@ -76,7 +76,7 @@ export const LexaFunnelStarted: React.FC<LexaFunnelStartedProps> = ({ onNavigate
 
                     <button 
                         onClick={() => onNavigate('trial')} 
-                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-[#051020] text-white font-bold text-lg py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden"
+                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-black text-white font-bold text-lg py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden"
                     >
                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                         <span className="relative z-10">Acompanhar meu teste</span>

@@ -67,10 +67,10 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                                 </ul>
                             </div>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Essencial')} className="group shimmer relative w-full py-5 rounded-full bg-white text-navy-acc font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                <button onClick={() => handleSelectPlan('Essencial')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <span>Escolher Essencial</span>
                                     <div className="bg-gold p-1.5 rounded-full">
-                                        <CheckCircleIcon className="w-3.5 h-3.5 text-navy-acc" />
+                                        <CheckCircleIcon className="w-3.5 h-3.5 text-[#051020]" />
                                     </div>
                                 </button>
                             ) : (
@@ -111,10 +111,10 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                                 </ul>
                             </div>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Profissional')} className="group shimmer relative w-full py-6 rounded-full bg-gold text-navy-acc font-black shadow-lg hover:scale-[1.02] transition-all overflow-hidden text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                <button onClick={() => handleSelectPlan('Profissional')} className="group shimmer relative w-full py-6 rounded-full bg-gold text-[#051020] font-black shadow-lg hover:scale-[1.02] transition-all overflow-hidden text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                                     <span>Escolher Profissional e Continuar</span>
-                                    <div className="bg-navy-acc p-1.5 rounded-full">
+                                    <div className="bg-[#051020] p-1.5 rounded-full">
                                         <ZapIcon className="w-4 h-4 text-gold" />
                                     </div>
                                 </button>
@@ -153,10 +153,10 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                                 </ul>
                             </div>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Ilimitado')} className="group shimmer relative w-full py-5 rounded-full bg-white text-navy-acc font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                <button onClick={() => handleSelectPlan('Ilimitado')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <span>Escolher Ilimitado</span>
                                     <div className="bg-gold p-1.5 rounded-full">
-                                        <CheckCircleIcon className="w-3.5 h-3.5 text-navy-acc" />
+                                        <CheckCircleIcon className="w-3.5 h-3.5 text-[#051020]" />
                                     </div>
                                 </button>
                             ) : (

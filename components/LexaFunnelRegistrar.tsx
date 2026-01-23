@@ -121,7 +121,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
                                     placeholder="Ex: Dr. Alexandre Braun"
                                     required
                                 />
@@ -134,7 +134,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                     name="officeName"
                                     value={formData.officeName}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
                                     placeholder="Ex: Braun & Associados"
                                     required
                                 />
@@ -147,7 +147,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
+                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
                                     placeholder="contato@seuescritorio.com.br"
                                     required
                                 />
@@ -162,7 +162,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full bg-slate-50 border-b-2 border-slate-100 focus:border-gold pl-12 pr-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-t-xl hover:bg-slate-50/80"
+                                        className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 pl-12 pr-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
                                         placeholder="(00) 00000-0000"
                                         required
                                     />
@@ -177,7 +177,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                         { id: 'Celular', label: 'Celular', hint: 'Mobile number' },
                                         { id: 'Dúvida', label: 'Dúvida', hint: 'We will help' }
                                     ].map((type) => (
-                                        <label key={type.id} className={`cursor-pointer border rounded-2xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 ${formData.lineType === type.id ? 'bg-[#051020] text-white border-[#051020] shadow-lg scale-105' : 'bg-white text-slate-500 border-slate-100 hover:border-gold/30 hover:bg-slate-50'}`}>
+                                        <label key={type.id} className={`cursor-pointer border rounded-2xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 ${formData.lineType === type.id ? 'bg-[#051020] text-white border-gold shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] scale-105' : 'bg-white text-slate-500 border-slate-100 hover:border-gold/30 hover:bg-slate-50'}`}>
                                             <input 
                                                 type="radio" 
                                                 name="lineType" 
@@ -187,7 +187,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                                 className="hidden"
                                             />
                                             <span className="text-xs font-black uppercase tracking-wider mb-1">{type.label}</span>
-                                            <span className={`text-[9px] font-medium leading-tight ${formData.lineType === type.id ? 'text-gold/80' : 'text-slate-400'}`}>
+                                            <span className={`text-[9px] font-medium leading-tight ${formData.lineType === type.id ? 'text-gold' : 'text-slate-400'}`}>
                                                 {type.hint}
                                             </span>
                                         </label>
@@ -199,11 +199,11 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                         <div className="pt-4">
                             <button 
                                 type="submit" 
-                                className="group shimmer relative w-full flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-lg py-5 px-12 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden"
+                                className="group shimmer relative w-full flex items-center justify-center gap-4 bg-black text-white font-bold text-lg py-5 px-12 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden"
                             >
                                 <span className="leading-tight relative z-10">Reservar meu teste</span>
                                 <div className="bg-gold p-2 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
-                                    <SmartphoneIcon className="w-5 h-5 text-navy-acc" />
+                                    <SmartphoneIcon className="w-5 h-5 text-[#051020]" />
                                 </div>
                             </button>
                             

@@ -40,7 +40,7 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 
-                    <div className="w-16 h-16 bg-navy-acc text-gold rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg ring-4 ring-gold/10">
+                    <div className="w-16 h-16 bg-[#051020] text-gold rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg ring-4 ring-gold/10">
                         <CheckCircleIcon className="w-8 h-8" />
                     </div>
 
@@ -110,12 +110,12 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
 
                     <button 
                         onClick={() => onNavigate('status')} 
-                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-navy-acc text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] overflow-hidden uppercase tracking-widest"
+                        className="group shimmer relative w-full flex items-center justify-center gap-4 bg-black text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden uppercase tracking-widest"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                         <span className="relative z-10">Acompanhar status da minha Lexa</span>
                         <div className="bg-gold p-1.5 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
-                            <ClockIcon className="w-4 h-4 text-navy-acc" />
+                            <ClockIcon className="w-4 h-4 text-[#051020]" />
                         </div>
                     </button>
                     <p className="mt-6 text-xs text-slate-400 font-bold uppercase tracking-wider">
