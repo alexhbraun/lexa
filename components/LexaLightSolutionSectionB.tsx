@@ -5,7 +5,7 @@ export const LexaLightSolutionSectionB: React.FC = () => {
     return (
         <section className="py-24 bg-slate-50 reveal">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
                     {/* Left Column: Narrative */}
                     <div className="text-left">
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
@@ -34,7 +34,7 @@ export const LexaLightSolutionSectionB: React.FC = () => {
                     </div>
 
                     {/* Right Column: Checklist Card */}
-                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-gold/30 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)]">
+                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-slate-200 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] h-fit">
                         <h3 className="text-lg font-bold text-slate-400 uppercase tracking-widest mb-8 text-center lg:text-left">O que ela faz por você:</h3>
                          <ul className="space-y-6">
                             <li className="flex items-start gap-4">
@@ -75,6 +75,25 @@ export const LexaLightSolutionSectionB: React.FC = () => {
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                {/* Bottom Row: Visual Proof (Centered) */}
+                <div className="relative max-w-4xl mx-auto">
+                     <div 
+                        className="relative w-full rounded-[24px] overflow-hidden bg-transparent reveal"
+                        style={{
+                            boxShadow: '0 0 0 1px rgba(180,138,58,0.25), 0 30px 80px rgba(0,0,0,0.15)',
+                            animationDelay: '0.2s'
+                        }}
+                    >
+                        <img 
+                            src="https://ik.imagekit.io/rgqefde41/Gemini_Generated_Image_aaaibraaaibraaai.png"
+                            alt="Resumo de Chamada - Lexa"
+                            className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-700"
+                        />
+                    </div>
+                    {/* Decorative glow behind */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gold/10 blur-[80px] -z-10 rounded-full pointer-events-none"></div>
                 </div>
             </div>
         </section>

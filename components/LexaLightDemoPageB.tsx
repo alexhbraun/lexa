@@ -9,6 +9,8 @@ import { LexaLightProcessSectionB } from './LexaLightProcessSectionB';
 import { LexaLightAudioDemoSection } from './LexaLightAudioDemoSection';
 import { LexaLightFeaturesSectionB } from './LexaLightFeaturesSectionB';
 import { LexaLightFaqSectionB } from './LexaLightFaqSectionB';
+import { LexaLightStorySection } from './LexaLightStorySection';
+import { LexaLightBridge } from './LexaLightBridge';
 import { Modal } from './Modal';
 import { ShieldCheckIcon, PhoneIcon } from './Icons';
 
@@ -64,6 +66,9 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
             <LexaLightProcessSectionB />
             <LexaLightFeaturesSectionB />   
             <LexaLightFaqSectionB onOpenSurvey={() => setIsSurveyOpen(true)} />
+            <LexaLightStorySection />
+            
+            <LexaLightBridge />
 
             {/* Final CTA Section */}
             <section id="contato" className="py-40 bg-[#051020] relative overflow-hidden">
@@ -86,9 +91,9 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 stagger-reveal" style={{ animationDelay: '0.4s' }}>
                             <button
                                 onClick={() => setIsSurveyOpen(true)}
-                                className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-[0_40px_100px_-15px_rgba(197,160,89,0.5)]"
+                                className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-black text-white font-bold text-base px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(197,160,89,0.3)] border border-gold hover:shadow-[0_0_30px_rgba(197,160,89,0.5)] hover:brightness-110"
                             >
-                                <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0" />
+                                <ShieldCheckIcon className="w-5 h-5 text-gold shrink-0" />
                                 <span className="leading-tight font-black uppercase tracking-widest">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
                             </button>
                         </div>

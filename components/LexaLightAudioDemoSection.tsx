@@ -31,7 +31,18 @@ const AudioCard: React.FC<{
     };
 
     return (
-        <div className="group bg-[#0B1221] p-6 md:p-10 rounded-[40px] border border-slate-800 transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] hover:border-gold/30">
+        <div 
+            className="group relative rounded-[40px] border border-white/10 p-6 md:p-10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+            style={{
+                background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
+                boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
+            }}
+        >
+             {/* Aura Halo */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10"
+                 style={{ background: 'radial-gradient(circle at center, rgba(180,138,58,0.15), transparent 70%)' }}>
+            </div>
+
             {audioSrc && (
                 <audio 
                     ref={audioRef} 
@@ -42,22 +53,22 @@ const AudioCard: React.FC<{
                     className="hidden"
                 />
             )}
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full relative z-10">
                 {/* Image Section - Centered Illustration Style */}
                 <div className="relative mb-8 text-center">
                     <div className="inline-block relative">
                          {/* Pill Tag */}
                         <div className="mb-6 flex justify-center">
-                           <span className="px-4 py-1.5 rounded-full bg-slate-800/50 text-slate-300 text-[10px] font-bold uppercase tracking-widest border border-slate-700">
+                           <span className="px-4 py-1.5 rounded-full bg-white/10 text-white/90 text-[10px] font-bold uppercase tracking-widest border border-white/20 backdrop-blur-sm">
                                 {type}
                             </span> 
                         </div>
 
-                        <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-slate-800 bg-slate-800">
+                        <div className="relative w-48 h-48 mx-auto overflow-hidden rounded-full border-4 border-white/5 bg-black/20 shadow-inner">
                              <img
                                 src={image}
                                 alt={title}
-                                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                             />
                         </div>
                     </div>
@@ -65,15 +76,15 @@ const AudioCard: React.FC<{
 
                 {/* Content Section */}
                 <div className="text-center flex-grow">
-                    <h3 className="text-2xl font-bold text-white mb-4 leading-tight">{title}</h3>
-                    <p className="text-slate-400 text-[16px] leading-relaxed font-normal mb-10">
+                    <h3 className="text-2xl font-bold text-white/95 mb-4 leading-tight">{title}</h3>
+                    <p className="text-white/70 text-[16px] leading-relaxed font-normal mb-10">
                         {description}
                     </p>
                 </div>
 
                 {/* Player Section */}
                 <div className="mt-auto">
-                    <div className="flex items-center gap-5 p-4 rounded-[24px] bg-slate-900/50 border border-slate-800">
+                    <div className="flex items-center gap-5 p-4 rounded-[24px] bg-black/20 border border-white/5 backdrop-blur-sm">
                         <button
                             onClick={togglePlay}
                             className={`w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#051020] hover:scale-105 transition-all duration-300 shadow-md ${!audioSrc ? 'opacity-50 cursor-not-allowed' : ''}`}
@@ -83,10 +94,10 @@ const AudioCard: React.FC<{
                         </button>
                         <div className="flex-grow">
                              <div className="flex justify-between mb-2">
-                                <span className="text-[9px] text-slate-500 font-bold uppercase tracking-widest">{isPlaying ? 'Tocando...' : 'Ouvir audio'}</span>
-                                <span className="text-[9px] text-slate-500 font-bold uppercase tracking-widest">{duration}</span>
+                                <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">{isPlaying ? 'Tocando...' : 'Ouvir audio'}</span>
+                                <span className="text-[9px] text-white/50 font-bold uppercase tracking-widest">{duration}</span>
                             </div>
-                            <div className="h-1.5 w-full bg-slate-700 rounded-full overflow-hidden">
+                            <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
                                 <div className={`h-full bg-gold transition-all duration-[2000ms] ease-linear ${isPlaying ? 'w-full' : 'w-0'}`}></div>
                             </div>
                         </div>

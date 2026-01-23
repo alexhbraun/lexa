@@ -3,13 +3,15 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ClockIcon, FileTextIcon, ShieldCheckIcon, BriefcaseIcon } from './Icons'; // Using Briefcase for "Criada para escritórios"
 
 const TrustItem: React.FC<{ icon: React.ReactNode; title: string; text: string }> = ({ icon, title, text }) => (
-    <div className="group flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-5 p-4 rounded-2xl transition-all duration-300 hover:bg-slate-50/80 cursor-default">
-        <div className="shrink-0 w-12 h-12 rounded-2xl bg-[#F8F9FC] flex items-center justify-center text-gold shadow-sm border border-slate-100 group-hover:scale-105 group-hover:bg-white group-hover:border-gold/20 transition-all duration-300">
-            {icon}
+    <div className="flex-none w-full md:w-auto group flex items-center gap-[14px] p-[14px] px-[20px] min-w-[260px] rounded-xl bg-white/[0.03] border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.06] snap-center">
+        <div className="shrink-0 w-9 h-9 rounded-full bg-white/[0.06] flex items-center justify-center border border-white/[0.10]">
+            <div className="opacity-95 text-gold">
+                {icon}
+            </div>
         </div>
-        <div>
-            <h4 className="font-bold text-[#051020] text-sm md:text-[15px] mb-1 leading-tight group-hover:text-navy-acc transition-colors">{title}</h4>
-            <p className="text-slate-500 text-xs md:text-[13px] leading-relaxed max-w-[200px] md:max-w-none mx-auto font-medium">{text}</p>
+        <div className="text-left">
+            <h4 className="font-semibold text-[rgba(255,255,255,0.92)] text-[15px] mb-0 leading-tight tracking-tight">{title}</h4>
+            <p className="text-[rgba(255,255,255,0.68)] text-[12.5px] leading-[1.4] mt-0.5">{text}</p>
         </div>
     </div>
 );
@@ -34,25 +36,25 @@ export const LexaLightTrustBar: React.FC = () => {
                 style={{ y, opacity }}
                 className="container mx-auto"
             >
-                <div className="bg-white border border-slate-100 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.08)] rounded-[32px] p-4 md:py-6 md:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                <div className="bg-[#051020] border border-slate-800 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.3)] rounded-[32px] p-4 md:py-6 md:px-8 overflow-hidden">
+                    <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 pb-4 md:pb-0 -mb-4 md:mb-0 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden scrollbar-none">
                         <TrustItem 
-                            icon={<ClockIcon className="w-6 h-6" />}
+                            icon={<ClockIcon className="w-5 h-5" />}
                             title="A partir de apenas R$297 mensal"
                             text="Com 150 minutos inclusos"
                         />
                         <TrustItem 
-                            icon={<FileTextIcon className="w-6 h-6" />}
+                            icon={<FileTextIcon className="w-5 h-5" />}
                             title="Cancelamento mensal flexível"
                             text="Sem fidelidade ou multa"
                         />
                         <TrustItem 
-                            icon={<BriefcaseIcon className="w-6 h-6" />}
+                            icon={<BriefcaseIcon className="w-5 h-5" />}
                             title="Criada para escritórios jurídicos"
                             text="Linguagem e postura adequadas"
                         />
                         <TrustItem 
-                            icon={<ShieldCheckIcon className="w-6 h-6" />}
+                            icon={<ShieldCheckIcon className="w-5 h-5" />}
                             title="LGPD e sigilo profissional"
                             text="Processos alinhados às normas"
                         />

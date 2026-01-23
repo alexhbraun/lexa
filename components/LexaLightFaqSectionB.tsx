@@ -70,7 +70,7 @@ export const LexaLightFaqSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ 
         <section id="faq" className="py-24 md:py-32 bg-slate-50 reveal">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
-                    <div className="glask-card p-8 md:p-12 rounded-[40px] border border-gold/30 shadow-xl bg-white">
+                    <div className="glask-card p-8 md:p-12 rounded-[40px] border border-slate-200 shadow-xl bg-white">
                         <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6 text-center">
                             DÚVIDAS
                         </div>

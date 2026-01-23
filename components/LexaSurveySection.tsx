@@ -124,12 +124,20 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                                 <button
                                     key={option.id}
                                     onClick={() => handleOptionSelect(option.id)}
-                                    className="group relative flex items-center p-5 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-gold/50 transition-all duration-300 text-left"
+                                    className="group relative flex items-center p-5 rounded-2xl border border-white/10 transition-all duration-300 text-left overflow-hidden hover:-translate-y-1 hover:border-gold/30 hover:shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)]"
+                                    style={{
+                                        background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))'
+                                    }}
                                 >
-                                    <div className="mr-4 text-gold/70 group-hover:text-gold transition-colors">
+                                     {/* Aura Halo */}
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10"
+                                         style={{ background: 'radial-gradient(circle at center, rgba(180,138,58,0.15), transparent 70%)' }}>
+                                    </div>
+
+                                    <div className="mr-4 text-gold/70 group-hover:text-gold transition-colors relative z-10">
                                         {option.icon}
                                     </div>
-                                    <span className="text-lg font-medium text-gray-200 group-hover:text-white leading-tight">
+                                    <span className="text-lg font-medium text-gray-200 group-hover:text-white leading-tight relative z-10">
                                         {option.label}
                                     </span>
                                 </button>
@@ -138,7 +146,17 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                     </div>
                 ) : (
                     <div className="animate-fade-in-up">
-                        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-[40px] p-8 md:p-12 text-center shadow-2xl">
+                        <div 
+                            className="relative border border-white/10 rounded-[40px] p-8 md:p-12 text-center overflow-hidden"
+                            style={{
+                                background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
+                                boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
+                            }}
+                        >
+                             {/* Aura Halo */}
+                            <div className="absolute inset-0 pointer-events-none -z-10"
+                                 style={{ background: 'radial-gradient(circle at top center, rgba(180,138,58,0.1), transparent 70%)' }}>
+                            </div>
                             {tag === 'LEXA_OK_PADRAO' && (
                                 <>
                                     <div className="inline-flex items-center justify-center p-5 bg-emerald-500/20 rounded-full mb-8 text-emerald-400">

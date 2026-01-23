@@ -9,37 +9,49 @@ const PricingCard: React.FC<{
     highlight?: boolean;
     onCta?: () => void;
 }> = ({ title, price, features, description, highlight, onCta }) => (
-    <div className={`relative p-8 rounded-[40px] border flex flex-col h-full transition-all duration-500 ${highlight ? 'bg-[#051020] text-white border-navy-acc shadow-2xl scale-105 z-10' : 'bg-white text-slate-900 border-slate-100 shadow-lg hover:shadow-xl'}`}>
+    <div 
+        className={`relative p-8 rounded-[40px] border flex flex-col h-full transition-all duration-500 overflow-hidden group ${highlight ? 'text-white border-gold shadow-[0_30px_80px_-10px_rgba(197,160,89,0.15)] scale-105 z-10' : 'text-slate-300 border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.45)] hover:border-gold/30 hover:-translate-y-2'}`}
+        style={{
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))'
+        }}
+    >
+        {/* Aura Halo for Highlight Card */}
         {highlight && (
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-navy-acc text-xs font-black uppercase tracking-widest py-2 px-6 rounded-full shadow-lg">
+            <div className="absolute inset-0 pointer-events-none -z-10"
+                 style={{ background: 'radial-gradient(circle at top center, rgba(180,138,58,0.15), transparent 70%)' }}>
+            </div>
+        )}
+        
+        {highlight && (
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-[#051020] text-xs font-black uppercase tracking-widest py-2 px-6 rounded-full shadow-lg border border-white/20">
                 Mais Popular
             </div>
         )}
         
-        <h3 className={`text-xl font-bold mb-2 ${highlight ? 'text-white' : 'text-[#051020]'}`}>{title}</h3>
-        <p className={`text-sm mb-8 h-10 ${highlight ? 'text-slate-400' : 'text-slate-500'}`}>{description}</p>
+        <h3 className={`text-xl font-bold mb-2 ${highlight ? 'text-white' : 'text-white/90'}`}>{title}</h3>
+        <p className={`text-sm mb-8 h-10 leading-relaxed ${highlight ? 'text-white/70' : 'text-white/50'}`}>{description}</p>
         
         <div className="mb-8">
-            <span className="text-4xl font-serif font-black">{price}</span>
-            <span className={`text-sm ${highlight ? 'text-slate-400' : 'text-slate-500'}`}>/mês</span>
+            <span className="text-4xl font-serif font-black text-white">{price}</span>
+            <span className="text-sm text-white/40">/mês</span>
         </div>
 
         <ul className="space-y-4 mb-10 flex-grow">
             {features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm">
                     <span className="text-gold font-bold">✓</span>
-                    <span className={highlight ? 'text-slate-300' : 'text-slate-600'}>{feature}</span>
+                    <span className={highlight ? 'text-white/80' : 'text-white/60'}>{feature}</span>
                 </li>
             ))}
         </ul>
 
         <button 
             onClick={onCta}
-            className={`w-full py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 ${highlight ? 'bg-gold text-navy-acc hover:bg-white' : 'bg-slate-100 text-slate-900 hover:bg-[#051020] hover:text-white'}`}
+            className={`w-full py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 border ${highlight ? 'bg-gold text-[#051020] border-gold hover:bg-white hover:border-white' : 'bg-white/5 text-white border-white/10 hover:bg-gold hover:text-[#051020] hover:border-gold'}`}
         >
             INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)
         </button>
-        <p className="text-center mt-3 text-xs text-slate-400 font-medium opacity-80">
+        <p className="text-center mt-3 text-xs text-white/30 font-medium">
             Sem compromisso · Veja na prática
         </p>
     </div>
@@ -47,16 +59,16 @@ const PricingCard: React.FC<{
 
 export const LexaLightPricingSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ onOpenSurvey }) => {
     return (
-        <section className="py-24 bg-slate-50 reveal">
+        <section className="py-24 bg-[#051020] reveal border-t border-slate-800">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-4xl mx-auto mb-20">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
                         INVESTIMENTO
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-6">
+                    <h2 className="text-3xl md:text-5xl font-serif font-black text-white mb-6">
                         Preços Simples e Transparentes
                     </h2>
-                    <p className="text-xl text-slate-500">
+                    <p className="text-xl text-slate-400 font-light">
                         Até mesmo um cliente salvo paga por meses de serviço. Faça as contas.
                     </p>
                 </div>

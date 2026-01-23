@@ -2,8 +2,8 @@ import React from 'react';
 import { PhoneIcon, IconResumosAutomaticos, IconTransferenciaHumana, IconAtendimento24h, ShieldCheckIcon } from './Icons';
 
 const Step: React.FC<{ number: string; title: string; text: React.ReactNode; icon: React.ReactNode }> = ({ number, title, text, icon }) => (
-    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-gold/30 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 relative h-full flex flex-col items-center">
-        <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-navy-acc border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
+    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-slate-200 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 relative h-full flex flex-col items-center">
+        <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-slate-700 border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
             {number}
         </div>
         <div className="flex flex-col items-center text-center flex-grow w-full">
@@ -23,17 +23,17 @@ export const LexaLightProcessSectionB: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-gradient-to-b from-slate-50/0 via-slate-50/50 to-slate-50/0 -z-10 blur-3xl pointer-events-none"></div>
             
             <div className="container mx-auto px-6">
-                <div className="text-center max-w-5xl mx-auto mb-20">
+                <div className="text-center max-w-5xl mx-auto mb-12">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
                         PASSO A PASSO
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
                         Veja Como Funciona <br />
-                        <span className="text-gold italic font-light">(É um teste real — sem compromisso)</span>
+                        <span className="text-gold italic font-light">(É Super Fácil)</span>
                     </h2>
                 </div>
 
-                <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-4 md:gap-8 relative pb-8 pt-8 md:pt-0 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 hide-scrollbar md:overflow-visible mb-16">
+                <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-4 md:gap-8 relative pb-8 pt-4 md:pt-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 hide-scrollbar md:overflow-visible mb-16 mt-10">
                     <div className="min-w-[85vw] md:min-w-0 snap-center h-full">
                         <Step
                             number="01"
@@ -50,7 +50,8 @@ export const LexaLightProcessSectionB: React.FC = () => {
                             icon={<IconTransferenciaHumana className="w-full h-full" />}
                         />
                     </div>
-                    <div className="min-w-[85vw] md:min-w-0 snap-center h-full">
+                    {/* Card 02: Highlighted but toned down as requested */}
+                    <div className="min-w-[85vw] md:min-w-0 snap-center h-full brightness-[0.97]">
                         <Step
                             number="02"
                             title="Teste de Encaminhamento"
@@ -95,7 +96,7 @@ export const LexaLightProcessSectionB: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="mt-20 max-w-4xl mx-auto bg-white rounded-[40px] p-8 md:p-12 border border-gold/30 shadow-xl">
+                <div className="mt-20 max-w-4xl mx-auto bg-white rounded-[40px] p-8 md:p-12 border border-slate-200 shadow-xl">
                      <h3 className="text-2xl font-bold text-[#051020] mb-8 text-center">Então, quando uma ligação chega:</h3>
                      <ul className="space-y-4 text-left md:text-center text-slate-600 text-lg mb-12">
                         <li className="flex items-start md:items-center md:justify-center gap-3">
@@ -119,7 +120,7 @@ export const LexaLightProcessSectionB: React.FC = () => {
                          <div className="mb-4 text-slate-400 font-medium italic">
                             Primeiro você testa. Depois você decide.
                          </div>
-                         <button className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:shadow-xl group">
+                         <button className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
                             <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0 group-hover:rotate-12 transition-transform" />
                             <span className="leading-tight uppercase">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
                          </button>
