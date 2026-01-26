@@ -25,11 +25,11 @@ export const LexaLightProcessSectionB: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-5xl mx-auto mb-12">
                     <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
-                        PASSO A PASSO
+                        ATIVAÇÃO DO PERÍODO GRÁTIS
                     </div>
                     <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
-                        Veja Como Funciona <br />
-                        <span className="text-gold italic font-light">(É Super Fácil)</span>
+                        Veja Como Ativar Seu Teste <br />
+                        <span className="text-gold italic font-light">Em Apenas 3 Passos</span>
                     </h2>
                 </div>
 
@@ -96,35 +96,15 @@ export const LexaLightProcessSectionB: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="mt-20 max-w-4xl mx-auto bg-white rounded-[40px] p-8 md:p-12 border border-slate-200 shadow-xl">
-                     <h3 className="text-2xl font-bold text-[#051020] mb-8 text-center">Então, quando uma ligação chega:</h3>
-                     <ul className="space-y-4 text-left md:text-center text-slate-600 text-lg mb-12">
-                        <li className="flex items-start md:items-center md:justify-center gap-3">
-                            <span className="text-gold font-bold">✓</span> A Lexa atende profissionalmente em português
-                        </li>
-                        <li className="flex items-start md:items-center md:justify-center gap-3">
-                            <span className="text-gold font-bold">✓</span> Faz as perguntas certas (sem aconselhamento jurídico)
-                        </li>
-                        <li className="flex items-start md:items-center md:justify-center gap-3">
-                            <span className="text-gold font-bold">✓</span> Captura nome, contato, contexto e urgência
-                        </li>
-                         <li className="flex items-start md:items-center md:justify-center gap-3">
-                            <span className="text-gold font-bold">✓</span> Te envia um resumo imediato para você decidir o próximo passo
-                        </li>
-                         <li className="flex items-start md:items-center md:justify-center gap-3">
-                            <span className="text-gold font-bold">✓</span> O cliente se sente ouvido — não ignorado
-                        </li>
-                     </ul>
-
-                     <div className="text-center border-t border-slate-100 pt-8">
-                         <div className="mb-4 text-slate-400 font-medium italic">
-                            Primeiro você testa. Depois você decide.
-                         </div>
-                         <button className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
-                            <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0 group-hover:rotate-12 transition-transform" />
-                            <span className="leading-tight uppercase">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
-                         </button>
+                {/* Direct CTA Button (Box Removed) */}
+                 <div className="mt-20 max-w-4xl mx-auto text-center">
+                     <div className="mb-4 text-slate-400 font-medium italic">
+                        Primeiro você testa. Depois você decide.
                      </div>
+                     <button className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
+                        <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0 group-hover:rotate-12 transition-transform" />
+                        <span className="leading-tight uppercase">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
+                     </button>
                 </div>
             </div>
         </section>

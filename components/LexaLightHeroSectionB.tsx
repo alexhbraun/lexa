@@ -12,7 +12,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
             {/* Premium Background Image with Dynamic Overlay */}
             <div className="absolute inset-0 -z-10" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.35)' }}>
                 <img
-                    src="https://ik.imagekit.io/rgqefde41/Gemini_Generated_Image_ih93sbih93sbih93.png"
+                    src="/assets/images/lexa_hero_v3.png"
                     alt="Boutique Law Office Brazil"
                     className="w-full h-full object-cover object-center"
                 />
@@ -28,9 +28,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                         background: 'radial-gradient(circle at 50% 40%, rgba(245,242,238,0.78) 0%, rgba(245,242,238,0.58) 35%, rgba(245,242,238,0.22) 60%, rgba(245,242,238,0.00) 80%)' 
                     }}
                 ></div>
-            </div>
-
-            <div className="relative z-10 mx-auto max-w-[820px] py-10 px-6 text-center">
+            </div>            <div className="relative z-10 mx-auto max-w-[820px] py-10 px-6 text-center">
                 <h1 className="text-[50px] md:text-[90px] font-serif font-black text-[#141414] mb-6 leading-[1.05] reveal">
                         Nunca Mais Perca <br className="hidden md:block" />
                         <span className="text-gold italic font-light">Uma Ligação de Cliente.</span>

@@ -5,95 +5,81 @@ export const LexaLightSolutionSectionB: React.FC = () => {
     return (
         <section className="py-24 bg-slate-50 reveal">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
-                    {/* Left Column: Narrative */}
-                    <div className="text-left">
-                        <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
-                            SOLUÇÃO
-                        </div>
-                        <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
-                            Conheça Sua Nova Recepcionista de IA <br/>
-                            <span className="text-gold italic font-light">Feita para Escritórios de Advocacia</span>
-                        </h2>
-                        
-                        <p className="text-xl text-slate-600 font-medium leading-relaxed mb-12">
-                            Imagine se cada ligação para seu escritório fosse atendida por uma assistente profissional e inteligente.
-                        </p>
-
-                        <div className="space-y-6 border-t border-slate-200 pt-8">
-                             <p className="text-2xl font-bold text-[#051020]">
-                                É exatamente isso que nosso Agente de IA por Voz faz.
-                            </p>
-                            <p className="text-slate-600 text-lg leading-relaxed">
-                                Ele atende suas ligações recebidas como uma recepcionista de verdade, coleta todas as informações relevantes e te envia um resumo acionável para que você possa decidir o que fazer em seguida.
-                            </p>
-                            <p className="text-lg font-bold text-gold italic">
-                                Chega de buracos negros de caixa postal. Chega de oportunidades perdidas. Chega de clientes frustrados.
-                            </p>
-                        </div>
+                {/* Centered Header & Narrative */}
+                <div className="text-center max-w-4xl mx-auto mb-16">
+                    <div className="text-gold text-[11px] font-black uppercase tracking-[0.4em] mb-6">
+                        SOLUÇÃO
                     </div>
+                    <h2 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-8 leading-tight">
+                        Conheça Sua Nova Recepcionista de IA <br/>
+                        <span className="text-gold italic font-light">Feita para Escritórios de Advocacia</span>
+                    </h2>
+                    
+                    <p className="text-xl text-slate-600 font-medium leading-relaxed mb-8">
+                        Imagine se cada ligação para seu escritório fosse atendida por uma assistente profissional e inteligente.
+                    </p>
 
-                    {/* Right Column: Checklist Card */}
-                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-slate-200 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] h-fit">
-                        <h3 className="text-lg font-bold text-slate-400 uppercase tracking-widest mb-8 text-center lg:text-left">O que ela faz por você:</h3>
-                         <ul className="space-y-6">
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Nunca perde uma ligação <span className="text-slate-400 text-base block mt-1">(mesmo quando você está ocupado, no tribunal, ou fora do horário)</span></span>
-                            </li>
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Fala naturalmente com os clientes em português</span>
-                            </li>
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Captura cada detalhe importante</span>
-                            </li>
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Qualifica novos leads automaticamente</span>
-                            </li>
-                             <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Tranquiliza clientes existentes profissionalmente</span>
-                            </li>
-                            <li className="flex items-start gap-4">
-                                <div className="mt-1 w-6 h-6 rounded-full bg-navy-acc/5 flex items-center justify-center shrink-0">
-                                     <span className="text-navy-acc font-bold text-sm">✓</span>
-                                </div>
-                                <span className="text-slate-700 text-lg">Organiza tudo para que você possa fazer follow-up rapidamente</span>
-                            </li>
-                        </ul>
+                    <div className="space-y-6">
+                         <p className="text-2xl font-bold text-[#051020]">
+                            É exatamente isso que nosso Agente de IA por Voz faz.
+                        </p>
+                        <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
+                            Ele atende suas ligações recebidas como uma recepcionista de verdade, coleta todas as informações relevantes e te envia um resumo acionável para que você possa decidir o que fazer em seguida.
+                        </p>
                     </div>
                 </div>
 
-                {/* Bottom Row: Visual Proof (Centered) */}
-                <div className="relative max-w-4xl mx-auto">
-                     <div 
-                        className="relative w-full rounded-[24px] overflow-hidden bg-transparent reveal"
-                        style={{
-                            boxShadow: '0 0 0 1px rgba(180,138,58,0.25), 0 30px 80px rgba(0,0,0,0.15)',
-                            animationDelay: '0.2s'
-                        }}
-                    >
-                        <img 
-                            src="https://ik.imagekit.io/rgqefde41/Gemini_Generated_Image_aaaibraaaibraaai.png"
-                            alt="Resumo de Chamada - Lexa"
-                            className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-700"
-                        />
+                {/* Comparison Cards: Two Distinct Cards Side-by-Side */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-5xl mx-auto">
+                    
+                    {/* Card 1: What Lexa Does (White, Elevated) */}
+                    <div className="bg-white rounded-[40px] p-8 md:p-12 border border-slate-100 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.08)] h-full">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="w-10 h-10 rounded-full bg-navy-acc/10 flex items-center justify-center shrink-0">
+                                <span className="text-navy-acc font-black text-sm">✓</span>
+                            </div>
+                            <h3 className="text-sm font-black text-[#051020] uppercase tracking-widest">O QUE A LEXA FAZ</h3>
+                        </div>
+                        <ul className="space-y-5">
+                            {[
+                                "Atende ligações imediatamente (24/7)",
+                                "Entende o motivo da ligação",
+                                "Coleta nome, telefone e dados críticos",
+                                "Fala naturalmente com profissionalismo",
+                                "Encaminha o resumo para sua decisão"
+                            ].map((item, idx) => (
+                                <li key={idx} className="flex items-start gap-4">
+                                    <span className="text-navy-acc font-bold text-lg leading-none mt-1">✓</span>
+                                    <span className="text-slate-700 text-[16px] font-medium leading-normal">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    {/* Decorative glow behind */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gold/10 blur-[80px] -z-10 rounded-full pointer-events-none"></div>
+
+                    {/* Card 2: What Lexa Never Does (Light Gray, Subtle) */}
+                    <div className="bg-slate-50 rounded-[40px] p-8 md:p-12 border border-slate-100 h-full">
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center shrink-0">
+                                <span className="text-slate-400 font-black text-xs">✕</span>
+                            </div>
+                            <h3 className="text-sm font-black text-slate-400 uppercase tracking-widest">O QUE ELA NUNCA FAZ</h3>
+                        </div>
+                        <ul className="space-y-5">
+                            {[
+                                "Não dá aconselhamento jurídico",
+                                "Não negocia honorários ou valores",
+                                "Não promete resultados de causa",
+                                "Não inventa respostas que não sabe",
+                                "Não substitui a inteligência do advogado"
+                            ].map((item, idx) => (
+                                <li key={idx} className="flex items-start gap-4 opacity-70 hover:opacity-100 transition-opacity">
+                                    <span className="text-slate-300 font-bold text-lg leading-none mt-1">✕</span>
+                                    <span className="text-slate-500 text-[16px] font-medium leading-normal">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </section>

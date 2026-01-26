@@ -76,34 +76,51 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
                 <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gold/10 to-transparent"></div>
                 
                 <div className="container mx-auto px-6 relative z-10">
-                    <div className="max-w-5xl mx-auto text-center">
+                    <div className="max-w-4xl mx-auto text-center">
                         <div className="text-gold text-[12px] font-black uppercase tracking-[0.6em] mb-12 stagger-reveal" style={{ animationDelay: '0.1s' }}>
                             DECISÃO
                         </div>
 
                         <h2 className="text-3xl md:text-5xl font-serif font-black text-white mb-8 leading-tight stagger-reveal" style={{ animationDelay: '0.2s' }}>
-                            Pronto Para Ver se a Lexa <br/> <span className="text-gold italic font-light">Funciona no Seu Dia a Dia?</span>
+                            Próximos Passos
                         </h2>
-                        <p className="text-2xl text-slate-400 font-light leading-relaxed mb-16 max-w-3xl mx-auto stagger-reveal" style={{ animationDelay: '0.3s' }}>
-                            Você não precisa acreditar.<br/>Você só precisa testar.
-                        </p>
                         
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 stagger-reveal" style={{ animationDelay: '0.4s' }}>
+                        <div className="text-xl text-slate-300 font-light leading-relaxed mb-10 stagger-reveal space-y-4" style={{ animationDelay: '0.3s' }}>
+                            <p>Se você chegou até aqui, provavelmente se identificou com o problema que descrevemos.</p>
+                            <p>A boa notícia é que a solução está disponível e você pode testá-la sem nenhum risco.</p>
+                        </div>
+                        
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 stagger-reveal mb-12" style={{ animationDelay: '0.4s' }}>
                             <button
                                 onClick={() => setIsSurveyOpen(true)}
-                                className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-black text-white font-bold text-base px-12 py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_0_15px_rgba(197,160,89,0.3)] border border-gold hover:shadow-[0_0_30px_rgba(197,160,89,0.5)] hover:brightness-110"
+                                className="shimmer w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-110 hover:shadow-[0_0_30px_rgba(197,160,89,0.4)] shadow-[0_0_20px_rgba(197,160,89,0.2)]"
                             >
-                                <ShieldCheckIcon className="w-5 h-5 text-gold shrink-0" />
-                                <span className="leading-tight font-black uppercase tracking-widest">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
+                                <span className="leading-tight font-black uppercase tracking-widest text-[#051020]">COMEÇAR TESTE GRATUITO DE 3 DIAS</span>
                             </button>
                         </div>
                         
-                        <div className="mt-8 text-center reveal" style={{ animationDelay: '0.6s' }}>
-                            <p className="text-slate-500 font-medium tracking-[0.2em] uppercase text-xs mb-2">
-                                Formulário rápido de onboarding (5 min)
+                        <div className="text-lg text-slate-400 font-light leading-relaxed stagger-reveal space-y-6" style={{ animationDelay: '0.5s' }}>
+                            <p>
+                                Nos próximos 3 dias, você vai descobrir como é ter um atendimento profissional <br className="hidden md:block" />
+                                funcionando 24/7, sem custos fixos elevados.
                             </p>
-                             <p className="text-sm text-slate-500 font-medium opacity-60">
-                                Decisão depois · Veja na prática
+                            <p>
+                                E então você decide se faz sentido para o seu negócio.
+                            </p>
+                            <p className="text-white font-bold text-xl">
+                                Simples assim.
+                            </p>
+                            <p className="pt-4">
+                                Estamos aqui para ajudar você a capturar mais oportunidades e crescer seu negócio.
+                            </p>
+                        </div>
+
+                        <div className="mt-16 stagger-reveal" style={{ animationDelay: '0.6s' }}>
+                             <p className="text-gold font-serif italic text-2xl mb-2">
+                                Atenciosamente,
+                            </p>
+                            <p className="text-white font-black uppercase tracking-widest">
+                                Equipe Lexa
                             </p>
                         </div>
                     </div>
