@@ -36,8 +36,17 @@ export const LexaLightTrustBar: React.FC = () => {
                 style={{ y, opacity }}
                 className="container mx-auto"
             >
-                <div className="bg-[#051020] border border-slate-800 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.3)] rounded-[32px] p-4 md:py-6 md:px-8 overflow-hidden">
-                    <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 pb-4 md:pb-0 -mb-4 md:mb-0 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden scrollbar-none">
+                <div className="bg-[#051020] border border-slate-800 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.3)] rounded-[32px] p-4 md:py-6 md:px-8 overflow-hidden relative group/slider">
+                    {/* Mobile Scroll Indicator - Right Arrow */}
+                    <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 md:hidden pointer-events-none animate-pulse">
+                         <div className="bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/10 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 text-gold">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                         </div>
+                    </div>
+
+                    <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 pb-4 md:pb-0 -mb-4 md:mb-0 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden scrollbar-none relative pr-12 md:pr-0">
                         <TrustItem 
                             icon={<ClockIcon className="w-5 h-5" />}
                             title="A partir de apenas R$297 mensal"
