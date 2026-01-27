@@ -24,9 +24,25 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
     // GoHighLevel Webhook URL
     const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/TEVwwDK8JO4eqvbBtTmb/webhook-trigger/f11530e6-1ed4-421f-8240-907ad29b029f'; 
 
+    const formatPhoneNumber = (phone: string) => {
+        // Remove all non-numeric characters
+        const cleanNumber = phone.replace(/\D/g, '');
+        
+        // Check if it already starts with 55 (Brazil country code)
+        // A valid Brazil mobile number with 55 is usually 12-13 digits (55 + 2 digit area + 8-9 digit number)
+        if (cleanNumber.startsWith('55') && cleanNumber.length > 11) {
+            return `+${cleanNumber}`;
+        }
+        
+        // If not, prepend 55
+        return `+55${cleanNumber}`;
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+
+        const formattedPhone = formatPhoneNumber(formData.phone);
 
         try {
             const response = await fetch(WEBHOOK_URL, {
@@ -36,6 +52,8 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                 },
                 body: JSON.stringify({
                     ...formData,
+                    phone: formattedPhone, // Send formatted number
+                    msg_src__original_phone: formData.phone, // Keep original input just in case
                     submittedAt: new Date().toISOString(),
                     source: 'Lexa Landing Page'
                 }),
