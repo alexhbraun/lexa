@@ -198,7 +198,7 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                                 onClick={() => window.location.href = '/registrar'}
                                 className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-gradient-to-r from-gold to-yellow-600 text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_50px_-15px_rgba(197,160,89,0.4)]"
                             >
-                                <span className="leading-tight">Contratar Lexa — 7 dias grátis</span>
+                                <span className="leading-tight">Reservar Teste — 7 dias grátis</span>
                                 <div className="bg-white/20 p-2 rounded-full group-hover:rotate-12 transition-transform">
                                     <ZapIcon className="w-5 h-5 text-white" />
                                 </div>
