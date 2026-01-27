@@ -63,7 +63,7 @@ export const LexaLightDemoPageB: React.FC<LexaDemoPageProps> = ({ onNavigateToPr
             <LexaLightSolutionSectionB />
 
             <LexaLightAudioDemoSection className="bg-[#051020] border-t-0" />
-            <LexaLightProcessSectionB />
+            <LexaLightProcessSectionB onOpenSurvey={() => setIsSurveyOpen(true)} />
             <LexaLightFeaturesSectionB />   
             <LexaLightFaqSectionB onOpenSurvey={() => setIsSurveyOpen(true)} />
             <LexaLightStorySection />

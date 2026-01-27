@@ -14,7 +14,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                 <img
                     src="/assets/images/lexa_hero_v3.png"
                     alt="Boutique Law Office Brazil"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-left md:object-center"
                 />
                 {/* Global Veil (Super Light) */}
                 <div 

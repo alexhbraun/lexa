@@ -16,7 +16,7 @@ const Step: React.FC<{ number: string; title: string; text: React.ReactNode; ico
     </div>
 );
 
-export const LexaLightProcessSectionB: React.FC = () => {
+export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ onOpenSurvey }) => {
     return (
         <section id="como-funciona" className="py-20 md:py-32 bg-slate-50 reveal relative overflow-hidden">
              {/* Subtle decorative blob for glassmorphism context */}
@@ -101,7 +101,7 @@ export const LexaLightProcessSectionB: React.FC = () => {
                      <div className="mb-4 text-slate-400 font-medium italic">
                         Primeiro você testa. Depois você decide.
                      </div>
-                     <button className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
+                     <button onClick={onOpenSurvey} className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
                         <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0 group-hover:rotate-12 transition-transform" />
                         <span className="leading-tight uppercase">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
                      </button>

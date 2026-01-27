@@ -14,7 +14,7 @@ export const LexaLightHeroSection: React.FC<LexaHeroSectionProps> = ({ onNavigat
                 <img
                     src="/assets/images/lexa_brazil_boutique_hero.png"
                     alt="Boutique Law Office Brazil"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-left md:object-center"
                 />
                 {/* Refined overlays: Balanced for visibility and contrast */}
                 <div className="absolute inset-0 bg-white/30"></div>
