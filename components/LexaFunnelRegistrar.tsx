@@ -31,11 +31,11 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
         // Check if it already starts with 55 (Brazil country code)
         // A valid Brazil mobile number with 55 is usually 12-13 digits (55 + 2 digit area + 8-9 digit number)
         if (cleanNumber.startsWith('55') && cleanNumber.length > 11) {
-            return `+${cleanNumber}`;
+            return cleanNumber;
         }
         
         // If not, prepend 55
-        return `+55${cleanNumber}`;
+        return `55${cleanNumber}`;
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
