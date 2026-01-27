@@ -7,13 +7,7 @@ interface LexaFunnelStatusProps {
 }
 
 export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }) => {
-    // Simulate progression for demo purposes
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            onNavigate('pronta-para-teste');
-        }, 5000); // Auto navigate after 5s for demo
-        return () => clearTimeout(timer);
-    }, [onNavigate]);
+    // Removed simulated progression useEffect
 
     return (
         <section className="min-h-screen flex flex-col items-center justify-center p-6 md:p-12 font-sans text-slate-900 relative overflow-hidden">
@@ -59,65 +53,35 @@ export const LexaFunnelStatus: React.FC<LexaFunnelStatusProps> = ({ onNavigate }
                     </div>
 
                     <div className="bg-slate-50 rounded-[32px] p-8 border border-slate-100 shadow-inner mb-8 relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-1.5 h-full bg-gold/50"></div>
-                        
                         <div className="space-y-8 relative z-10">
-                            {/* Step 1 */}
-                            <div className="flex items-center gap-5">
-                                <div className="w-10 h-10 rounded-full bg-[#051020] text-gold flex items-center justify-center shrink-0 shadow-lg ring-4 ring-gold/10">
-                                    <CheckCircleIcon className="w-6 h-6" />
+                            <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Etapas do Processo</h3>
+                            
+                            {/* Static Steps List */}
+                            <div className="space-y-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-8 h-8 rounded-full bg-gold/20 text-gold flex items-center justify-center shrink-0 font-bold text-sm">1</div>
+                                    <div>
+                                        <p className="font-bold text-[#051020] text-sm uppercase tracking-wide">Reserva Recebida</p>
+                                        <p className="text-sm text-slate-500 leading-relaxed">Seu pedido já está com nossa equipe técnica.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="font-black text-[#051020] text-sm uppercase tracking-wider">Reserva recebida</p>
-                                    <p className="text-xs text-slate-500 font-medium">Ambiente em processamento</p>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center shrink-0 font-bold text-sm">2</div>
+                                    <div>
+                                        <p className="font-bold text-[#051020] text-sm uppercase tracking-wide">Criação do Ambiente</p>
+                                        <p className="text-sm text-slate-500 leading-relaxed">Configuramos a inteligência e a voz da sua Lexa.</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center shrink-0 font-bold text-sm">3</div>
+                                    <div>
+                                        <p className="font-bold text-[#051020] text-sm uppercase tracking-wide">Liberação Técnica</p>
+                                        <p className="text-sm text-slate-500 leading-relaxed">Confirmamos que o encaminhamento funcionará no seu número.</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            {/* Step 2 */}
-                            <div className="flex items-center gap-5">
-                                <div className="w-10 h-10 rounded-full bg-gold text-[#051020] flex items-center justify-center shrink-0 animate-pulse shadow-[0_0_20px_rgba(197,160,89,0.5)] ring-4 ring-gold/20">
-                                    <ClockIcon className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="font-black text-[#051020] text-sm uppercase tracking-wider">Ambiente Lexa em criação</p>
-                                    <p className="text-xs text-slate-500 font-medium">Configurando inteligência e voz</p>
-                                </div>
-                            </div>
-
-                            {/* Step 3 */}
-                            <div className="flex items-center gap-5 opacity-40 grayscale-[0.5]">
-                                <div className="w-10 h-10 rounded-full bg-white border-2 border-slate-200 flex items-center justify-center shrink-0">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
-                                </div>
-                                <div>
-                                    <p className="font-black text-slate-400 text-sm uppercase tracking-wider">Encaminhamento será liberado</p>
-                                    <p className="text-xs text-slate-400 font-medium">Liberação técnica pendente</p>
-                                </div>
-                            </div>
-
-                            {/* Step 4 */}
-                            <div className="flex items-center gap-5 opacity-40 grayscale-[0.5]">
-                                <div className="w-10 h-10 rounded-full bg-white border-2 border-slate-200 flex items-center justify-center shrink-0">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
-                                </div>
-                                <div>
-                                    <p className="font-black text-slate-400 text-sm uppercase tracking-wider">Teste pronto para iniciar</p>
-                                    <p className="text-xs text-slate-400 font-medium">Aguardando configuração final</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        {/* Connecting Line */}
-                        <div className="absolute left-[54px] top-12 bottom-12 w-px bg-slate-200 -z-0"></div>
-                    </div>
-
-                    <div className="mb-10">
-                        <div className="flex justify-between items-end mb-3 px-2">
-                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#051020]">Progresso Geral</span>
-                            <span className="text-[10px] font-black text-gold">45%</span>
-                        </div>
-                        <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden p-0.5 border border-slate-200/50 shadow-inner">
-                            <div className="h-full bg-gradient-to-r from-gold to-yellow-600 rounded-full w-[45%] shadow-[0_0_15px_rgba(197,160,89,0.2)]"></div>
                         </div>
                     </div>
 

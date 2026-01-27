@@ -53,42 +53,13 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                     </p>
 
                     <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-inner mb-10 text-left relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-1 h-full bg-gold"></div>
-                        
-                        <div className="mb-8">
-                            <div className="flex justify-between items-end mb-3">
-                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#051020]">Progresso da Configuração</span>
-                                <span className="text-[10px] font-black text-gold">30%</span>
-                            </div>
-                            <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
-                                <div className="h-full bg-gold w-[30%] shadow-[0_0_10px_rgba(197,160,89,0.3)]"></div>
-                            </div>
-                        </div>
-
-                        <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Preparação técnica em andamento</h3>
+                        <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Próximos Passos</h3>
                         <p className="text-slate-600 font-medium leading-relaxed mb-4 text-base">
                             Para garantir que o atendimento funcione corretamente **no seu número**, criamos o ambiente da Lexa de forma dedicada.
                         </p>
-                        <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                        <p className="text-slate-500 text-sm leading-relaxed mb-0">
                             Isso assegura que nenhuma ligação seja perdida e que o teste reflita a operação real do seu escritório. Esse processo normalmente é concluído **até o próximo dia útil**.
                         </p>
-
-                        <div className="bg-white rounded-xl p-5 border border-slate-100 text-left shadow-sm">
-                            <div className="flex items-center gap-3 mb-3">
-                                <div className="w-2.5 h-2.5 rounded-full bg-gold animate-pulse shadow-[0_0_10px_rgba(197,160,89,0.5)]"></div>
-                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#051020]">Status Atual</span>
-                            </div>
-                            <p className="text-sm font-bold text-slate-700 pl-5 mb-5 relative">
-                                <span className="absolute left-[2px] top-2 bottom-[-20px] w-px bg-slate-200"></span>
-                                Ambiente da Lexa em preparação
-                            </p>
-                            
-                            <div className="flex items-center gap-3 mb-1 opacity-60">
-                                <div className="w-2.5 h-2.5 rounded-full bg-slate-200"></div>
-                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Próximo Passo</span>
-                            </div>
-                            <p className="text-sm text-slate-400 pl-5 font-medium">Configuração do atendimento e liberação do teste</p>
-                        </div>
                     </div>
 
                     <div className="mb-10 text-left px-4">
@@ -110,11 +81,11 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                     </div>
 
                     <button 
-                        onClick={() => onNavigate('status')} 
+                        onClick={() => onNavigate('landing')} 
                         className="group shimmer relative w-full flex items-center justify-center gap-4 bg-black text-white font-bold text-sm py-5 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)] border border-gold/30 hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] overflow-hidden uppercase tracking-widest"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                        <span className="relative z-10">Acompanhar status da minha Lexa</span>
+                        <span className="relative z-10">Voltar para o site</span>
                         <div className="bg-gold p-1.5 rounded-full relative z-10 group-hover:rotate-12 transition-transform duration-300">
                             <ClockIcon className="w-4 h-4 text-[#051020]" />
                         </div>
