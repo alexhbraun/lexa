@@ -4,19 +4,11 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { PrepPage } from './components/PrepPage';
 
-import { LexaLightDemoPage } from './components/LexaLightDemoPage';
-import { LexaLightDemoPageB } from './components/LexaLightDemoPageB';
-
-// Funnel Components
-import { LexaFunnelRegistrar } from './components/LexaFunnelRegistrar';
-import { LexaFunnelConfirmed } from './components/LexaFunnelConfirmed';
-import { LexaFunnelStatus } from './components/LexaFunnelStatus';
-import { LexaFunnelReady } from './components/LexaFunnelReady';
-import { LexaFunnelStarted } from './components/LexaFunnelStarted';
-import { LexaFunnelTrial } from './components/LexaFunnelTrial';
+// Imports
+import { LexaShortLandingPage } from './components/LexaShortLandingPage';
 
 type ViewState = 'landing' | 'prep' | 'lexa-light' | 
-                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b' | 'teste' | 'teste-confirmado';
+                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b' | 'teste' | 'teste-confirmado' | 'short-lp';
 
 function App() {
   const [view, setView] = useState<ViewState>('landing');
@@ -31,10 +23,35 @@ function App() {
         else if (path.includes('/status')) setView('status');
     else if (path.includes('/pronta-para-teste')) setView('pronta-para-teste');
     else if (path.includes('/teste-iniciado')) setView('teste-iniciado');
+    else if (path.includes('/saiba-mais')) setView('short-lp');
     else if (path.includes('/trial')) setView('trial');
+    else if (path.includes('/saiba-mais')) setView('short-lp');
     else if (search.includes('v2') || path.includes('/b')) setView('variant-b');
     else if (search.includes('lexa') || path.includes('/lexa')) setView('lexa-light');
   }, []);
+
+  // ... (useEffects) ...
+  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
+
+  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
+  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
+
+  // ... (rest of App) ...
+  
+  if (view === 'variant-b') {
+    return (
+      <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
+        <Header onLogoClick={handleBackToLanding} />
+        <main>
+          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('teste')} />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  return null;
+}
 
   // Time on Page Tracking (15s, 30s, 60s)
   useEffect(() => {
@@ -111,6 +128,8 @@ function App() {
   if (view === 'teste-iniciado') return <LexaFunnelStarted onNavigate={navigateTo} />;
   if (view === 'trial') return <LexaFunnelTrial onNavigate={navigateTo} />;
 
+
+  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
 
   if (view === 'lexa-light' || view === 'landing') {
     return (
