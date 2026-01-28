@@ -23,7 +23,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                 ></div>
             </div>
 
-            <div className="relative z-10 mx-4 md:mx-auto max-w-[820px] py-10 px-6 text-center bg-white/80 backdrop-blur-xl rounded-[40px] shadow-2xl border border-white ring-1 ring-white/50">
+            <div className="relative z-10 mx-4 md:mx-auto max-w-[820px] py-10 px-6 text-center bg-white/95 backdrop-blur-3xl rounded-[40px] shadow-[0_50px_120px_-20px_rgba(0,0,0,0.3)] border border-white/80 ring-1 ring-white/50">
                 <h1 className="text-[38px] md:text-[90px] font-serif font-black text-[#141414] mb-4 md:mb-6 leading-[1.05] reveal">
                         Nunca Mais Perca <br className="hidden md:block" />
                         <span className="text-gold italic font-light">Uma Ligação de Cliente.</span>
