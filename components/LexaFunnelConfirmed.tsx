@@ -53,12 +53,12 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                     </p>
 
                     <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-inner mb-10 text-left relative overflow-hidden">
-                        <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Próximos Passos</h3>
-                        <p className="text-slate-600 font-medium leading-relaxed mb-4 text-base">
-                            Para garantir que o atendimento funcione corretamente **no seu número**, criamos o ambiente da Lexa de forma dedicada.
+                        <h3 className="text-sm font-black text-[#051020] uppercase tracking-wider mb-4">Próximo Passo: Fique de olho no seu WhatsApp</h3>
+                        <p className="text-[#051020] font-bold leading-relaxed mb-4 text-lg">
+                            Você será avisado por WhatsApp assim que o teste estiver liberado.
                         </p>
                         <p className="text-slate-500 text-sm leading-relaxed mb-0">
-                            Isso assegura que nenhuma ligação seja perdida e que o teste reflita a operação real do seu escritório. Esse processo normalmente é concluído **até o próximo dia útil**.
+                            Nossa equipe técnica já está preparando seu ambiente. Esse processo de configuração manual garante qualidade total e normalmente é concluído **até o próximo dia útil**.
                         </p>
                     </div>
 
@@ -90,9 +90,7 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                             <ClockIcon className="w-4 h-4 text-[#051020]" />
                         </div>
                     </button>
-                    <p className="mt-6 text-xs text-slate-400 font-bold uppercase tracking-wider">
-                        Você será avisado por e-mail assim que o teste estiver liberado.
-                    </p>
+
                 </div>
             </motion.div>
         </section>
