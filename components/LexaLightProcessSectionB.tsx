@@ -74,7 +74,7 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             title="Início do Teste Real (3 dias)"
                             text={
                                 <>
-                                    Com tudo pronto, liberamos o período de teste. Você redireciona as chamadas quando quiser e vê a Lexa em ação.<br/><br/>
+                                    Com tudo pronto, liberamos o período de teste. Você ativa o encaminhamento das chamadas e pode desativar a qualquer momento.<br/><br/>
                                     Você tem 3 dias para avaliar a qualidade do atendimento com seus próprios clientes.<br/><br/>
                                     <div className="bg-slate-100 p-4 rounded-xl border border-slate-200 w-full">
                                         <div className="flex flex-col gap-2 mb-3">
