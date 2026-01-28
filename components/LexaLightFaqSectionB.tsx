@@ -41,6 +41,10 @@ export const LexaLightFaqSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ 
             answer: "Cada escritório tem sua forma de trabalhar.\nQuando o atendimento não segue esse fluxo, o controle some — mesmo quando alguém atende.\n\nCom a Lexa, você define exatamente o que é perguntado, quando a conversa muda de rumo e quando deve parar. Tom, saudação, regras por área, horários.\n\nNa prática, ela fala como o seu escritório falaria.\nMesmo quando você não pode atender.\n\nO risco não é personalizar demais. É aceitar um atendimento genérico que não representa você."
         },
         {
+            question: "Posso ligar e desligar a Lexa quando quiser?",
+            answer: "Sim. O controle é seu.\n\nVocê ativa o encaminhamento apenas quando precisar (em reuniões, audiências ou após o expediente) e desativa quando quiser atender pessoalmente.\n\nNa prática: a Lexa funciona sob demanda. Ela só atende se você encaminhar.\n\nO risco não é perder a linha.\nÉ perder o cliente porque ninguém atendeu."
+        },
+        {
             question: "A Lexa oferece orientação jurídica aos clientes?",
             answer: "Aqui o limite é claro.\n\nA Lexa não aconselha, não interpreta, não promete.\nEla apenas escuta, registra e encaminha.\n\nIsso não tira seu controle — devolve.\nVocê decide com calma, com a informação na mão.\n\nNa prática: o contato não se perde.\nE você escolhe o próximo passo.\n\nO risco não é a Lexa falar pouco. É você não ficar sabendo que alguém ligou."
         },
