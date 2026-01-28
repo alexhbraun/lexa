@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheckIcon, PhoneIcon, IconAtendimento24h } from './Icons';
+import { sendFacebookCAPI, generateEventId } from '../utils/facebookCAPI';
 
 interface LexaHeroSectionProps {
     onNavigateToPrep: () => void;
@@ -7,6 +8,31 @@ interface LexaHeroSectionProps {
 }
 
 export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNavigateToPrep, onOpenSurvey }) => {
+    
+    const handleHeroClick = () => {
+        // Track Click Event
+        const eventId = generateEventId('init_checkout');
+        
+        // 1. Pixel
+        if ((window as any).fbq) {
+            (window as any).fbq('track', 'InitiateCheckout', {
+                content_name: 'Hero CTA',
+            }, { eventID: eventId });
+        }
+
+        // 2. CAPI (Anonymous)
+        // Since we don't have user data yet, this will be a low-match-quality event,
+        // but it tracks the server-side signal.
+        sendFacebookCAPI('InitiateCheckout', eventId);
+
+        // Navigate
+        if (onOpenSurvey) {
+            onOpenSurvey();
+        } else {
+            onNavigateToPrep();
+        }
+    };
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-12 md:pt-24 md:pb-16 reveal bg-white">
             {/* Premium Background Image with Dynamic Overlay */}
@@ -44,7 +70,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 reveal w-full sm:w-auto px-4 sm:px-0 mb-6 md:mb-8" style={{ animationDelay: '0.4s' }}>
                         <button 
-                            onClick={onOpenSurvey || onNavigateToPrep}
+                            onClick={handleHeroClick}
                             className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-2 sm:gap-4 bg-black text-white font-bold text-xs sm:text-lg px-5 py-3 sm:px-12 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                         >
                             <span className="leading-tight uppercase">Iniciar Teste de 7 Dias (30 min. grátis)</span>
