@@ -150,13 +150,14 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
 
                             {tag === 'LEXA_ATENCAO_PREPAGO' && (
                                 <>
-                                    <div className="inline-flex items-center justify-center p-5 bg-amber-50 rounded-full mb-8 text-amber-500">
+                                    <div className="inline-flex items-center justify-center p-5 bg-red-50 rounded-full mb-8 text-red-500">
                                         <AlertCircleIcon className="w-12 h-12" />
                                     </div>
-                                    <h3 className="text-3xl font-serif text-[#051020] mb-4">Atenção sobre planos pré-pagos</h3>
+                                    <h3 className="text-3xl font-serif text-[#051020] mb-4">Não recomendamos o uso da Lexa</h3>
                                     <p className="text-slate-500 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-                                        Planos pré-pagos geralmente não permitem encaminhamento de chamadas. <br/>
-                                        <span className="text-[#051020] font-medium">Não se preocupe:</span> verificamos isso com você no trial. Se preferir, você poderá usar um número Lexa próprio.
+                                        Planos pré-pagos não possuem a tecnologia de encaminhamento de chamadas necessária para a Lexa funcionar.
+                                        <br/><br/>
+                                        Para usar o sistema, é necessário ter um plano <strong>Controle</strong> ou <strong>Pós-pago</strong>.
                                     </p>
                                 </>
                             )}
@@ -173,15 +174,17 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                                 </>
                             )}
 
-                            <button 
-                                onClick={() => window.location.href = '/teste'}
-                                className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-gradient-to-r from-gold to-yellow-600 text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_50px_-15px_rgba(197,160,89,0.4)]"
-                            >
-                                <span className="leading-tight">Reservar Teste — 7 dias grátis</span>
-                                <div className="bg-white/20 p-2 rounded-full group-hover:rotate-12 transition-transform">
-                                    <ZapIcon className="w-5 h-5 text-white" />
-                                </div>
-                            </button>
+                            {tag !== 'LEXA_ATENCAO_PREPAGO' && (
+                                <button 
+                                    onClick={() => window.location.href = '/teste'}
+                                    className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-4 bg-gradient-to-r from-gold to-yellow-600 text-white font-bold text-lg px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_20px_50px_-15px_rgba(197,160,89,0.4)]"
+                                >
+                                    <span className="leading-tight">Reservar Teste — 7 dias grátis</span>
+                                    <div className="bg-white/20 p-2 rounded-full group-hover:rotate-12 transition-transform">
+                                        <ZapIcon className="w-5 h-5 text-white" />
+                                    </div>
+                                </button>
+                            )}
                             
                             <div className="mt-8 flex items-center justify-center gap-6 text-xs text-slate-400 font-medium uppercase tracking-widest">
                                 <span className="flex items-center gap-2 italic">✓ Ativação no Onboarding</span>
