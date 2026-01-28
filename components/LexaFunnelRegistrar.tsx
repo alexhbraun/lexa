@@ -113,51 +113,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                         </div>
                         <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-[1.1]">
                             Comece seus 7 dias grátis.
-                            <br/><span className="text-gold italic font-light">Para o seu escritório.</span>
                         </h1>
-                        <p className="text-slate-500 text-lg font-light leading-relaxed mb-6">
-                            Em poucos passos, preparamos sua Lexa para atender ligações reais do seu escritório.
-                        </p>
-                        <div className="bg-navy-acc/5 border-l-4 border-gold p-4 mb-4 text-left">
-                            <p className="text-slate-700 text-sm font-medium leading-relaxed">
-                                <strong className="text-navy-acc">A Lexa não é uma demonstração.</strong><br/>
-                                É um teste operacional no seu número, com chamadas reais.
-                            </p>
-                        </div>
-
-                        {/* Overview of Next Steps */}
-                        <div className="text-left mt-[32px] mb-[12px] w-full">
-                            <h3 className="text-slate-400 text-xs font-bold uppercase tracking-wider">
-                                O que acontece a seguir
-                            </h3>
-                        </div>
-
-                        <div className="text-left space-y-[10px] mb-[24px] w-full">
-                            <div className="text-sm leading-[1.4] text-slate-500">
-                                <p className="font-bold text-slate-800">1. Preparamos sua Lexa</p>
-                                <p>Criamos um ambiente dedicado para o seu teste, configurado para o seu número.</p>
-                            </div>
-                            <div className="text-sm leading-[1.4] text-slate-500">
-                                <p className="font-bold text-slate-800">2. Avisamos quando estiver pronta</p>
-                                <p>Assim que tudo estiver preparado, você recebe um aviso para iniciar o teste.</p>
-                            </div>
-                            <div className="text-sm leading-[1.4] text-slate-500">
-                                <p className="font-bold text-slate-800">3. O teste começa na primeira ligação real</p>
-                                <p>O período de avaliação só inicia quando a Lexa atender uma chamada de verdade.</p>
-                            </div>
-                            <div className="text-sm leading-[1.4] text-slate-500">
-                                <p className="font-bold text-slate-800">4. Você decide com calma</p>
-                                <p>Após o teste, você escolhe se faz sentido continuar — sem surpresas.</p>
-                            </div>
-                            <p className="text-[11px] text-slate-400 font-medium mt-[10px]">
-                                Não há cobrança antes do início real do teste.
-                            </p>
-                        </div>
-
-                        <p className="text-slate-400 text-xs font-bold uppercase tracking-wider">
-                            Precisamos apenas de algumas informações.<br/>
-                            <span className="text-gold/80 normal-case italic font-medium text-sm">Para preparar corretamente o ambiente.</span>
-                        </p>
                     </div>
 
                     {/* Form */}
