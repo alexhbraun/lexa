@@ -68,7 +68,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
             console.error('Error submitting form:', error);
         } finally {
             setIsSubmitting(false);
-            onNavigate('reserva-confirmada');
+            onNavigate('teste-confirmado');
         }
     };
 

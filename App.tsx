@@ -16,7 +16,7 @@ import { LexaFunnelStarted } from './components/LexaFunnelStarted';
 import { LexaFunnelTrial } from './components/LexaFunnelTrial';
 
 type ViewState = 'landing' | 'prep' | 'lexa-light' | 
-                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b';
+                 'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b' | 'teste' | 'teste-confirmado';
 
 function App() {
   const [view, setView] = useState<ViewState>('landing');
@@ -26,9 +26,9 @@ function App() {
     const path = window.location.pathname;
     const search = window.location.search;
 
-    if (path.includes('/registrar')) setView('registrar');
-    else if (path.includes('/reserva-confirmada')) setView('reserva-confirmada');
-    else if (path.includes('/status')) setView('status');
+        if (path.includes('/teste-confirmado')) setView('teste-confirmado');
+        else if (path.includes('/teste')) setView('teste');
+        else if (path.includes('/status')) setView('status');
     else if (path.includes('/pronta-para-teste')) setView('pronta-para-teste');
     else if (path.includes('/teste-iniciado')) setView('teste-iniciado');
     else if (path.includes('/trial')) setView('trial');
@@ -84,8 +84,8 @@ function App() {
   }
 
   // FUNNEL PAGES
-  if (view === 'registrar') return <LexaFunnelRegistrar onNavigate={navigateTo} />;
-  if (view === 'reserva-confirmada') return <LexaFunnelConfirmed onNavigate={navigateTo} />;
+  if (view === 'teste' || view === 'registrar') return <LexaFunnelRegistrar onNavigate={navigateTo} />;
+  if (view === 'teste-confirmado' || view === 'reserva-confirmada') return <LexaFunnelConfirmed onNavigate={navigateTo} />;
   if (view === 'status') return <LexaFunnelStatus onNavigate={navigateTo} />;
   if (view === 'pronta-para-teste') return <LexaFunnelReady onNavigate={navigateTo} />;
   if (view === 'teste-iniciado') return <LexaFunnelStarted onNavigate={navigateTo} />;
@@ -97,7 +97,7 @@ function App() {
       <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
         <Header onLogoClick={handleBackToLanding} />
         <main>
-          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('registrar')} />
+          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('teste')} />
         </main>
         <Footer />
       </div>
@@ -109,7 +109,7 @@ function App() {
       <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
         <Header onLogoClick={handleBackToLanding} />
         <main>
-          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('registrar')} />
+          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('teste')} />
         </main>
         <Footer />
       </div>
