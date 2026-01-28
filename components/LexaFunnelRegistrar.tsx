@@ -239,6 +239,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                         <div className="pt-4">
                             <button 
                                 type="submit" 
+                                onClick={() => (window as any).fbq && (window as any).fbq('trackCustom', 'trial_click')}
                                 className="group shimmer relative w-full flex items-center justify-center gap-4 bg-gradient-to-r from-gold to-yellow-600 text-white font-bold text-lg py-5 px-12 rounded-full transition-all duration-500 hover:scale-[1.02] shadow-[0_20px_50px_-15px_rgba(197,160,89,0.4)] border border-transparent overflow-hidden"
                             >
                                 <span className="leading-tight relative z-10">Reservar meu teste de 7 dias</span>
