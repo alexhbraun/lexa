@@ -6,6 +6,15 @@ import { PrepPage } from './components/PrepPage';
 
 // Imports
 import { LexaShortLandingPage } from './components/LexaShortLandingPage';
+import { LexaLightDemoPageB } from './components/LexaLightDemoPageB';
+
+// Funnel Components
+import { LexaFunnelRegistrar } from './components/LexaFunnelRegistrar';
+import { LexaFunnelConfirmed } from './components/LexaFunnelConfirmed';
+import { LexaFunnelStatus } from './components/LexaFunnelStatus';
+import { LexaFunnelReady } from './components/LexaFunnelReady';
+import { LexaFunnelStarted } from './components/LexaFunnelStarted';
+import { LexaFunnelTrial } from './components/LexaFunnelTrial';
 
 type ViewState = 'landing' | 'prep' | 'lexa-light' | 
                  'registrar' | 'reserva-confirmada' | 'status' | 'pronta-para-teste' | 'teste-iniciado' | 'trial' | 'variant-b' | 'teste' | 'teste-confirmado' | 'short-lp';
@@ -31,27 +40,9 @@ function App() {
   }, []);
 
   // ... (useEffects) ...
-  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
 
-  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
-  if (view === 'short-lp') return <LexaShortLandingPage onNavigate={navigateTo} />;
 
-  // ... (rest of App) ...
-  
-  if (view === 'variant-b') {
-    return (
-      <div className="bg-white text-slate-900 font-sans antialiased relative min-h-screen text-[17px] leading-[1.6]">
-        <Header onLogoClick={handleBackToLanding} />
-        <main>
-          <LexaLightDemoPageB onNavigateToPrep={() => navigateTo('teste')} />
-        </main>
-        <Footer />
-      </div>
-    );
-  }
 
-  return null;
-}
 
   // Time on Page Tracking (15s, 30s, 60s)
   useEffect(() => {
