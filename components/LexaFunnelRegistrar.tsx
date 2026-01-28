@@ -112,7 +112,8 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold/90">Ambiente Seguro</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-[1.1]">
-                            Comece seus 7 dias grátis.
+                            Comece seus <br className="hidden md:block" />
+                            <span className="text-gold italic font-light">7 dias grátis.</span>
                         </h1>
                     </div>
 
