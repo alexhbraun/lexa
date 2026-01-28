@@ -15,8 +15,29 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
         lineType: ''
     });
 
+    const [error, setError] = useState('');
+
+    const formatPhoneDisplay = (value: string) => {
+        const numbers = value.replace(/\D/g, '');
+        if (numbers.length <= 11) {
+            return numbers.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3')
+                        .replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3')
+                        .replace(/(\d{2})(\d{0,5})/, '($1) $2');
+        }
+        return value.substring(0, 15); // Limit max length
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        if (name === 'phone') {
+            const formatted = formatPhoneDisplay(value);
+            setFormData({ ...formData, phone: formatted });
+            // Clear error when user types enough digits (10 digits + formatting)
+            const digits = formatted.replace(/\D/g, '');
+            if (digits.length >= 10 && error) setError('');
+        } else {
+            setFormData({ ...formData, [name]: value });
+        }
     };
 
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -40,7 +61,16 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        
+        // Phone Validation
+        const cleanPhone = formData.phone.replace(/\D/g, '');
+        if (cleanPhone.length < 10) {
+            setError('Por favor, insira um número de telefone válido (mínimo 10 dígitos).');
+            return;
+        }
+
         setIsSubmitting(true);
+        setError('');
 
         const formattedPhone = formatPhoneNumber(formData.phone);
 
@@ -173,6 +203,11 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                         required
                                     />
                                 </div>
+                                {error && (
+                                    <p className="text-red-500 text-xs font-bold mt-2 ml-1 animate-pulse">
+                                        {error}
+                                    </p>
+                                )}
                             </div>
 
                             <div>
