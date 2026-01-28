@@ -85,7 +85,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                     {!lineType && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in-up">
                             <button 
-                                onClick={() => setLineType('mobile')}
+                                onClick={() => setLineType('celular')}
                                 className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
                             >
                                 <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
