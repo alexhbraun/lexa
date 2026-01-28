@@ -76,7 +76,7 @@ export const LexaLightPricingSectionB: React.FC<{ onOpenSurvey?: () => void }> =
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
                     <PricingCard
-                        title="Plano Básico"
+                        title="Plano Essencial"
                         price="R$297"
                         description="Perfeito para escritórios menores com volume moderado."
                         features={[
@@ -88,12 +88,12 @@ export const LexaLightPricingSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                         onCta={onOpenSurvey}
                     />
                     <PricingCard
-                        title="Plano Plus"
+                        title="Plano Profissional"
                         price="R$497"
                         description="Para escritórios que precisam de alertas móveis instantâneos."
                         highlight={true}
                         features={[
-                            "Até 400 minutos de chamadas",
+                            "Até 300 minutos de chamadas",
                             "Notificações WhatsApp + E-mail",
                             "Painel completo organizado",
                             "Configuração personalizada",
