@@ -23,9 +23,10 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                 <img 
                     src="/assets/images/lexa_brazil_boutique_hero.png" 
                     alt="Background" 
-                    className="w-full h-full object-cover blur-sm opacity-30 fixed" 
+                    className="w-full h-full object-cover blur-sm opacity-50 scale-105 fixed" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-white/90 to-slate-50/95 fixed"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-slate-50/90 fixed"></div>
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] fixed"></div>
             </div>
 
             <Header onLogoClick={() => onNavigate('landing')} />

@@ -100,7 +100,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                 className="max-w-[580px] w-full relative z-10"
             >
                 {/* Ceramic Card */}
-                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5">
+                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-gold/30 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5">
                     
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
@@ -111,7 +111,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                             <ShieldCheckIcon className="w-4 h-4 text-gold" />
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold/90">Ambiente Seguro</span>
                         </div>
-                        <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl font-serif font-black text-[#051020] mb-4 tracking-tight leading-tight">
                             Comece seus <br className="hidden md:block" />
                             <span className="text-gold italic font-light">7 dias grátis.</span>
                         </h1>
