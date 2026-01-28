@@ -128,7 +128,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                     value={formData.name}
                                     onChange={handleChange}
                                     className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
-                                    placeholder="Ex: Dr. Alexandre Braun"
+                                    placeholder="Ex: Dr. João Silva"
                                     required
                                 />
                             </div>
@@ -141,7 +141,7 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
                                     value={formData.officeName}
                                     onChange={handleChange}
                                     className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 transition-all outline-none text-[#051020] font-medium placeholder:text-slate-400 rounded-xl hover:border-gold/50"
-                                    placeholder="Ex: Braun & Associados"
+                                    placeholder="Ex: Silva & Associados"
                                     required
                                 />
                             </div>
