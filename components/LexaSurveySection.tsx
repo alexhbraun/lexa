@@ -32,8 +32,7 @@ const QUESTIONS: Question[] = [
         question: "Qual número você quer usar com a Lexa?",
         options: [
             { id: 'mobile', label: "Celular", icon: <SmartphoneIcon className="w-6 h-6" /> },
-            { id: 'fixed', label: "Telefone fixo", icon: <PhoneIcon className="w-6 h-6" /> },
-            { id: 'not_sure', label: "Ainda não sei", icon: <HelpCircleIcon className="w-6 h-6" /> }
+            { id: 'fixed', label: "Telefone fixo", icon: <PhoneIcon className="w-6 h-6" /> }
         ]
     },
     {
@@ -43,8 +42,7 @@ const QUESTIONS: Question[] = [
         options: [
             { id: 'post', label: "Pós-pago", icon: <BriefcaseIcon className="w-6 h-6" /> },
             { id: 'control', label: "Controle", icon: <BriefcaseIcon className="w-6 h-6" /> },
-            { id: 'pre', label: "Pré-pago", icon: <SmartphoneIcon className="w-6 h-6" /> },
-            { id: 'not_sure', label: "Não sei informar", icon: <HelpCircleIcon className="w-6 h-6" /> }
+            { id: 'pre', label: "Pré-pago", icon: <SmartphoneIcon className="w-6 h-6" /> }
         ]
     },
     {
@@ -53,8 +51,7 @@ const QUESTIONS: Question[] = [
         condition: (answers) => answers.numberType === 'fixed',
         options: [
             { id: 'residential', label: "Residencial", icon: <HomeIcon className="w-6 h-6" /> },
-            { id: 'business', label: "Empresarial / Escritório", icon: <BriefcaseIcon className="w-6 h-6" /> },
-            { id: 'not_sure', label: "Não sei informar", icon: <HelpCircleIcon className="w-6 h-6" /> }
+            { id: 'business', label: "Empresarial / Escritório", icon: <BriefcaseIcon className="w-6 h-6" /> }
         ]
     }
 ];
