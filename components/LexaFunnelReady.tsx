@@ -61,7 +61,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                 className="max-w-[800px] w-full relative z-10"
             >
                 {/* Ceramic Card */}
-                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5">
+                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5 min-h-[400px]">
                     
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
@@ -127,7 +127,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                     </div>
 
                     {/* Step 2: Conditional Instructions */}
-                    <AnimatePresence mode="wait">
+                    <AnimatePresence>
                         {lineType === 'celular' && (
                             <motion.div 
                                 key="celular"
