@@ -71,11 +71,11 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                     <div className="min-w-[85vw] md:min-w-0 snap-center h-full">
                         <Step
                             number="03"
-                            title="Início do Teste Real (3 dias)"
+                            title="Início do Teste Real (7 dias)"
                             text={
                                 <>
                                     Com tudo pronto, liberamos o período de teste. Você ativa o encaminhamento das chamadas e pode desativar a qualquer momento.<br/><br/>
-                                    Você tem 3 dias para avaliar a qualidade do atendimento com seus próprios clientes.<br/><br/>
+                                    Você tem 7 dias (com 30 minutos inclusos) para avaliar a qualidade do atendimento.<br/><br/>
                                     <div className="bg-slate-100 p-4 rounded-xl border border-slate-200 w-full">
                                         <div className="flex flex-col gap-2 mb-3">
                                             <div className="flex items-center gap-2 justify-center text-slate-700 font-bold text-sm">
@@ -103,7 +103,7 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                      </div>
                      <button onClick={onOpenSurvey} className="shimmer inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold to-yellow-600 text-bg-1 font-bold text-base px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 hover:brightness-105 hover:shadow-[0_0_25px_rgba(197,160,89,0.5)] group border-2 border-gold shadow-[0_0_15px_rgba(197,160,89,0.3)]">
                         <ShieldCheckIcon className="w-5 h-5 text-bg-1 shrink-0 group-hover:rotate-12 transition-transform" />
-                        <span className="leading-tight uppercase">INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)</span>
+                        <span className="leading-tight uppercase">INICIAR TESTE DE 7 DIAS (30 MIN. GRÁTIS)</span>
                      </button>
                 </div>
             </div>

@@ -49,7 +49,7 @@ const PricingCard: React.FC<{
             onClick={onCta}
             className={`w-full py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all duration-300 border ${highlight ? 'bg-gold text-[#051020] border-gold hover:bg-white hover:border-white' : 'bg-white/5 text-white border-white/10 hover:bg-gold hover:text-[#051020] hover:border-gold'}`}
         >
-            INICIAR TESTE DE 3 DIAS (GRÁTIS E SEM CARTÃO)
+            INICIAR TESTE DE 7 DIAS (30 MIN. GRÁTIS)
         </button>
         <p className="text-center mt-3 text-xs text-white/30 font-medium">
             Sem compromisso · Veja na prática

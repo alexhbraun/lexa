@@ -58,7 +58,7 @@ export const LexaFunnelConfirmed: React.FC<LexaFunnelConfirmedProps> = ({ onNavi
                             Você será avisado por WhatsApp assim que o teste estiver liberado.
                         </p>
                         <p className="text-slate-500 text-sm leading-relaxed mb-0">
-                            Nossa equipe técnica já está preparando seu ambiente. Esse processo de configuração manual garante qualidade total e normalmente é concluído **até o próximo dia útil**.
+                            Nossa equipe técnica já está preparando seu ambiente. Esse processo de configuração manual garante qualidade total e normalmente é concluído **em até 2 dias úteis**.
                         </p>
                     </div>
 

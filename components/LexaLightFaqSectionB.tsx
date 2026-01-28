@@ -61,7 +61,7 @@ export const LexaLightFaqSectionB: React.FC<{ onOpenSurvey?: () => void }> = ({ 
             answer: "Não. Zero barreiras.\n\nPedir cartão antes cria atrito. Nós queremos confiança.\nVocê inicia o teste sem compromisso financeiro nenhum.\n\nNa prática: você valida a tecnologia primeiro. O investimento vem depois, se fizer sentido.\n\nO risco não é testar. É continuar pagando o preço invisível de perder clientes."
         },
         {
-            question: "Sou obrigado a continuar após os 3 dias?",
+            question: "Sou obrigado a continuar após os 7 dias?",
             answer: "Não. A Lexa só deve ficar se ela se pagar.\n\nVocê é livre para parar a qualquer momento. Sem multas, sem letras miúdas.\nO teste serve justamente para provar o valor antes de qualquer decisão.\n\nNa prática: a maioria dos clientes não quer ficar sem depois que vê os resultados.\n\nMas a escolha é 100% sua."
         },
         {

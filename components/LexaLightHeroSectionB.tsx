@@ -47,7 +47,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                             onClick={onOpenSurvey || onNavigateToPrep}
                             className="group shimmer relative flex sm:inline-flex w-full sm:w-auto items-center justify-center gap-2 sm:gap-4 bg-black text-white font-bold text-xs sm:text-lg px-5 py-3 sm:px-12 sm:py-6 rounded-full transition-all duration-500 hover:scale-105 shadow-[0_40px_80px_-15px_rgba(5,16,32,0.4)]"
                         >
-                            <span className="leading-tight uppercase">Iniciar Teste de 3 Dias (Grátis e Sem Cartão)</span>
+                            <span className="leading-tight uppercase">Iniciar Teste de 7 Dias (30 min. grátis)</span>
                             <div className="bg-gold p-1.5 sm:p-2 rounded-full group-hover:rotate-12 transition-transform">
                                 <IconAtendimento24h className="w-4 h-4 sm:w-5 sm:h-5 text-navy-acc" />
                             </div>
@@ -57,7 +57,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
 
                     <div className="flex flex-col items-center justify-center gap-2 reveal" style={{ animationDelay: '0.6s' }}>
                         <div className="flex items-center justify-center gap-3 text-[#051020] font-black text-sm uppercase tracking-wide">
-                             Onboarding em 1-2 dias.
+                             Onboarding em até 2 dias úteis.
                         </div>
                          <p className="text-sm text-slate-900 font-bold">
                             Teste real · Sem compromisso · Sem cartão
