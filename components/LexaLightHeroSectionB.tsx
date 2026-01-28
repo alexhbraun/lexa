@@ -12,7 +12,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
             {/* Premium Background Image with Dynamic Overlay */}
             <div className="absolute inset-0 -z-10" style={{ boxShadow: '0 20px 40px rgba(0,0,0,0.35)' }}>
                 <img
-                    src="/assets/images/lexa_hero_v3.png"
+                    src="/assets/images/lexa_hero_v4_phone.png"
                     alt="Boutique Law Office Brazil"
                     className="w-full h-full object-cover object-left md:object-center"
                 />
