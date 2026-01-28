@@ -16,16 +16,16 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                     alt="Boutique Law Office Brazil"
                     className="w-full h-full object-cover object-left md:object-center"
                 />
-                {/* Stronger Global Veil for Contrast */}
+                {/* Global Veil (Reduced) */}
                 <div 
                     className="absolute inset-0"
-                    style={{ background: 'rgba(255,255,255,0.65)' }}
+                    style={{ background: 'rgba(255,255,255,0.1)' }}
                 ></div>
-                {/* Radial Gradient to further fade center for legibility */}
+                {/* Localized Spotlight for Text Legibility */}
                 <div 
                     className="absolute inset-0" 
                     style={{ 
-                        background: 'radial-gradient(circle at center, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0.4) 100%)' 
+                        background: 'radial-gradient(circle at 50% 30%, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.85) 25%, rgba(255,255,255,0.5) 45%, rgba(255,255,255,0) 70%)' 
                     }}
                 ></div>
             </div>
