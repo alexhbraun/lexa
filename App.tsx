@@ -36,6 +36,26 @@ function App() {
     else if (search.includes('lexa') || path.includes('/lexa')) setView('lexa-light');
   }, []);
 
+  // Time on Page Tracking (15s, 30s, 60s)
+  useEffect(() => {
+    const trackTime = (seconds: number) => {
+        if ((window as any).fbq) {
+            (window as any).fbq('trackCustom', `view_${seconds}s`);
+            console.log(`Fired pixel: view_${seconds}s`);
+        }
+    };
+
+    const t15 = setTimeout(() => trackTime(15), 15000);
+    const t30 = setTimeout(() => trackTime(30), 30000);
+    const t60 = setTimeout(() => trackTime(60), 60000);
+
+    return () => {
+        clearTimeout(t15);
+        clearTimeout(t30);
+        clearTimeout(t60);
+    };
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
