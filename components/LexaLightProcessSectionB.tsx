@@ -57,7 +57,7 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             title="Configuração da Lexa"
                             text={
                                 <>
-                                    Nossa equipe técnica configura a Lexa personalizadamente para o seu escritório.<br/><br/>
+                                    Nossa equipe configura a Lexa para o seu escritório.<br/><br/>
                                     Ajustamos os roteiros e as instruções para garantir que o atendimento soe natural e profissional.<br/><br/>
                                     <ul className="text-left space-y-2 list-none bg-slate-100 p-4 rounded-xl border border-slate-200 text-sm">
                                         <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Configuração Manual e Dedicada</li>
