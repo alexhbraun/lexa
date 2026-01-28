@@ -68,7 +68,7 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                                 </ul>
                             </div>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Essencial')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                <button onClick={() => handleSelectPlan('Essencial')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-gold/30 hover:border-gold/60 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <span>Escolher Essencial</span>
                                     <div className="bg-gold p-1.5 rounded-full">
                                         <CheckCircleIcon className="w-3.5 h-3.5 text-[#051020]" />
@@ -154,7 +154,7 @@ export const LexaFunnelTrial: React.FC<LexaFunnelTrialProps> = ({ onNavigate, ha
                                 </ul>
                             </div>
                             {hasUsed ? (
-                                <button onClick={() => handleSelectPlan('Ilimitado')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-slate-200 hover:border-gold/30 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                                <button onClick={() => handleSelectPlan('Ilimitado')} className="group shimmer relative w-full py-5 rounded-full bg-white text-[#051020] font-black border border-gold/30 hover:border-gold/60 hover:bg-slate-50 transition-all text-sm uppercase tracking-wider flex items-center justify-center gap-3">
                                     <span>Escolher Ilimitado</span>
                                     <div className="bg-gold p-1.5 rounded-full">
                                         <CheckCircleIcon className="w-3.5 h-3.5 text-[#051020]" />

@@ -10,7 +10,7 @@ const PricingCard: React.FC<{
     onCta?: () => void;
 }> = ({ title, price, features, description, highlight, onCta }) => (
     <div 
-        className={`relative p-8 rounded-[40px] border flex flex-col h-full transition-all duration-500 overflow-hidden group ${highlight ? 'text-white border-gold shadow-[0_30px_80px_-10px_rgba(197,160,89,0.15)] scale-105 z-10' : 'text-slate-300 border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.45)] hover:border-gold/30 hover:-translate-y-2'}`}
+        className={`relative p-8 rounded-[40px] border flex flex-col h-full transition-all duration-500 overflow-hidden group ${highlight ? 'text-white border-gold shadow-[0_30px_80px_-10px_rgba(197,160,89,0.15)] scale-105 z-10' : 'text-slate-300 border-gold/30 shadow-[0_20px_50px_rgba(0,0,0,0.45)] hover:border-gold/60 hover:-translate-y-2'}`}
         style={{
             background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))'
         }}

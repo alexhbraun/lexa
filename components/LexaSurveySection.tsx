@@ -121,7 +121,7 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                                 <button
                                     key={option.id}
                                     onClick={() => handleOptionSelect(option.id)}
-                                    className="group relative flex items-center p-5 rounded-2xl border border-slate-200 bg-white transition-all duration-300 text-left overflow-hidden hover:-translate-y-1 hover:border-gold/50 hover:shadow-xl"
+                                    className="group relative flex items-center p-5 rounded-2xl border border-gold/30 bg-white transition-all duration-300 text-left overflow-hidden hover:-translate-y-1 hover:border-gold/60 hover:shadow-xl"
                                 >
                                     <div className="mr-4 text-navy-acc group-hover:text-gold transition-colors relative z-10">
                                         {option.icon}
@@ -135,7 +135,7 @@ export const LexaSurveySection: React.FC<{ insideModal?: boolean }> = ({ insideM
                     </div>
                 ) : (
                     <div className="animate-fade-in-up">
-                        <div className="relative bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 text-center overflow-hidden ring-1 ring-slate-900/5">
+                        <div className="relative bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-gold/30 p-8 md:p-12 text-center overflow-hidden ring-1 ring-slate-900/5">
                              {/* Top Shine */}
                              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
 

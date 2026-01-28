@@ -61,7 +61,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                 className="max-w-[800px] w-full relative z-10"
             >
                 {/* Ceramic Card */}
-                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-white/60 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5 min-h-[400px]">
+                <div className="bg-white rounded-[40px] shadow-[0_40px_100px_-20px_rgba(5,16,32,0.12)] border border-gold/30 p-8 md:p-12 relative overflow-hidden ring-1 ring-slate-900/5 min-h-[400px]">
                     
                     {/* Top Shine */}
                     <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
@@ -86,7 +86,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in-up">
                             <button 
                                 onClick={() => setLineType('celular')}
-                                className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
+                                className="group relative bg-white border border-gold/30 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:-translate-y-1"
                             >
                                 <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
                                     <SmartphoneIcon className="w-6 h-6 text-navy-acc" />
@@ -99,7 +99,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
 
                             <button 
                                 onClick={() => setLineType('fixo')}
-                                className="group relative bg-white border border-slate-100 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1"
+                                className="group relative bg-white border border-gold/30 p-8 rounded-[32px] text-left transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:-translate-y-1"
                             >
                                 <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold/10 transition-colors">
                                     <PhoneIcon className="w-6 h-6 text-[#051020]" />
@@ -112,7 +112,7 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
 
                             <button 
                                 onClick={() => setLineType('desconhecido')}
-                                className="md:col-span-2 group relative bg-white border border-slate-100 p-6 rounded-[32px] text-center transition-all duration-300 hover:border-gold/50 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-4"
+                                className="md:col-span-2 group relative bg-white border border-gold/30 p-6 rounded-[32px] text-center transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-4"
                             >
                                 <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-gold/10 transition-colors">
                                     <HelpCircleIcon className="w-5 h-5 text-navy-acc" />

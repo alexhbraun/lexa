@@ -25,7 +25,7 @@ export const LexaLightShowcaseSection: React.FC = () => {
                                 "Um histórico organizado para consulta posterior"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-6 group">
-                                    <div className="p-3 rounded-xl bg-white shadow-sm border border-slate-100 group-hover:border-gold/30 transition-all duration-500">
+                                    <div className="p-3 rounded-xl bg-white shadow-sm border border-gold/30 group-hover:border-gold/50 transition-all duration-500">
                                         <div className="w-5 h-5 text-gold flex items-center justify-center font-bold">✓</div>
                                     </div>
                                     <div>

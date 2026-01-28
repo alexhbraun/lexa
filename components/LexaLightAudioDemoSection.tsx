@@ -32,7 +32,7 @@ const AudioCard: React.FC<{
 
     return (
         <div 
-            className="group relative rounded-[40px] border border-white/10 p-6 md:p-10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+            className="group relative rounded-[40px] border border-gold/30 p-6 md:p-10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/50 overflow-hidden"
             style={{
                 background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
                 boxShadow: '0 20px 50px rgba(0,0,0,0.45)'

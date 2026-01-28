@@ -2,7 +2,7 @@ import React from 'react';
 import { PhoneIcon, IconResumosAutomaticos, IconTransferenciaHumana, IconAtendimento24h, ShieldCheckIcon } from './Icons';
 
 const Step: React.FC<{ number: string; title: string; text: React.ReactNode; icon: React.ReactNode }> = ({ number, title, text, icon }) => (
-    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-slate-200 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/50 relative h-full flex flex-col items-center">
+    <div className="group bg-white p-6 md:p-10 rounded-[40px] border border-gold/30 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_100px_-20px_rgba(197,160,89,0.1)] hover:border-gold/60 relative h-full flex flex-col items-center">
         <div className="absolute -top-6 -left-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-xl font-bold text-slate-700 border border-slate-100 shadow-lg group-hover:scale-110 transition-transform duration-500">
             {number}
         </div>

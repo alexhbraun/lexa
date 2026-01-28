@@ -17,7 +17,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div 
-                        className="group relative p-8 rounded-[40px] border border-white/10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+                        className="group relative p-8 rounded-[40px] border border-gold/30 transition-all duration-700 hover:-translate-y-2 hover:border-gold/50 overflow-hidden"
                         style={{
                             background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
                             boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
@@ -38,7 +38,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                     </div>
 
                     <div 
-                        className="group relative p-8 rounded-[40px] border border-white/10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+                        className="group relative p-8 rounded-[40px] border border-gold/30 transition-all duration-700 hover:-translate-y-2 hover:border-gold/50 overflow-hidden"
                         style={{
                             background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
                             boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
@@ -59,7 +59,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                     </div>
 
                     <div 
-                        className="group relative p-8 rounded-[40px] border border-white/10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+                        className="group relative p-8 rounded-[40px] border border-gold/30 transition-all duration-700 hover:-translate-y-2 hover:border-gold/50 overflow-hidden"
                         style={{
                             background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
                             boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
@@ -80,7 +80,7 @@ export const LexaLightFeaturesSectionB: React.FC = () => {
                     </div>
 
                     <div 
-                        className="group relative p-8 rounded-[40px] border border-white/10 transition-all duration-700 hover:-translate-y-2 hover:border-gold/30 overflow-hidden"
+                        className="group relative p-8 rounded-[40px] border border-gold/30 transition-all duration-700 hover:-translate-y-2 hover:border-gold/50 overflow-hidden"
                         style={{
                             background: 'linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02))',
                             boxShadow: '0 20px 50px rgba(0,0,0,0.45)'
