@@ -50,18 +50,18 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             icon={<IconTransferenciaHumana className="w-full h-full" />}
                         />
                     </div>
-                    {/* Card 02: Control */}
+                    {/* Card 02: Configuration */}
                     <div className="min-w-[85vw] md:min-w-0 snap-center h-full brightness-[0.97]">
                         <Step
                             number="02"
-                            title="Encaminhamento Controlado"
+                            title="Configuração da Lexa"
                             text={
                                 <>
-                                    Validamos juntos o redirecionamento das chamadas, garantindo que tudo funcione perfeitamente.<br/><br/>
-                                    <span className="font-bold text-slate-700">O redirecionamento é ativado e desativado exclusivamente por você.</span><br/><br/>
+                                    Nossa equipe configura a Lexa para o seu escritório.<br/><br/>
+                                    Ajustamos os roteiros e as instruções para garantir que o atendimento soe natural e profissional.<br/><br/>
                                     <ul className="text-left space-y-2 list-none bg-slate-100 p-4 rounded-xl border border-slate-200 text-sm">
-                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Você decide quando ativar</li>
-                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Você reverte quando quiser</li>
+                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Configuração Manual e Dedicada</li>
+                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Adaptação ao seu Estilo</li>
                                     </ul>
                                 </>
                             }
@@ -74,15 +74,15 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             title="Início do Teste Real (3 dias)"
                             text={
                                 <>
-                                    Com o sistema validado, você libera o teste real. A Lexa atende, você recebe os registros.<br/><br/>
-                                    <span className="font-bold text-slate-700">A linha continua sendo sua. A Lexa apenas opera sob sua demanda.</span><br/><br/>
+                                    Com tudo pronto, liberamos o período de teste. Você redireciona as chamadas quando quiser e vê a Lexa em ação.<br/><br/>
+                                    Você tem 3 dias para avaliar a qualidade do atendimento com seus próprios clientes.<br/><br/>
                                     <div className="bg-slate-100 p-4 rounded-xl border border-slate-200 w-full">
                                         <div className="flex flex-col gap-2 mb-3">
                                             <div className="flex items-center gap-2 justify-center text-slate-700 font-bold text-sm">
-                                                <span className="text-gold">✓</span> Monitoramento Total
+                                                <span className="text-gold">✓</span> Chamadas Reais
                                             </div>
                                             <div className="flex items-center gap-2 justify-center text-slate-700 font-bold text-sm">
-                                                <span className="text-gold">✓</span> Interrupção Imediata
+                                                <span className="text-gold">✓</span> Registros no Painel
                                             </div>
                                         </div>
                                         <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest border-t border-slate-200 pt-2 text-center">
@@ -93,17 +93,6 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             }
                             icon={<IconResumosAutomaticos className="w-full h-full" />}
                         />
-                    </div>
-                </div>
-
-                {/* Trust Micro-line */}
-                <div className="flex justify-center mb-12 -mt-8 relative z-10">
-                    <div className="inline-flex items-center gap-3 px-4 py-2 bg-slate-100 rounded-full border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-500 shadow-sm">
-                        <span>Sem Fidelidade</span>
-                        <span className="w-1 h-1 rounded-full bg-slate-300"></span>
-                        <span>Reversão Imediata</span>
-                        <span className="w-1 h-1 rounded-full bg-slate-300"></span>
-                        <span>Controle Total</span>
                     </div>
                 </div>
 
