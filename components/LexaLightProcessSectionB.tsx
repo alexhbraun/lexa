@@ -50,22 +50,22 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             icon={<IconTransferenciaHumana className="w-full h-full" />}
                         />
                     </div>
-                    {/* Card 02: Highlighted but toned down as requested */}
+                    {/* Card 02: Configuration */}
                     <div className="min-w-[85vw] md:min-w-0 snap-center h-full brightness-[0.97]">
                         <Step
                             number="02"
-                            title="Teste de Encaminhamento"
+                            title="Configuração da Lexa"
                             text={
                                 <>
-                                    Vamos validar o encaminhamento do seu número para garantir que as ligações sejam roteadas corretamente.<br/><br/>
-                                    Esse teste técnico leva cerca de 2 minutos e confirma que:<br/><br/>
+                                    Nossa equipe técnica configura a Lexa personalizadamente para o seu escritório.<br/><br/>
+                                    Ajustamos os roteiros e as instruções para garantir que o atendimento soe natural e profissional.<br/><br/>
                                     <ul className="text-left space-y-2 list-none bg-slate-100 p-4 rounded-xl border border-slate-200 text-sm">
-                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> nada será perdido</li>
-                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> você pode voltar ao estado original quando quiser</li>
+                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Configuração Manual e Dedicada</li>
+                                        <li className="flex gap-2"><span className="text-gold font-bold">✓</span> Adaptação ao seu Estilo</li>
                                     </ul>
                                 </>
                             }
-                            icon={<PhoneIcon className="w-full h-full" />}
+                            icon={<IconAtendimento24h className="w-full h-full" />}
                         />
                     </div>
                     <div className="min-w-[85vw] md:min-w-0 snap-center h-full">
@@ -74,15 +74,15 @@ export const LexaLightProcessSectionB: React.FC<{ onOpenSurvey?: () => void }> =
                             title="Início do Teste Real (3 dias)"
                             text={
                                 <>
-                                    Nossa equipe configura a Lexa para o seu escritório e libera o período de teste real.<br/><br/>
-                                    Nossa equipe configura a Lexa para o seu escritório e libera o período de teste real.<br/><br/>
+                                    Com tudo pronto, liberamos o período de teste. Você redireciona as chamadas quando quiser e vê a Lexa em ação.<br/><br/>
+                                    Você tem 3 dias para avaliar a qualidade do atendimento com seus próprios clientes.<br/><br/>
                                     <div className="bg-slate-100 p-4 rounded-xl border border-slate-200 w-full">
                                         <div className="flex flex-col gap-2 mb-3">
                                             <div className="flex items-center gap-2 justify-center text-slate-700 font-bold text-sm">
                                                 <span className="text-gold">✓</span> Chamadas Reais
                                             </div>
                                             <div className="flex items-center gap-2 justify-center text-slate-700 font-bold text-sm">
-                                                <span className="text-gold">✓</span> Registros Reais
+                                                <span className="text-gold">✓</span> Registros no Painel
                                             </div>
                                         </div>
                                         <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest border-t border-slate-200 pt-2 text-center">
