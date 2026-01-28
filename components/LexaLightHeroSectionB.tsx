@@ -16,19 +16,14 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                     alt="Boutique Law Office Brazil"
                     className="w-full h-full object-cover object-left md:object-center"
                 />
-                {/* Global Veil (Super Light) */}
+                {/* Global Veil (Reduced) */}
                 <div 
                     className="absolute inset-0"
-                    style={{ background: 'rgba(245,242,238,0.22)' }}
+                    style={{ background: 'rgba(245,242,238,0.1)' }}
                 ></div>
-                {/* Legibility Island (Radial Gradient) */}
-                <div 
-                    className="absolute inset-0" 
-                    style={{ 
-                        background: 'radial-gradient(circle at 50% 40%, rgba(245,242,238,0.78) 0%, rgba(245,242,238,0.58) 35%, rgba(245,242,238,0.22) 60%, rgba(245,242,238,0.00) 80%)' 
-                    }}
-                ></div>
-            </div>            <div className="relative z-10 mx-auto max-w-[820px] py-6 md:py-10 px-6 text-center">
+            </div>
+
+            <div className="relative z-10 mx-4 md:mx-auto max-w-[820px] py-10 px-6 text-center bg-white/80 backdrop-blur-xl rounded-[40px] shadow-2xl border border-white ring-1 ring-white/50">
                 <h1 className="text-[38px] md:text-[90px] font-serif font-black text-[#141414] mb-4 md:mb-6 leading-[1.05] reveal">
                         Nunca Mais Perca <br className="hidden md:block" />
                         <span className="text-gold italic font-light">Uma Ligação de Cliente.</span>
