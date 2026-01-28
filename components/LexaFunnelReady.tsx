@@ -110,18 +110,6 @@ export const LexaFunnelReady: React.FC<LexaFunnelReadyProps> = ({ onNavigate }) 
                                 </p>
                             </button>
 
-                            <button 
-                                onClick={() => setLineType('desconhecido')}
-                                className="md:col-span-2 group relative bg-white border border-gold/30 p-6 rounded-[32px] text-center transition-all duration-300 hover:border-gold/60 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-4"
-                            >
-                                <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center group-hover:bg-gold/10 transition-colors">
-                                    <HelpCircleIcon className="w-5 h-5 text-navy-acc" />
-                                </div>
-                                <div className="text-left">
-                                    <h3 className="text-lg font-black text-[#051020] uppercase tracking-tight">Não tenho certeza</h3>
-                                    <p className="text-slate-400 text-xs font-medium">We will guide you through the process.</p>
-                                </div>
-                            </button>
                         </div>
                     )}
                     </div>

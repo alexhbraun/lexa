@@ -177,11 +177,10 @@ export const LexaFunnelRegistrar: React.FC<LexaFunnelRegistrarProps> = ({ onNavi
 
                             <div>
                                 <label className="block text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-3 ml-1">Tipo de Linha</label>
-                                <div className="grid grid-cols-3 gap-3">
+                                <div className="grid grid-cols-2 gap-3">
                                     {[
                                         { id: 'Fixo', label: 'Fixo', hint: 'Landline/PABX' },
-                                        { id: 'Celular', label: 'Celular', hint: 'Mobile number' },
-                                        { id: 'Dúvida', label: 'Dúvida', hint: 'We will help' }
+                                        { id: 'Celular', label: 'Celular', hint: 'Mobile number' }
                                     ].map((type) => (
                                         <label key={type.id} className={`cursor-pointer border border-gold/30 rounded-2xl p-4 flex flex-col items-center justify-center text-center transition-all duration-300 ${formData.lineType === type.id ? 'bg-[#051020] text-white border-gold shadow-[0_10px_30px_-10px_rgba(0,0,0,0.3)] scale-105' : 'bg-white text-slate-500 hover:border-gold/60 hover:bg-slate-50'}`}>
                                             <input 
