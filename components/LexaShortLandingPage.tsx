@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheckIcon, SmartphoneIcon, CheckCircleIcon, IconAtendimento24h, CalendarIcon, FilterIcon } from './Icons';
+import { ShieldCheckIcon, SmartphoneIcon, CheckCircleIcon, IconAtendimento24h, CalendarIcon, FilterIcon, LockIcon } from './Icons';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { sendFacebookCAPI, generateEventId } from '../utils/facebookCAPI';
@@ -76,13 +76,14 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
             {/* HERO SECTION WITH FORM */}
             <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden min-h-[90vh] flex items-center">
                 {/* Background */}
-                <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 z-0">
                     <img 
-                        src="/assets/images/lexa_brazil_boutique_hero.png" 
+                        src="/assets/images/lexa_elite_office_hero.png" 
                         alt="Background" 
-                        className="w-full h-full object-cover blur-[2px] opacity-40 scale-105" 
+                        className="w-full h-full object-cover object-center" 
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-slate-50/50"></div>
+                    {/* Much lighter gradient to ensure image visibility */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-slate-50/80 via-slate-50/40 to-slate-50/10"></div>
                 </div>
 
                 <div className="container mx-auto px-6 relative z-10">
@@ -95,34 +96,34 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                             transition={{ duration: 0.8 }}
                             className="max-w-xl"
                         >
-                            <div className="inline-flex items-center gap-2 mb-6 bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">
+                            <div className="inline-flex items-center gap-2 mb-6 bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full backdrop-blur-sm">
                                 <ShieldCheckIcon className="w-4 h-4 text-gold-dark" />
-                                <span className="text-[11px] font-black uppercase tracking-[0.2em] text-gold-dark">Tecnologia Jurídica Premium</span>
+                                <span className="text-[11px] font-black uppercase tracking-[0.2em] text-gold-dark">Inteligência Artificial Jurídica</span>
                             </div>
                             
-                            <h1 className="text-4xl md:text-6xl font-serif font-black text-[#051020] mb-6 leading-[1.1] tracking-tight">
-                                Pare de Perder Clientes para a <span className="text-gold">Caixa Postal.</span>
+                            <h1 className="text-4xl md:text-6xl font-serif font-black text-[#051020] mb-6 leading-[1.05] tracking-tight">
+                                A Excelência do Seu Escritório <span className="text-gold italic font-serif">Começa no Atendimento.</span>
                             </h1>
                             
                             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
-                                A única IA que atende seu telefone como uma secretária humana experiente. 
-                                <br className="hidden md:block" />
-                                <span className="text-[#051020] font-bold">24 horas por dia. Sem custos trabalhistas.</span>
+                                A Lexa garante que todo potencial cliente seja atendido com profissionalismo instantâneo, 24 horas por dia.
                             </p>
 
-                            <div className="flex flex-col gap-4 text-sm font-bold text-slate-500 mb-8">
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-green-100 p-1 rounded-full"><CheckCircleIcon className="w-4 h-4 text-green-600" /></div>
-                                    Triagem de clientes urgentes
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-green-100 p-1 rounded-full"><CheckCircleIcon className="w-4 h-4 text-green-600" /></div>
-                                    Agendamento automático na sua agenda
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-green-100 p-1 rounded-full"><CheckCircleIcon className="w-4 h-4 text-green-600" /></div>
-                                    Instalação simples em 5 minutos
-                                </div>
+                            <div className="space-y-4">
+                                {[
+                                    { text: "Atendimento imediato, sem sinal de ocupado", highlight: "Zero Chamadas Perdidas" },
+                                    { text: "Qualificação automática de demandas", highlight: "Filtro Inteligente" },
+                                    { text: "Resumo do caso enviado no seu WhatsApp", highlight: "Notificação Instantânea" }
+                                ].map((item, i) => (
+                                    <div key={i} className="flex items-center gap-4 bg-white/60 p-3 rounded-xl border border-white/50 shadow-sm">
+                                        <div className="bg-[#051020] p-2 rounded-full text-gold">
+                                            <CheckCircleIcon className="w-4 h-4" />
+                                        </div>
+                                        <p className="text-sm font-medium text-slate-700">
+                                            <span className="text-[#051020] font-bold">{item.highlight}:</span> {item.text}
+                                        </p>
+                                    </div>
+                                ))}
                             </div>
                         </motion.div>
 
@@ -133,14 +134,18 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="relative"
                         >
-                            <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full transform rotate-3 scale-90 -z-10"></div>
+                            {/* Decorative Elements */}
+                            <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/30 rounded-full blur-[50px]"></div>
+                            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-900/10 rounded-full blur-[50px]"></div>
                             
-                            <div className="bg-white/80 backdrop-blur-xl border border-white/50 shadow-[0_40px_100px_-20px_rgba(5,16,32,0.1)] rounded-[32px] p-8 md:p-10 relative overflow-hidden">
+                            <div className="bg-white/90 backdrop-blur-2xl border border-white shadow-[0_20px_60px_-15px_rgba(5,16,32,0.15)] rounded-[32px] p-8 md:p-10 relative overflow-hidden">
+                                <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+                                
                                 {!submitted ? (
                                     <>
                                         <div className="mb-8 text-center">
-                                            <h3 className="text-2xl font-serif font-black text-[#051020] mb-2">Conheça a Lexa</h3>
-                                            <p className="text-slate-500 text-sm">Preencha para receber uma demonstração.</p>
+                                            <h3 className="text-2xl font-serif font-black text-[#051020] mb-2">Solicite uma Demo</h3>
+                                            <p className="text-slate-500 text-sm">Descubra como modernizar sua recepção.</p>
                                         </div>
 
                                         <form onSubmit={handleSubmit} className="space-y-4">
@@ -150,8 +155,8 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                                                     name="name"
                                                     value={formData.name}
                                                     onChange={handleChange}
-                                                    placeholder="Seu Nome"
-                                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400"
+                                                    placeholder="Nome Completo"
+                                                    className="w-full bg-slate-50 border border-slate-200 focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400 font-medium"
                                                     required
                                                 />
                                             </div>
@@ -161,8 +166,8 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                                                     name="phone"
                                                     value={formData.phone}
                                                     onChange={handleChange}
-                                                    placeholder="Seu WhatsApp"
-                                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400"
+                                                    placeholder="WhatsApp com DDD"
+                                                    className="w-full bg-slate-50 border border-slate-200 focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400 font-medium"
                                                     required
                                                 />
                                             </div>
@@ -172,8 +177,8 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                                                     name="email"
                                                     value={formData.email}
                                                     onChange={handleChange}
-                                                    placeholder="Seu E-mail Profissional"
-                                                    className="w-full bg-white border border-slate-200 focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400"
+                                                    placeholder="E-mail Profissional"
+                                                    className="w-full bg-slate-50 border border-slate-200 focus:bg-white focus:border-gold focus:ring-1 focus:ring-gold/20 px-4 py-4 rounded-xl text-[#051020] outline-none transition-all placeholder:text-slate-400 font-medium"
                                                     required
                                                 />
                                             </div>
@@ -181,29 +186,39 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                                             <button 
                                                 type="submit" 
                                                 disabled={isSubmitting}
-                                                className="w-full bg-[#051020] text-white font-bold text-lg py-4 rounded-xl hover:bg-gold transition-all duration-300 shadow-lg hover:shadow-gold/20 flex items-center justify-center gap-2 group mt-2"
+                                                className="w-full bg-[#051020] text-white font-bold text-lg py-4 rounded-xl hover:bg-gold hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-gold/20 flex items-center justify-center gap-3 group mt-4 overflow-hidden relative"
                                             >
-                                                {isSubmitting ? 'Enviando...' : 'Quero Conhecer'}
-                                                {!isSubmitting && <IconAtendimento24h className="w-5 h-5 text-gold group-hover:text-white transition-colors" />}
+                                                <span className="relative z-10">{isSubmitting ? 'Enviando...' : 'Quero Ver a Lexa Agindo'}</span>
+                                                {!isSubmitting && <div className="relative z-10 bg-white/20 p-1 rounded-full"><IconAtendimento24h className="w-4 h-4 text-white" /></div>}
+                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                             </button>
 
-                                            <p className="text-center text-[10px] uppercase tracking-wider text-slate-400 mt-4">
-                                                Seus dados estão seguros.
-                                            </p>
+                                            <div className="flex items-center justify-center gap-2 mt-6 opacity-60">
+                                                <LockIcon className="w-3 h-3 text-slate-500" />
+                                                <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">
+                                                    Dados 100% Protegidos
+                                                </p>
+                                            </div>
                                         </form>
                                     </>
                                 ) : (
                                     <div className="text-center py-12">
-                                        <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                                            <CheckCircleIcon className="w-8 h-8" />
-                                        </div>
-                                        <h3 className="text-2xl font-serif font-bold text-[#051020] mb-2">Solicitação Recebida!</h3>
-                                        <p className="text-slate-500 mb-8">Nossa equipe entrará em contato em breve.</p>
+                                        <motion.div 
+                                            initial={{ scale: 0 }}
+                                            animate={{ scale: 1 }}
+                                            className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border border-green-200"
+                                        >
+                                            <CheckCircleIcon className="w-10 h-10" />
+                                        </motion.div>
+                                        <h3 className="text-2xl font-serif font-bold text-[#051020] mb-3">Tudo Certo!</h3>
+                                        <p className="text-slate-600 mb-8 leading-relaxed">
+                                            Recebemos seu interesse. Nossa equipe entrará em contato via WhatsApp em breve para agendar sua demonstração.
+                                        </p>
                                         <button 
                                             onClick={() => onNavigate('landing')}
-                                            className="text-gold font-bold hover:underline"
+                                            className="text-[#051020] font-bold border-b-2 border-gold/30 hover:border-gold transition-colors pb-0.5"
                                         >
-                                            Voltar ao site
+                                            Voltar ao site principal
                                         </button>
                                     </div>
                                 )}
@@ -233,9 +248,9 @@ export const LexaShortLandingPage: React.FC<LexaShortLandingPageProps> = ({ onNa
                                 desc: "Ela conversa naturalmente, entende o contexto jurídico e nunca deixa o telefone tocando."
                             },
                             {
-                                icon: <CalendarIcon className="w-8 h-8 text-gold" />,
-                                title: "Agenda Integrada",
-                                desc: "A Lexa acessa sua agenda e marca reuniões com clientes qualificados automaticamente."
+                                icon: <SmartphoneIcon className="w-8 h-8 text-gold" />,
+                                title: "Notificação em Tempo Real",
+                                desc: "Após cada atendimento, a Lexa envia um resumo e o áudio da conversa direto no seu WhatsApp."
                             },
                             {
                                 icon: <FilterIcon className="w-8 h-8 text-gold" />,

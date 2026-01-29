@@ -66,6 +66,7 @@ export const LexaLightHeroSectionB: React.FC<LexaHeroSectionProps> = ({ onNaviga
                         <p>Seu telefone toca.</p>
                         <p>Você está em reunião com um cliente.</p>
                         <p>Um caso potencial de R$20.000 vai para a caixa postal — e direto para seu concorrente.</p>
+                        <p className="font-bold text-[#051020]">Com a Lexa, essa ligação seria atendida e registrada.</p>
                     </div>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 reveal w-full sm:w-auto px-4 sm:px-0 mb-6 md:mb-8" style={{ animationDelay: '0.4s' }}>
